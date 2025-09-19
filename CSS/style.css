@@ -59,7 +59,7 @@
       background: #F59E0B;
       color: #fff;
       transform: translateY(-1px) scale(1.02);
-      box-shadow: 3px 4px 6px 2px rgba(245, 159, 11, 0.87);
+      box-shadow: 0px 0px 35px 8px rgba(245, 159, 11, 0.87);
     }
 
     
@@ -118,7 +118,7 @@
     }
     /* SOBRE */
     #sobre{
-      padding: 3.5rem 0 7rem!important;
+      padding: 3.3rem 0 7rem!important;
     }
     .section-title {
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
@@ -136,8 +136,7 @@
           line-height: 1.5;
           color: #000000;
           margin-bottom: 2rem;
-          margin: 0 10rem 2rem!important;
-          font-weight: 700;
+          margin: 0 12rem 2rem!important;
         }
         .d-flex.flex-wrap.justify-content-center.gap-5{
           .fw-bold{
@@ -158,12 +157,13 @@
       padding: 13rem 1rem;
       text-align: center;
       transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+      box-shadow: 6px 5px 24px 4px rgb(48 68 153 / 68%);
       opacity: 0.85;
       cursor: pointer;
     }
     .milestone-card:hover {
       transform: scale(1.06);
-      box-shadow: 0 8px 32px rgba(30,58,138,0.12);
+      box-shadow:1px 2px 25px 15px #f59e0b91;
       opacity: 1;
     }
     .milestone-card::before {
@@ -177,6 +177,14 @@
       border-radius: 200px;
    }
     /* SERVIÇOS */
+    #servicos{
+      padding: 10rem 0!important;
+      .container{
+        .section-title{
+          font-size: 45px!important;
+        }
+      }
+    }
     .service-card {
       border: none;
       border-radius: 1rem;
