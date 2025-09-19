@@ -139,10 +139,10 @@
           margin: 0 10rem 2rem!important;
           font-weight: 700;
         }
-        .d-flex.flex-wrap.justify-content-center.gap-3{
+        .d-flex.flex-wrap.justify-content-center.gap-5{
           .fw-bold{
             font-size: 1.3rem;
-            color: #F59E0B;
+            color: #F59E0B!important;
             font-weight: 600;
             z-index: 1;
             position: relative;
