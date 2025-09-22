@@ -79,7 +79,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(124deg, rgba(30, 59, 138, 0.747) 48%, rgba(243, 244, 246, 0.267) 65%);
+      background: linear-gradient(124deg, #1e3b8abe 48%, rgba(243, 244, 246, 0.267) 65%);
       z-index: 1;
       pointer-events: none;
     }
@@ -157,7 +157,7 @@
       padding: 13rem 1rem;
       text-align: center;
       transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
-      box-shadow: 6px 5px 24px 4px rgb(48 68 153 / 68%);
+      box-shadow: 6px 5px 24px 4px hsla(229, 52%, 39%, 0.68);
       opacity: 0.85;
       cursor: pointer;
     }
@@ -186,6 +186,7 @@
       }
     }
     .service-card {
+      height: 300px;
       border: none;
       border-radius: 1rem;
       box-shadow: var(--shadow);
