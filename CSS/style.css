@@ -218,6 +218,30 @@
       box-shadow: 0 8px 32px rgba(30,58,138,0.12);
     }
     /* PROJETOS */
+    #projetos{
+      .container{
+        .section-title{
+          font-size: 45px!important;
+        }
+        .col-lg-6.mb-4.mb-lg-0.fade-in{
+          h5.fw-bold.mb-2{
+            font-size: 2rem;
+            color: #1E3A8A!important;
+            font-weight: 600;
+            z-index: 1;
+            position: relative;
+          }
+          p{
+            font-size: 1.1rem;
+            text-align: justify;
+            line-height: 1.5;
+            color: #000000;
+            margin-bottom: 2rem;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
     .timeline {
       display: flex;
       flex-direction: row;
@@ -226,11 +250,11 @@
       margin: 2rem 0;
     }
     .timeline-step {
-      background: var(--white);
+      /* background: var(--white); */
       border-radius: 1rem;
       padding: 1rem 2rem;
       text-align: center;
-      box-shadow: var(--shadow);
+      /* box-shadow: var(--shadow); */
       color: var(--primary);
       font-weight: 700;
       min-width: 90px;
