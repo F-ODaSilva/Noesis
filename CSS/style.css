@@ -7,9 +7,9 @@
       --shadow: 0 4px 24px rgba(30,58,138,0.08);
     }
     body {
-      font-family: 'Inter', 'Roboto', Arial, sans-serif;
+      font-family: 'Ubuntu' Arial, sans-serif;
       /* background: var(--bg) */
-      background-color:#374151;   
+      background-color:#fff;   
       color: var(--secondary);
       scroll-behavior: smooth;
     }
@@ -30,26 +30,36 @@
       .nav-item {
         padding: 0 25px;
         .nav-link{
-          color: #fff;
+          color: #000000;
           font-weight: 400;
         } 
       }
     }
 
-    .nav-link:hover{
-      font-weight: 500!important;
-    }
-    .navbar-brand img { 
+    
+    /* .navbar-brand img { 
         position: absolute;
         height: 175px;
         top: -3.5rem;
-     }
+     } */
     .nav-link, .navbar-brand, .btn {
-      font-family: 'Roboto', Arial, sans-serif;
-      font-weight: 700;
+      font-family: 'Ubuntu', Arial, sans-serif;
+      font-weight: light!important;
       letter-spacing: 0.01em;
+      margin-right: 55px;
+      color: rgb(12, 12, 12);
     }
-    .btn-accent {
+    .nav-link:hover{
+      font-weight: 500!important;
+    }
+    .language-switcher button.btn.btn-outline-light{
+      border: solid 2px #b4c101;
+      font-size: 14px
+    }
+    .language-switcher button.btn.btn-outline-light:hover{
+      background-color:#cfcfcf!important
+    }
+    /* .btn-accent {
       background: #F59E0B ;
       color: #fff;
       border: none;
@@ -60,28 +70,52 @@
       color: #fff;
       transform: translateY(-1px) scale(1.02);
       box-shadow: 0px 0px 35px 8px rgba(245, 159, 11, 0.87);
-    }
+    } */
 
     
     /* HERO */
     .hero {
-      min-height: 100vh;
-      background: url('../Assets/images/coins-layed.jpg') center/cover no-repeat;
+      min-height: 98vh;
+      background: url('../Assets/images/hero-bg-pt.jpg.png') center/cover no-repeat;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
       overflow: hidden;
-      background-position: right center;
+      background-position: 3% center;
+      object-fit: cover;
+      /* background-position: 5% 0%; */
+      /* background-size: 105%; */
     }
     .hero::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(124deg, #1e3b8abe 48%, rgba(243, 244, 246, 0.267) 65%);
+      /* background: linear-gradient(124deg, #1e3b8abe 48%, rgba(243, 244, 246, 0.267) 65%); */
       z-index: 1;
       pointer-events: none;
+    }
+    /* Small Mobile: 320px - 480px */
+    @media (min-width: 320px) and (max-width: 480px) {
+      /* Background Image */
+      #hero.hero{
+        min-height: 32vh!important;
+      }
+    }
+
+    /* Mobile: 481px - 767px */
+    @media (min-width: 481px) and (max-width: 767px) {
+      /* Background Image*/
+      #hero.hero{
+        min-height: 32vh!important;
+      }
+     }
+   /* LARGE DESKTOP */
+   @media (min-width: 1281px) and (max-width: 1440px) { 
+      .container-fluid{
+        margin: 0 10rem;
+      }
     }
     .hero-content {
       position: relative;
@@ -102,26 +136,36 @@
       transform: translateY(0);
     }
     .hero-title {
-      font-size: 50px;
+      font-size: 70px;
       font-weight: 700;
-      font-family: 'Inter', 'Roboto', sans-serif;
-      margin-bottom: 0.5rem;
-      color: #fff;
-      /* letter-spacing: 0.01em; */
+      font-family: 'Inter', 'Ubuntu', sans-serif;
+      margin-bottom: 4rem;
+      color: black;
+      /* letter-spacing: 0.5px; */
       text-transform: capitalize;
+      line-height: 4rem;
+      margin-right: -2rem;
     }
     .hero-subtitle {
-      font-size: 1.16rem;
+      font-size: 2rem;
+      text-transform: uppercase;
       font-weight: 400;
       margin-bottom: 1rem;
-      color: #fff;
+      color: #F59E0B;
     }
+    
+    .hero-image img{
+      max-height: 80vh; /* control size on desktop */
+      object-fit: contain;
+    }
+
+
     /* SOBRE */
     #sobre{
       padding: 3.3rem 0 7rem!important;
     }
     .section-title {
-      font-family: 'Inter', 'Roboto', Arial, sans-serif;
+      font-family: 'Inter', 'Ubuntu', Arial, sans-serif;
       font-weight: 700;
       color: var(--primary);
       margin-bottom: 2rem;

@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE INFO -->
   <title>NOESIS Intelligence Value</title>
+  <!-- FAVICONS LINK -->
   <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/favicon_io_simple/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon_io_simple/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon_io_simple/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="description" content="NOESIS Intelligence Value - Soluções inteligentes para centros de dados e ativos digitais em Moçambique.">
   <meta name="keywords" content="NOESIS, Inteligência, Data Center, Moçambique, Digital, Parcerias">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- UBUNTU GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+  <!-- CUSTOM CSS STYLESHEET -->
   <link rel="stylesheet" href="CSS/style.css">
-  <!-- Font Awesome Icons -->
+  <!-- FONT AWESOME ICONS -->
   <script src="https://kit.fontawesome.com/3359c08231.js" crossorigin="anonymous"></script>
-  <!-- Google Ana lytics Placeholder -->
+  <!-- GOOGLE ANALYTICS PLACHOLDER -->
   <script>
     // window.dataLayer = window.dataLayer || [];
     // function gtag(){dataLayer.push(arguments);}
@@ -25,25 +31,30 @@
   </script>
 </head>
 <body>
-  <!-- HEADER -->
+    <!-- HEADER -->
   <header>
     <nav class="navbar navbar-expand-lg fixed-top py-2">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="Assets/images/full-logo-no-bg.png" alt="NOESIS">
-        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav"> 
-          <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lideranca">Liderança</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <ul class="navbar-nav me-5 mb-3 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#sobre" data-key="nav.about">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos" data-key="nav.services">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos" data-key="nav.projects">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lideranca" data-key="nav.leadership">Liderança</a></li>
           </ul>
-          <a href="#contacto" class="btn btn-accent px-5 ms-lg-3">Contactar</a>
+          <div class="d-flex align-items-center">
+            <div class="language-switcher">
+              <button class="btn btn-outline-light btn-md px-4 language-btn" data-lang="pt">
+                <i class="fas fa-language me-1"></i>PT
+              </button>
+              <button class="btn btn-outline-light btn-md px-4 language-btn" data-lang="en" style="display: none;">
+                <i class="fas fa-language me-1"></i>EN
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -52,11 +63,19 @@
   <main>
     <!-- HERO SECTION -->
     <section class="hero" id="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">Transformando Energia em Valor Digital</h1>
-        <p class="hero-subtitle">Soluções inteligentes para centros de dados e ativos digitais em Moçambique</p>
-        <a href="#sobre" class="btn btn-accent btn-md hero-btn px-5">Descobrir Mais</a>
-      </div>
+      <!-- <div class="container-fluid h-75 d-flex flex-column justify-content-center align-items-center text-center text-white">
+       <div class="row align-items-center h-100 w-100">
+         <div class="hero-content col-6 col-md-6 col-lg-7">
+          <h1 class="hero-title">NOESIS <br> Perfil da Empresa</h1>
+          <p class="hero-subtitle">Mineração de Ativos Digitais</p>
+           <a href="#sobre" class="btn btn-accent btn-md hero-btn px-5">Descobrir Mais</a> 
+        </div>
+        <div class="hero-image col-6 col-md-6 col-lg-5">
+          <img src="Assets/images/moz-map.png" alt="Digital Asset Mining" class="img-fluid">
+          <p>NOESIS - Inteligence Value, SA</p>
+        </div>
+       </div>
+      </div> -->
     </section>
 
     <!-- SOBRE NÓS -->
@@ -252,11 +271,13 @@
         nav.classList.add('scrolled');
         document.querySelectorAll('.nav-link').forEach(link => {
           link.style.color = '#000000';
+          link.style.fontWeight = 'light';
         }); 
       } else {
         nav.classList.remove('scrolled');
         document.querySelectorAll('.nav-link').forEach(link => {
-          link.style.color = '#fff';
+          link.style.color = '#000000';
+          link.style.fontWeight = 'light';
         }); 
       }
     });
@@ -272,14 +293,14 @@
       });
     });
 
-    // Parallax effect for hero background
-    window.addEventListener('scroll', function() {
-      const hero = document.querySelector('.hero');
-      if(hero) {
-        let offset = window.scrollY * 0.4;
-        hero.style.backgroundPosition = `center ${offset}px`;
-      }
-    });
+    // // Parallax effect for hero background
+    // window.addEventListener('scroll', function() {
+    //   const hero = document.querySelector('.hero');
+    //   if(hero) {
+    //     let offset = window.scrollY * 0.4;
+    //     hero.style.backgroundPosition = `center ${offset}px`;
+    //   }
+    // });
 
     // Fade-in animations for hero
     window.addEventListener('DOMContentLoaded', function() {
