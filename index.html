@@ -107,21 +107,21 @@
           </div>
           <div class="col-6 col-md-8 col-lg-7 col-xl-8">
             <div class="section-content">
-              <h2 class="section-title text-left slide-right">Quem Somos</h2>
-              <h3 class="section-subtitle text-left slide-right">
+              <h2 class="section-title text-left slide-right" data-key="about.title">Quem Somos</h2>
+              <h3 class="section-subtitle text-left slide-right" data-key="about.text1">
                 NOESIS - Intelligence Value é uma empresa moçambicana espacializada em infraestutura de data centers de
                 alto desempenho
               </h3>
-              <p class="about-text mb-5">
+              <p class="about-text mb-5" data-key="about.text2">
                 Focamos na criação e operação de centros de processamento de dados que aproveitam a vantagem energética
                 de Moçambique para impulsionar a transformação digital e o desenvolvimento económico do país.
               </p>
-              <p class="about-text mb-5">
+              <p class="about-text mb-5" data-key="about.text3">
                 Nossa abordagem combina tecnologia de ponta com práticas sustentáveis, criando uma nova frente económica
                 baseada em infraestrutura digital que posiciona Moçambique como um hub tecnológico regional.
               </p>
 
-              <span class="operation-location">Operações: Maputo, Moçambique</span>
+              <span class="operation-location" data-key="about.location">Operações: Maputo, Moçambique</span>
             </div>
           </div>
         </div>
@@ -135,17 +135,17 @@
           <img src="Assets/images/mozambique.jpg" class="img-fluid" alt="Maputo">
         </div>
         <div class="row">
-          <h2 class="section-title text-left slide-right">Visão e Missão</h2>
+          <h2 class="section-title text-left slide-right" data-key="data-key">Visão e Missão</h2>
           <div class="col-6 col-md-6 col-lg-6 col-xl-6">
             <div class="vision-indicator indicator">
-              <div class="number-indicator">1</div>
+              <div class="number-indicator" ">1</div>
               <div class="indicator-line"></div>
             </div>
             <div class="section-content">
-              <h3 class="section-subtitle text-left slide-right">
+              <h3 class="section-subtitle text-left slide-right" data-key="vision.title">
                 Visão
               </h3>
-              <p class="about-text mb-5">
+              <p class="about-text mb-5" data-key="vision.text>">
                 Posicionar Moçambique como lider regional em inovação tecnológica, transformando recursos energéticos
                 abundantes em prosperidade nacional e desenvolvimento sustentável através de infraestrutura digital de
                 classe mundial.
@@ -158,11 +158,11 @@
               <div class="indicator-line"></div>
             </div>
             <div class="section-content">
-              <h3 class="section-subtitle text-left slide-right">
+              <h3 class="section-subtitle text-left slide-right" data-key="mission.title">
                 Missão
               </h3>
-              <p class="about-text mb-0">
-              <div class="quote">"Transformar a vantagem energética de Moçambique em valor digital e prosperidade
+              <p class="about-text mb-0" data-key="mission.text">
+              <div class="quote" data-key="mission.text1">"Transformar a vantagem energética de Moçambique em valor digital e prosperidade
                 nacional através de infraestrutura de classe mundial."</div>
               <br>
               Criamos soluções que conectam recursos naturais com oportunidades digitais, gerando impacto económico
@@ -182,7 +182,7 @@
           <div class="col-md-4">
             <div class="card service-card text-center p-4">
               <span class="service-icon mt-2">
-                <i class="fa-solid fa-server"></i>
+                <i class="fa-solid fa-database"></i>
               </span>
               <h5 class="card-title fw-bold mb-3">Data Centers de Alta Performance</h5>
               <p class="card-text">Desenvolvimento e operação de infraestutura de processamento de dados de classe
@@ -194,7 +194,7 @@
           <div class="col-md-4">
             <div class="card service-card text-center p-4">
               <span class="service-icon mt-2">
-                <i class="fa-solid fa-chess"></i>
+                <i class="fa-solid fa-microchip"></i>
               </span>
               <h5 class="card-title fw-bold mb-3">Computação e IA Especializada</h5>
               <p class="card-text">Fornecimento de serviços de processamento computacional para redes blockchain,
@@ -475,7 +475,7 @@
     </section>
 
     <!-- FASES DE IMPLEMENTAÇÃO -->
-    <section id="timeline" class="py-5">
+    <section id="timeline">
       <div class="container-fluid h-100">
 
         <!-- Image Row -->
@@ -492,40 +492,44 @@
           </h3>
         </div>
 
-        <!-- Timeline Grid -->
-        <div class="row position-relative">
-          <!-- Timeline Line -->
-          <div class="timeline-line"></div>
 
-          <!-- Step 1 (Left) -->
-          <div class="col-md-6 d-flex justify-content-md-end justify-content-center mb-5">
-            <div class="timeline-card text-md-end text-center">
-              <h4 class="fw-bold">Fase 1</h4>
-              <p>Descrição da primeira fase de implementação.</p>
+        <div class="container text-center">
+          <h2 class="section-title">Fases de Implementação</h2>
+          <p class="section-subtitle mb-5">
+            Abordagem faseada para garantir implementação sustentável e crescimento orgânico.
+          </p>
+
+          <div class="timeline-horizontal position-relative d-flex justify-content-between">
+
+            <!-- Phase 1 (top) -->
+            <div class="timeline-item top text-center">
+              <h5 class="fw-bold">Fase 1</h5>
+              <p class="small">Infraestrutura inicial e planeamento estratégico.</p>
+              <div class="timeline-dot"></div>
             </div>
-          </div>
 
-          <!-- Step 2 (Right) -->
-          <div class="col-md-6 d-flex justify-content-md-start justify-content-center mb-5">
-            <div class="timeline-card text-md-start text-center">
-              <h4 class="fw-bold">Fase 2</h4>
-              <p>Descrição da segunda fase de implementação.</p>
+            <!-- Phase 2 (bottom, centered) -->
+            <div class="timeline-item bottom text-center">
+              <div class="timeline-dot"></div>
+              <h5 class="fw-bold">Fase 2</h5>
+              <p class="small">Implementação tecnológica e integração.</p>
             </div>
-          </div>
 
-          <!-- Step 3 (Centered) -->
-          <div class="col-12 d-flex justify-content-center mb-5">
-            <div class="timeline-card text-center">
-              <h4 class="fw-bold">Fase 3</h4>
-              <p>Descrição da terceira fase de implementação.</p>
+            <!-- Phase 3 (top) -->
+            <div class="timeline-item top text-center">
+              <h5 class="fw-bold">Fase 3</h5>
+              <p class="small">Expansão e crescimento sustentável.</p>
+              <div class="timeline-dot"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
+
     <!-- LIDERANÇA -->
-    <section id="lideranca" class="py-5">
+    <section id="lideranca">
       <div class="container">
         <h2 class="section-title text-center fade-in">Equipa de Gestão</h2>
         <h3 class="section-subtitle">
@@ -570,7 +574,7 @@
           <div class="col-6 col-md-4 col-lg-5 col-xl-4 fade-in">
             <img src="Assets/images/girl-digital.png" alt="Sobre Nós" class="img-fluid">
           </div>
-          <div class="col-6 col-md-8 col-lg-7 col-xl-8">
+          <div class="col-6 col-md-4 col-lg-7 col-xl-8">
             <div class="section-content">
               <h2 class="section-title text-left slide-right">Contactos</h2>
               <h3 class="section-subtitle text-left slide-right">
@@ -593,21 +597,36 @@
                   <p class="contacto-principal">
                     <strong>Contacto Principal:</strong>
                   </p>
-                  <p>Nome: <span>Nuno Lima</span></p>
-                  <p>Cargo: <span>CEO</span></p>
-                  <p>Email: <a href="mailto:nuno.lima@noesis.co.mz">nuno.lima@noesis.co.mz</a></p>
-                  <p>Email: +258 843067770</p>
+                  <p class="name">Nome: <span>Nuno Lima</span></p>
+                  <p class="role">Cargo: <span>CEO</span></p>
+                  <p class="email">Email: <a href="mailto:nuno.lima@noesis.co.mz">nuno.lima@noesis.co.mz</a></p>
+                  <p class="number">Number: +258 843067770</p>
                 </div>
-              </div> 
+              </div>
+            </div>
+            <div class="col-md-6 fade-in">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required
+                    aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn btn-accent">Enviar</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="end">
-
-    </section>
   </main>
 
   <!-- FOOTER -->
@@ -631,6 +650,98 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const translations = {
+      pt: {
+        // NAVBAR
+        "nav.about": "Sobre",
+        "nav.services": "Serviços",
+        "nav.projects": "Projetos",
+        "nav.leadership": "Liderança",
+
+
+        // SOBRE
+        "about.title": "Quem Somos",
+        "about.text1": "NOESIS - Intelligence Value é uma empresa moçambicana especializada em infraestrutura de data centers de alto desempenho.",
+        "about.text2": "Focamos na criação e operação de centros de processamento de dados que aproveitam a vantagem energética de Moçambique para impulsionar a transformação digital.",
+
+        // SERVIÇOS
+        "services.title": "Serviços",
+        "services.item1": "Consultoria em Mineração Digital",
+        "services.item2": "Gestão de Data Centers",
+        "services.item3": "Eficiência Energética",
+        "services.item4": "Soluções Blockchain",
+
+        // PROJETOS
+        "projects.title": "Projetos",
+        "projects.text": "Nossos projetos demonstram como transformamos energia em valor digital sustentável.",
+
+        // LIDERANÇA
+        "leadership.title": "Liderança",
+        "leadership.text": "Nossa equipa de liderança é composta por especialistas em tecnologia, energia e inovação."
+      },
+      en: {
+        // NAVBAR
+        "nav.about": "About",
+        "nav.services": "Services",
+        "nav.projects": "Projects",
+        "nav.leadership": "Leadership",
+
+        // HERO
+        "hero.title": "NOESIS - Company Profile",
+        "hero.subtitle": "Digital Asset Mining",
+        "hero.btn": "Discover More",
+
+        // ABOUT
+        "about.title": "Who We Are",
+        "about.text1": "NOESIS - Intelligence Value is a Mozambican company specialized in high-performance data center infrastructure.",
+        "about.text2": "We focus on creating and operating data processing centers that leverage Mozambique's energy advantage to drive digital transformation.",
+
+        // SERVICES
+        "services.title": "Services",
+        "services.item1": "Digital Mining Consultancy",
+        "services.item2": "Data Center Management",
+        "services.item3": "Energy Efficiency",
+        "services.item4": "Blockchain Solutions",
+
+        // PROJECTS
+        "projects.title": "Projects",
+        "projects.text": "Our projects show how we transform energy into sustainable digital value.",
+
+        // LEADERSHIP
+        "leadership.title": "Leadership",
+        "leadership.text": "Our leadership team is composed of experts in technology, energy, and innovation."
+      }
+    };
+
+    let currentLang = "pt";
+
+    function changeLanguage(lang) {
+      const elements = document.querySelectorAll("[data-key]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      // alternar botões
+      document.querySelectorAll(".language-btn").forEach(btn => {
+        btn.style.display = (btn.dataset.lang === lang) ? "none" : "inline-block";
+      });
+
+      currentLang = lang;
+    }
+
+    // Eventos nos botões
+    document.querySelectorAll(".language-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const newLang = btn.getAttribute("data-lang");
+        changeLanguage(newLang);
+      });
+    });
+
+  </script>
   <script>
     // Sticky header background on scroll
     window.addEventListener('scroll', function () {
@@ -703,6 +814,9 @@
     revealOnScroll('.timeline-step');
     revealOnScroll('.timeline-arrow');
   </script>
+
+
+
 </body>
 
 </html>
