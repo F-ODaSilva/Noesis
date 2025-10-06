@@ -698,7 +698,7 @@
             height: 100% !important;
             object-cover: cover;
             object-position: center 20%;
-            filter: saturate(1.8) drop-shadow(4px 4px 17px #374151);
+            filter: saturate(1.8);
           }
         }
 
@@ -908,7 +908,7 @@
   #contacto {
     height: 100vh;
     background-color: white !important;
-
+    font-family: 'Ubuntu', Arial, sans-serif;
     .container-fluid {
       height: 100%;
 
@@ -957,16 +957,19 @@
               }
             }
             p.role{
+              font-weight: 700;
               span{
                 font-weight: 400;
               }
             }
             p.email{
+              font-weight: 700;
               span{
                 font-weight: 400;
               }
             }
             p.number{
+              font-weight: 700;
               span{
                 font-weight: 400;
               }
