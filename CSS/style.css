@@ -111,24 +111,6 @@
     pointer-events: none;
   }
 
-  /* Small Mobile: 320px - 480px */
-  @media (min-width: 320px) and (max-width: 480px) {
-
-    /* Background Image */
-    #hero.hero {
-      min-height: 32vh !important;
-    }
-  }
-
-  /* Mobile: 481px - 767px */
-  @media (min-width: 481px) and (max-width: 767px) {
-
-    /* Background Image*/
-    #hero.hero {
-      min-height: 32vh !important;
-    }
-  }
-
   /* LARGE DESKTOP */
   @media (min-width: 1281px) and (max-width: 1440px) {
     .container-fluid {
@@ -186,8 +168,10 @@
     /* control size on desktop */
     object-fit: contain;
   }
-
-
+/* 
+  #sobre,#mission-vision,#servicos,#objetivos,#necessidades,#beneficios,#projetos,#sustenta,#timeline,#lideranca,#contacto,#end, .footer{
+    display: none;
+  } */
   /* SOBRE */
   #sobre {
     height: 100vh;
@@ -416,6 +400,7 @@
 
   /* OBECTIVOS */
   #objetivos {
+
     height: 100vh;
     background-color: white !important;
 
@@ -1047,4 +1032,39 @@
   .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* SMALL MOBILE: 320px - 480px */
+  @media (min-width: 320px) and (max-width: 480px) {
+    /* Navbar */
+    header {
+      .navbar {
+        background-color: #ffffff!important;
+        #navbarNav {
+          .navbar-nav.mb-3.mb-lg-0{
+            .nav-item{
+              margin: auto auto!important;
+              /* padding-bottom: 7rem; */
+              .nav-link{
+                color: #000000;
+              }
+            }
+          }
+          
+        }
+      }     
+    }
+    /* Background Image */
+    #hero.hero {
+      min-height: 32vh !important;
+    }
+  }
+
+  /* MEDIUM & LARGE MOBILE: 481px - 767px */
+  @media (min-width: 481px) and (max-width: 767px) {
+
+    /* Background Image*/
+    #hero.hero {
+      min-height: 32vh !important;
+    }
   }

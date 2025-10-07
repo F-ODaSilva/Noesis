@@ -1,0 +1,297 @@
+/* HERO */
+#inicio {
+    .container {
+        .row {
+            margin-top: 4rem;
+
+            .col-6.col-sm-8.col-lg-6 {
+                img {
+                    width: 75%;
+                }
+            }
+
+            .col-lg-6 {
+                h1 {
+                    font-size: 4rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    margin-right: -3rem !important;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    text-align: justify;
+                }
+
+                .btn.btn-primary.btn-lg.px-4 {
+                    font-size: 1.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: white;
+                    font-weight: 400;
+                    border: solid 3px #8ED138 !important;
+                    background-color: transparent;
+                }
+
+                .btn.btn-primary.btn-lg.px-4:hover {
+                    background-color: #8ED138;
+                }
+            }
+        }
+    }
+}
+
+/* END HERO */
+
+/* ABOUT SECTION */
+#sobre {
+    background-color: #F5F5F5;
+
+    .container {
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    font-size: 3.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #92CA63 !important;
+                    font-weight: 700;
+                }
+
+                .underline {
+                    height: 8px;
+                    width: 250px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .col-12.col-md-6.col-lg-7 {
+                .about-content {
+                    h5.subtitle.mb-3 {
+                        font-size: 2rem;
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        color: #2A3B65 !important;
+                        font-weight: 700;
+                        text-align: justify;
+                        margin-right: 45px;
+                    }
+
+                    p {
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        font-size: 1.1rem;
+                        text-align: justify;
+                        margin-right: 45px;
+                        color: #696969;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .col-12.col-md-6.col-lg-5 {
+                .indicator {
+                    width: 500px !important;
+
+                    .number-indicator {
+                        text-align: center;
+                        width: 40px;
+                        margin: 0 auto !important;
+                        position: relative;
+                        background-color: #039FAC;
+                        top: 17px;
+                        z-index: 3;
+                        border-radius: 50%;
+                        height: 35px;
+                        font-weight: 700;
+                        color: white;
+                        padding: 2px;
+                        padding-top: 5px;
+                    }
+
+                    .indicator-line {
+                        width: 100%;
+                        background-color: #039FAC;
+                        height: 5px;
+                        position: relative;
+                        border-radius: 20px;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .section-subtitle {
+                    font-size: 1.3rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #8ED138 !important;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-right: 45px;
+                }
+
+                .about-text {
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    font-size: 1rem;
+                    text-align: justify;
+                    margin-right: 45px;
+                    color: #696969 !important;
+                    font-weight: 400;
+
+                    .quote {
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        font-size: 1.3rem;
+                        text-align: justify;
+                        margin-right: 45px;
+                        color: #696969 !important;
+                        font-weight: 400;
+                        font-style: oblique !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        .row {
+            iframe:hover {
+                filter: brightness(0.8) !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Small Laptops: 1025px - 1280px */
+@media (min-width: 1025px) and (max-width: 1285px) {
+
+    /* NAVBAR SCTION */
+    #sticky-wrapper {
+        height: 95px !important;
+    }
+
+    .site-navbar .site-logo a {
+        font-weight: 200;
+        color: #262626;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .site-navbar .site-navigation .site-menu>li>a {
+        font-size: 13px;
+        padding: 26px 7px;
+    }
+
+    /* HERO SECTION */
+    #inicio {
+        .container {
+            .row {
+                margin-top: 5rem;
+
+                .col-6.col-sm-8.col-lg-6 {
+                    img {
+                        width: 55%;
+                    }
+                }
+
+                .col-lg-6 {
+                    h1 {
+                        font-size: 3rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    .btn.btn-primary.btn-lg.px-4 {
+                        font-size: 1.2rem;
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        color: white;
+                        font-weight: 400;
+                        border: solid 3px #8ED138 !important;
+                        background-color: transparent;
+                    }
+
+                    .btn.btn-primary.btn-lg.px-4:hover {
+                        background-color: #8ED138;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ABOUT SECTION */
+    #sobre {
+        .container.pb-5{
+            height: ;
+            h1 {
+                font-size: 2.5rem !important;
+                font-family: "Ubuntu", Arial, sans-serif;
+                color: #92CA63 !important;
+                font-weight: 700;
+            }
+    
+            .underline {
+                height: 8px;
+                width: 200px !important;
+                background-color: #039FAC;
+                border-radius: 20px;
+                margin-left: 2px;
+            }
+    
+            .col-12.col-md-6.col-lg-7 {
+                    .about-content {
+                        h5.subtitle.mb-3 {
+                            font-size: 1.5rem!important;
+                            font-family: "Ubuntu", Arial, sans-serif;
+                            color: #2A3B65 !important;
+                            font-weight: 700;
+                            text-align: justify;
+                            margin-right: 45px;
+                        }
+    
+                        p {
+                            font-family: "Ubuntu", Arial, sans-serif;
+                            font-size: 1rem!important;
+                            text-align: justify;
+                            margin-right: 45px;
+                            color: #696969;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+        }
+
+
+    }
+}
+
+/* Desktops: 1281px - 1440px */
+@media (min-width: 1285px) and (max-width: 1440px) {
+    #inicio {
+        .container {
+            .row {
+                margin-top: 5rem;
+
+                .col-10.col-sm-8.col-lg-6 {
+                    img {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}
