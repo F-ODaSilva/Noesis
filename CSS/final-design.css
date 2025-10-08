@@ -38,12 +38,12 @@
         }
     }
 }
-
 /* END HERO */
 
 /* ABOUT SECTION */
 #sobre {
     background-color: #F5F5F5;
+    padding-top: 5rem;
 
     .container {
         .row {
@@ -58,7 +58,7 @@
                 }
 
                 .underline {
-                    height: 8px;
+                    height: 6px;
                     width: 250px;
                     background-color: #039FAC;
                     border-radius: 20px;
@@ -95,8 +95,9 @@
             }
 
             .col-12.col-md-6.col-lg-5 {
+                margin-top: -4rem;
                 .indicator {
-                    width: 500px !important;
+                    width: 480px !important;
 
                     .number-indicator {
                         text-align: center;
@@ -120,7 +121,7 @@
                         height: 5px;
                         position: relative;
                         border-radius: 20px;
-                        margin-bottom: 2rem;
+                        margin-bottom: 1rem;
                     }
                 }
 
@@ -163,6 +164,313 @@
         }
     }
 }
+/* END ABOUT SECTION */
+
+/* SERVICES SECTION */
+#servicos {
+    background-color: #F5F5F5;
+    padding-top: 5.4rem;
+
+    .container.py-5.py-md-4 {
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    font-size: 3.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #92CA63 !important;
+                    font-weight: 700;
+                }
+
+                .underline {
+                    height: 6px;
+                    width: 380px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .container-fluid.cards-container {
+        height: 72vh;
+        align-content: center;
+        padding-bottom: 4rem;
+        background-image: url(../Assets/images/data-centers-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .row.row-cols-1.row-cols-md-3.g-4 {
+            height: 40vh;
+            margin: 0 15rem;
+
+            .col {
+                .card.h-100 {
+                    border: solid 3px #92CA63;
+                    border-radius: 0;
+                    background-color: #3c3c3cc0;
+
+                    .card-body {
+
+                        span.service-icon {
+                            font-size: 1.8rem;
+                            color: #FFFFFF !important;
+                        }
+
+                        h5.card-title {
+                            font-size: 1.4rem;
+                            font-family: "Ubuntu", Arial, sans-serif;
+                            color: #8ED138 !important;
+                            font-weight: 700;
+                        }
+
+                        h5.card-title.last {
+                            font-size: 1.28rem;
+                        }
+
+                        p.card-text {
+                            font-size: 18px;
+                            color: whitesmoke;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* END SERVICES SECTION */
+
+#diferenciais {
+    background-color: #F5F5F5;
+    padding-top: 1rem;
+
+    .container.py-5.py-md-4 {
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    font-size: 3.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #92CA63 !important;
+                    font-weight: 700;
+                }
+
+                .underline {
+                    height: 6px;
+                    width: 430px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    .carousel-section {
+        position: relative;
+        height: 72vh;
+        min-height: 500px;
+        overflow: hidden;
+
+        .carousel {
+            height: 100%;
+            position: relative;
+
+            .carousel-inner {
+                height: 100%;
+
+                .carousel-item {
+                    height: 100%;
+                    position: relative;
+
+                    .carousel-bg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        z-index: 1;
+                    }
+
+                    .carousel-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(135deg,
+                            rgba(26, 41, 77, 0.8) 0%,
+                            rgba(11, 114, 124, 0.6) 50%,
+                            rgba(88, 127, 57, 0.4) 100%);
+                        z-index: 2;
+                    }
+
+                    .carousel-caption {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        z-index: 5;
+                        padding: 0;
+                        text-align: left;
+
+                        .container {
+                            .row.align-items-center.h-100 {
+                                .col-lg-9.col-md-8.col-sm-8 {
+                                    .caption-content {
+                                        padding: 35px;
+                                        margin-right: 20px;
+
+                                        .caption-title {
+                                            font-size: 3rem;
+                                            font-weight: 700;
+                                            color: #8ED138;
+                                            margin-bottom: 20px;
+                                            font-family: "Ubuntu", Arial, sans-serif;
+                                            line-height: 1.2;
+                                        }
+
+                                        .caption-text {
+                                            font-size: 1.1rem;
+                                            color: #F5F5F5;
+                                            line-height: 1.6;
+                                            margin-bottom: 25px;
+                                            font-family: "Ubuntu", Arial, sans-serif;
+                                            text-align: justify;
+                                        }
+
+                                        .caption-features {
+                                            display: flex;
+                                            gap: 12px;
+                                            flex-wrap: wrap;
+
+                                            .feature-tag {
+                                                /* background: linear-gradient(135deg, #8ED138, #92CA63); */
+                                                color: white;
+                                                padding: 8px 16px;
+                                                border-radius: 20px;
+                                                font-size: 0.9rem;
+                                                font-weight: 600;
+                                                border: 2px solid #8ED138;
+                                                display: flex;
+                                                align-items: center;
+                                                font-family: "Ubuntu", Arial, sans-serif;
+                                                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                                            }
+                                            .feature-tag:hover {
+                                                background-color: #8fd13897;
+                                                color: #fff;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .col-lg-3.col-md-4.col-sm-4 {
+                                    .slide-number {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100%;
+
+                                        .number {
+                                            font-size: 16rem;
+                                            font-weight: 900;
+                                            color: rgba(146, 202, 99, 0.8);
+                                            text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.65);
+                                            line-height: 1;
+                                            font-family: "Ubuntu", Arial, sans-serif;
+                                            user-select: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .carousel-indicators {
+                bottom: 20px;
+                z-index: 20;
+                margin-bottom: 0;
+
+                button {
+                    width: 10px;
+                    height: 10px;
+                    background-color: black;
+                    border: 0;
+                    margin-right: 15px;
+                    opacity: 0.5;
+                    transition: opacity 0.6s ease;
+
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 8%;
+                z-index: 20;
+                opacity: 0.8;
+                transition: opacity 0.3s ease;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                padding: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -234,15 +542,14 @@
 
     /* ABOUT SECTION */
     #sobre {
-        .container.pb-5{
-            height: ;
+        .container.pb-5 {
             h1 {
                 font-size: 2.5rem !important;
                 font-family: "Ubuntu", Arial, sans-serif;
                 color: #92CA63 !important;
                 font-weight: 700;
             }
-    
+
             .underline {
                 height: 8px;
                 width: 200px !important;
@@ -250,32 +557,174 @@
                 border-radius: 20px;
                 margin-left: 2px;
             }
-    
-            .col-12.col-md-6.col-lg-7 {
-                    .about-content {
-                        h5.subtitle.mb-3 {
-                            font-size: 1.5rem!important;
-                            font-family: "Ubuntu", Arial, sans-serif;
-                            color: #2A3B65 !important;
-                            font-weight: 700;
-                            text-align: justify;
-                            margin-right: 45px;
-                        }
-    
-                        p {
-                            font-family: "Ubuntu", Arial, sans-serif;
-                            font-size: 1rem!important;
-                            text-align: justify;
-                            margin-right: 45px;
-                            color: #696969;
-                            font-weight: 400;
+
+            .col-12.col-md-6.col-lg-5 {
+                margin-top: -5rem;
+                height: 495px;
+
+                .about-content {
+                    h5.subtitle.mb-3 {
+                        font-size: 1.2rem !important;
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        color: #2A3B65 !important;
+                        font-weight: 700;
+                        text-align: justify;
+                        margin-right: 45px;
+                    }
+
+                    p {
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        font-size: 1rem !important;
+                        text-align: justify;
+                        margin-right: 45px;
+                        color: #696969;
+                        font-weight: 400;
+                    }
+                }
+                .indicator {
+                    width: 410px !important;
+
+                    .number-indicator {
+                        text-align: center;
+                        width: 35px;
+                        margin: 0 auto !important;
+                        position: relative;
+                        background-color: #039FAC;
+                        top: 17px;
+                        z-index: 3;
+                        border-radius: 50%;
+                        height: 35px;
+                        font-weight: 700;
+                        color: white;
+                        padding: 2px;
+                        padding-top: 5px;
+                    }
+
+                    .indicator-line {
+                        width: 100%;
+                        background-color: #039FAC;
+                        height: 5px;
+                        position: relative;
+                        border-radius: 20px;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* SERVICES SECTION */
+    #servicos {
+        .container {
+            h1 {
+                font-size: 2.5rem !important;
+                font-family: "Ubuntu", Arial, sans-serif;
+                color: #92CA63 !important;
+                font-weight: 700;
+            }
+
+            .underline {
+                height: 8px;
+                width: 280px !important;
+                background-color: #039FAC;
+                border-radius: 20px;
+                margin-left: 2px;
+            }
+        }
+
+        .container-fluid.cards-container {
+            height: 70vh;
+            align-content: center;
+            padding-bottom: 4rem;
+            background-image: url(../Assets/images/data-centers-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            .row.row-cols-1.row-cols-md-3.g-4 {
+                height: 50vh;
+                margin: 0 6rem;
+
+                .col {
+                    .card.h-100 {
+                        border: solid 3px #92CA63;
+                        border-radius: 0;
+                        background-color: #3c3c3cc0;
+
+                        .card-body {
+
+                            span.service-icon {
+                                font-size: 1.8rem;
+                                color: #FFFFFF !important;
+                            }
+
+                            h5.card-title {
+                                font-size: 1.4rem;
+                                font-family: "Ubuntu", Arial, sans-serif;
+                                color: #8ED138 !important;
+                                font-weight: 700;
+                            }
+
+                            h5.card-title.last {
+                                font-size: 1.28rem;
+                            }
+
+                            p.card-text {
+                                font-size: 15px;
+                                color: whitesmoke;
+                                text-align: justify;
+                            }
+
+                            p.card-text.first {
+                                word-spacing: 0px;
+                            }
                         }
                     }
                 }
-
+            }
         }
+    }
 
+    /* DIFERENCIAIS SECTION */
+    #diferenciais {
+        .carousel-section {
+            height: 60vh;
+            min-height: 450px;
 
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .carousel-caption {
+                            .container {
+                                .row.align-items-center.h-100 {
+                                    .col-lg-9.col-md-8.col-sm-8 {
+                                        .caption-content {
+                                            padding: 25px;
+
+                                            .caption-title {
+                                                font-size: 1.8rem;
+                                            }
+
+                                            .caption-text {
+                                                font-size: 1rem;
+                                            }
+                                        }
+                                    }
+
+                                    .col-lg-3.col-md-4.col-sm-4 {
+                                        .slide-number {
+                                            .number {
+                                                font-size: 6rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -290,6 +739,491 @@
                     img {
                         width: 65%;
                     }
+                }
+            }
+        }
+    }
+}
+
+/* Tablets: 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* HERO SECTION */
+    #inicio {
+        .container {
+            .row {
+                margin-top: 3rem;
+
+                .col-6.col-sm-8.col-lg-6 {
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                .col-lg-6 {
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+
+                    .btn.btn-primary.btn-lg.px-4 {
+                        font-size: 1.1rem;
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        color: white;
+                        font-weight: 400;
+                        border: solid 3px #8ED138 !important;
+                        background-color: transparent;
+                    }
+
+                    .btn.btn-primary.btn-lg.px-4:hover {
+                        background-color: #8ED138;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ABOUT SECTION */
+    #sobre {
+        .container {
+            .row {
+                .col-12.heading {
+                    h1 {
+                        font-size: 2.8rem;
+                    }
+
+                    .underline {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+
+        .container.pb-5 {
+            .col-12.col-md-6.col-lg-7 {
+                .about-content {
+                    h5.subtitle.mb-3 {
+                        font-size: 1.5rem;
+                        margin-right: 20px;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .col-12.col-md-6.col-lg-5 {
+                margin-top: -2rem;
+
+                .indicator {
+                    width: 400px !important;
+                }
+
+                .section-subtitle {
+                    font-size: 1.2rem;
+                    margin-right: 20px;
+                }
+
+                .about-text {
+                    font-size: 0.95rem;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    /* SERVICES SECTION */
+    #servicos {
+        .container {
+            h1 {
+                font-size: 2.8rem !important;
+            }
+
+            .underline {
+                width: 300px !important;
+            }
+        }
+
+        .container-fluid.cards-container {
+            height: 65vh;
+
+            .row.row-cols-1.row-cols-md-3.g-4 {
+                margin: 0 3rem;
+
+                .col {
+                    .card.h-100 {
+                        .card-body {
+                            h5.card-title {
+                                font-size: 1.3rem;
+                            }
+
+                            p.card-text {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* DIFERENCIAIS SECTION */
+    #diferenciais {
+        .container.py-5.py-md-4 {
+            .row {
+                .col-12.heading {
+                    h1 {
+                        font-size: 2.8rem;
+                    }
+
+                    .underline {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+
+        .carousel-section {
+            height: 55vh;
+            min-height: 400px;
+
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .carousel-caption {
+                            .container {
+                                .row.align-items-center.h-100 {
+                                    .col-lg-9.col-md-8.col-sm-8 {
+                                        .caption-content {
+                                            padding: 20px;
+                                            margin-right: 10px;
+
+                                            .caption-title {
+                                                font-size: 1.5rem;
+                                                margin-bottom: 15px;
+                                            }
+
+                                            .caption-text {
+                                                font-size: 0.95rem;
+                                                margin-bottom: 20px;
+                                            }
+
+                                            .caption-features {
+                                                gap: 8px;
+
+                                                .feature-tag {
+                                                    font-size: 0.8rem;
+                                                    padding: 6px 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .col-lg-3.col-md-4.col-sm-4 {
+                                        .slide-number {
+                                            .number {
+                                                font-size: 5rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .carousel-control-prev,
+                .carousel-control-next {
+                    width: 10%;
+                }
+
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    padding: 18px;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile: 320px - 767px */
+@media (max-width: 767px) {
+    /* HERO SECTION */
+    #inicio {
+        .container {
+            .row {
+                margin-top: 2rem;
+                flex-direction: column-reverse;
+
+                .col-6.col-sm-8.col-lg-6 {
+                    text-align: center;
+                    margin-bottom: 2rem;
+
+                    img {
+                        width: 60%;
+                    }
+                }
+
+                .col-lg-6 {
+                    text-align: center;
+
+                    h1 {
+                        font-size: 2rem;
+                        margin-right: 0 !important;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+
+                    .btn.btn-primary.btn-lg.px-4 {
+                        font-size: 1rem;
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        color: white;
+                        font-weight: 400;
+                        border: solid 3px #8ED138 !important;
+                        background-color: transparent;
+                    }
+
+                    .btn.btn-primary.btn-lg.px-4:hover {
+                        background-color: #8ED138;
+                    }
+
+                    .d-grid.gap-2.d-md-flex.justify-content-md-start {
+                        justify-content: center !important;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ABOUT SECTION */
+    #sobre {
+        padding-top: 3rem;
+
+        .container {
+            .row {
+                .col-12.heading {
+                    text-align: center;
+
+                    h1 {
+                        font-size: 2.2rem;
+                    }
+
+                    .underline {
+                        width: 150px;
+                        margin: 0 auto;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .container.pb-5 {
+            .col-12.col-md-6.col-lg-7 {
+                .about-content {
+                    text-align: center;
+
+                    h5.subtitle.mb-3 {
+                        font-size: 1.3rem;
+                        margin-right: 0;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 0.95rem;
+                        margin-right: 0;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .col-12.col-md-6.col-lg-5 {
+                margin-top: 2rem;
+
+                .indicator {
+                    width: 100% !important;
+                }
+
+                .section-subtitle {
+                    font-size: 1.1rem;
+                    margin-right: 0;
+                    text-align: center;
+                }
+
+                .about-text {
+                    font-size: 0.9rem;
+                    margin-right: 0;
+                    text-align: center;
+
+                    .quote {
+                        font-size: 1.1rem;
+                        margin-right: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    /* SERVICES SECTION */
+    #servicos {
+        .container {
+            .row {
+                .col-12.heading {
+                    text-align: center;
+
+                    h1 {
+                        font-size: 2.2rem !important;
+                    }
+
+                    .underline {
+                        width: 200px !important;
+                        margin: 0 auto;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .container-fluid.cards-container {
+            height: auto;
+            padding: 2rem 1rem;
+
+            .row.row-cols-1.row-cols-md-3.g-4 {
+                margin: 0;
+                height: auto;
+
+                .col {
+                    margin-bottom: 1.5rem;
+
+                    .card.h-100 {
+                        .card-body {
+                            padding: 1.5rem;
+
+                            span.service-icon {
+                                font-size: 1.5rem;
+                            }
+
+                            h5.card-title {
+                                font-size: 1.2rem;
+                            }
+
+                            h5.card-title.last {
+                                font-size: 1.1rem;
+                            }
+
+                            p.card-text {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* DIFERENCIAIS SECTION */
+    #diferenciais {
+        .container.py-5.py-md-4 {
+            .row {
+                .col-12.heading {
+                    text-align: center;
+
+                    h1 {
+                        font-size: 2.2rem;
+                    }
+
+                    .underline {
+                        width: 250px;
+                        margin: 0 auto;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .carousel-section {
+            height: 50vh;
+            min-height: 350px;
+
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .carousel-caption {
+                            .container {
+                                .row.align-items-center.h-100 {
+                                    .col-lg-9.col-md-8.col-sm-8 {
+                                        .caption-content {
+                                            padding: 15px;
+                                            margin-right: 5px;
+
+                                            .caption-title {
+                                                font-size: 1.3rem;
+                                                margin-bottom: 12px;
+                                            }
+
+                                            .caption-text {
+                                                font-size: 0.85rem;
+                                                margin-bottom: 18px;
+                                            }
+
+                                            .caption-features {
+                                                flex-direction: column;
+                                                gap: 6px;
+
+                                                .feature-tag {
+                                                    font-size: 0.75rem;
+                                                    padding: 5px 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .col-lg-3.col-md-4.col-sm-4 {
+                                        .slide-number {
+                                            .number {
+                                                font-size: 4rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .carousel-indicators {
+                    button {
+                        width: 12px;
+                        height: 12px;
+                        margin: 0 5px;
+                    }
+                }
+
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    padding: 15px;
                 }
             }
         }

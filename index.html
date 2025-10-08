@@ -2,8 +2,6 @@
 <html lang="pt">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- PAGE INFO -->
   <title>NOESIS Intelligence Value</title>
   <!-- FAVICONS LINK -->
@@ -23,653 +21,627 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CUSTOM CSS STYLESHEET -->
-  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Navbar Style -->
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="stylesheet" href="CSS/final-design.css">
   <!-- FONT AWESOME ICONS -->
   <script src="https://kit.fontawesome.com/3359c08231.js" crossorigin="anonymous"></script>
-  <!-- GOOGLE ANALYTICS PLACHOLDER -->
-  <script>
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // gtag('config', 'UA-XXXXXXXXX-X');        
-  </script>
+  <!-- AOS CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Website Menu #7</title>
+
+  <style>
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Option 1: Dark overlay with reduced brightness */
+    /* .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        } */
+
+    /* Option 2: Gradient overlay (uncomment this and comment the above to use) */
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.822) 22%, rgba(41, 144, 185, 0.3) 100%);
+      z-index: 1;
+    }
+
+
+    /* Ensure content is above the overlay */
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Additional styling for better readability */
+    .hero h1,
+    .hero p,
+    .hero .btn {
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero .btn-outline-secondary {
+      border-color: white;
+      color: white;
+    }
+
+    .hero .btn-outline-secondary:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top py-2">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- MOBILE MENU -->
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="js-menu-toggle"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+  <!-- END MOBILE MENU -->
+
+
+  <!-- NAVBAR -->
+  <div class="site-navbar-wrap">
+    <!-- Top Bar -->
+    <div class="site-navbar-top">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div class="d-flex mr-auto">
+              <a href="mailto:info@noesis.co.mz" class="d-flex align-items-center mr-6 pe-4">
+                <i class="fa-solid fa-envelope mr-3 pe-4 pt-2"></i>
+                <span class="d-none d-md-inline-block">nuno.lima@noesis.co.mz</span>
+              </a>
+              <a href="tel:+258843067770" class="d-flex align-items-center mr-auto">
+                <i class="fa-solid fa-phone mr-3 pe-4 pt-2"></i>
+                <span class="d-none d-md-inline-block">+258 84 306 7770</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- SOCIALS RIGHT-ALIGNED -->
+          <div class="col-6">
+            <div class="d-flex justify-content-end social-icons">
+              <a href="#" class="px-3 py-2"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="px-3 py-2"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="px-3 py-2"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="px-3 py-2"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <!-- Main Navbar -->
+    <div class="site-navbar site-navbar-target js-sticky-header">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav-fullscreen" id="navbarNav">
-          <ul class="navbar-nav me-4 mb-3 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#sobre" data-key="nav.about">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#servicos" data-key="nav.services">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="#objetivos" data-key="nav.projects">Objetivos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lideranca" data-key="nav.leadership">Liderança</a></li>
-          </ul>
-          <div class="d-flex align-items-center">
-            <div class="language-switcher">
-              <button class="btn btn-outline-light btn-md px-4 language-btn" data-lang="pt">
-                <i class="fas fa-language me-1"></i>PT
-              </button>
-              <button class="btn btn-outline-light btn-md px-4 language-btn" data-lang="en" style="display: none;">
-                <i class="fas fa-language me-1"></i>EN
-              </button>
+        <div class="d-flex align-items-center justify-content-between">
+
+          <!-- Left: Logo -->
+          <h1 class="my-5 site-logo">
+            <a href="#inicio">noesis</a>
+          </h1>
+
+          <!-- Right: Menu & Toggler -->
+          <nav class="site-navigation text-right" role="navigation">
+            <div class="container d-flex align-items-center justify-content-end">
+
+              <!-- MAIN MENU (desktop) -->
+              <ul class="site-menu main-menu js-clone-nav d-none d-lg-flex mb-0">
+                <li class="active"><a href="#inicio" class="nav-link" data-key="nav.home">Início</a></li>
+                <li><a href="#sobre" class="nav-link" data-key="nav.about">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link" data-key="nav.services">Serviços</a></li>
+                <li><a href="#diferenciais" class="nav-link" data-key="nav.projects">Diferenciais Estratégicos</a></li>
+                <li><a href="#parcerias" class="nav-link" data-key="nav.partnerships">Parcerias</a></li>
+                <li><a href="#sustentabilidade" class="nav-link" data-key="nav.sustainability">Sustentabilidade</a></li>
+                <li><a href="#implementacao" class="nav-link" data-key="nav.implementation">Implementação</a></li>
+                <li><a href="#team" class="nav-link me-5" data-key="nav.team">Team</a></li>
+                <li class="lang-switch ms-5">
+                  <div class="language-switcher">
+                    <button class="btn btn-outline-success btn-md px-4 language-btn" data-lang="pt">
+                      <i class="fas fa-language me-1"></i>PT
+                    </button>
+                    <button class="btn btn-outline-success btn-md px-4 language-btn" data-lang="en"
+                      style="display: none;">
+                      <i class="fas fa-language me-1"></i>EN
+                    </button>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- MOBILE TOGGLER (aligned right) -->
+              <a href="#" class="site-menu-toggle js-menu-toggle d-lg-none ml-3">
+                <i class="fa-solid fa-bars fa-2x "></i>
+              </a>
             </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END NAVBAR -->
+
+  <!-- HERO -->
+  <section id="inicio" class="hero" style="background-image: url('Assets/images/coins-layed.jpg');">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-6 col-sm-8 col-lg-6">
+          <img src="Assets/images/moz-map.png  " class="d-block mx-lg-auto img-fluid " alt="Map Image" width="700"
+            height="500" loading="lazy" data-aos="fade-in" data-aos-easing="ease-in-sine" data-aos-delay="800"
+            data-aos-offset="0">
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="800" data-aos-easing="ease-in" data-aos-offset="0">
+          <h1 data-key="hero.title" class="display-5 fw-bold lh-1 mb-3">Transformando Energia em Valor Digital</h1>
+          <p data-key="hero.subtitle" class="lead">Acelerando a transformação digital de Moçambique entregando soluções
+            inteligentes e inovadoras para centros de dados e ativos digitais em Moçambique</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button data-key="hero.cta" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contactar</button>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </section>
+  <!-- HERO END -->
 
-  <main>
-    <!-- HERO SECTION -->
-    <section class="hero" id="hero">
-      <!-- <div class="container-fluid h-75 d-flex flex-column justify-content-center align-items-center text-center text-white">
-       <div class="row align-items-center h-100 w-100">
-         <div class="hero-content col-6 col-md-6 col-lg-7">
-          <h1 class="hero-title">NOESIS <br> Perfil da Empresa</h1>
-          <p class="hero-subtitle">Mineração de Ativos Digitais</p>
-           <a href="#sobre" class="btn btn-accent btn-md hero-btn px-5">Descobrir Mais</a> 
-        </div>
-        <div class="hero-image col-6 col-md-6 col-lg-5">
-          <img src="Assets/images/moz-map.png" alt="Digital Asset Mining" class="img-fluid">
-          <p>NOESIS - Inteligence Value, SA</p>
-        </div>
-       </div>
-      </div> -->
-    </section>
 
-    <!-- SOBRE NÓS -->
-    <section id="sobre" class="">
-      <div class="container-fluid">
-        <!-- <h2 class="section-title text-center fade-in">Sobre Nós</h2> -->
-        <div class="row justify-content-center">
-          <div class="col-6 col-md-4 col-lg-5 col-xl-4 fade-in">
-            <!-- <p class="mb-4">
-              A NOESIS Intelligence Value tem como missão transformar o potencial energético de Moçambique em valor digital, promovendo inovação, eficiência e sustentabilidade. Nossa visão é liderar o desenvolvimento de centros de dados e ativos digitais, conectando parceiros estratégicos e impulsionando o crescimento tecnológico do país.
+  <!-- ABOUT SECTION -->
+  <section id="sobre" class="about">
+    <div class="container py-5 py-md-4">
+      <div class="row">
+        <div class="col-12 heading">
+          <h1 data-key="about.title" class="section-title mb-1">Quem Somos</h2>
+            <div class="underline mb-3"></div>
+            <p data-key="about.titletext">Saiba mais sobre a NOESIS.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-7 pb-5">
+          <div class="about-content">
+            <h5 data-key="about.subtitle" class="subtitle mb-3">NOESIS - Intelligence Value é uma empresa moçambicana
+              especializada em infraestrutura de data centers de alto desempenho.</h5>
+            <p data-key="about.text1" class="about-text">Focamos na criação e operação de centros de processamento de
+              dados que aproveitam a
+              vantagem energética de Moçambique para impulsionar a transformação digital.</p>
+            <p data-key="about.text1" class="about-text">Nossa abordagem combina tecnologia de ponta com práticas
+              sustentáveis, criando uma
+              nova frente económica baseada em infraestrutura digital que posiciona Moçambique como um hub tecnológico
+              regional.</p>
+            <p data-key="about.location" class="about-text"> <strong class="me-3">Operações:</strong>Maputo, Moçambique
             </p>
-            <div class="d-flex flex-wrap justify-content-center gap-5">
-              <div class="milestone-card fade-in" style="background-image: url('Assets/images/foundation.jpg'); background-size: cover; background-position: center;">
-                <div class="fw-bold">Fundação em 2025</div>
-              </div>
-              <div class="milestone-card fade-in" style="background-image: url('Assets/images/mozambique.jpg'); background-size: cover; background-position: center;">
-                <div class="fw-bold">Foco em Moçambique</div>
-              </div>
-              <div class="milestone-card fade-in" style="background-image: url('Assets/images/partners.jpg'); background-size: cover; background-position: center;">
-                <div class="fw-bold">Parcerias Estratégicas</div>
-              </div> 
-            </div> -->
-            <img src="Assets/images/moz-flag.png" alt="Sobre Nós" class="img-fluid">
-          </div>
-          <div class="col-6 col-md-8 col-lg-7 col-xl-8">
-            <div class="section-content">
-              <h2 class="section-title text-left slide-right" data-key="about.title">Quem Somos</h2>
-              <h3 class="section-subtitle text-left slide-right" data-key="about.text1">
-                NOESIS - Intelligence Value é uma empresa moçambicana espacializada em infraestutura de data centers de
-                alto desempenho
-              </h3>
-              <p class="about-text mb-5" data-key="about.text2">
-                Focamos na criação e operação de centros de processamento de dados que aproveitam a vantagem energética
-                de Moçambique para impulsionar a transformação digital e o desenvolvimento económico do país.
-              </p>
-              <p class="about-text mb-5" data-key="about.text3">
-                Nossa abordagem combina tecnologia de ponta com práticas sustentáveis, criando uma nova frente económica
-                baseada em infraestrutura digital que posiciona Moçambique como um hub tecnológico regional.
-              </p>
-
-              <span class="operation-location" data-key="about.location">Operações: Maputo, Moçambique</span>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- MISSÃO & VISÃO -->
-    <section id="mission-vision">
-      <div class="container-fluid h-100">
-        <div class="row w-100">
-          <img src="Assets/images/mozambique.jpg" class="img-fluid" alt="Maputo">
-        </div>
-        <div class="row">
-          <h2 class="section-title text-left slide-right" data-key="vision.title">Visão e Missão</h2>
-          <div class="col-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="vision-indicator indicator">
-              <div class="number-indicator" ">1</div>
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="col-6 col-md-12 h-30">
+            <div class="vision-content">
+              <div class="vision-indicator indicator">
+                <div class="number-indicator" ">1</div>
               <div class=" indicator-line"></div>
-            </div>
-            <div class="section-content">
-              <h3 class="section-subtitle text-left slide-right" data-key="vision.title1">
-                Visão
-              </h3>
-              <p class="about-text mb-5" data-key="vision.text>">
-                Posicionar Moçambique como lider regional em inovação tecnológica, transformando recursos energéticos
-                abundantes em prosperidade nacional e desenvolvimento sustentável através de infraestrutura digital de
-                classe mundial.
-              </p>
+              </div>
+              <div class="section-content">
+                <h3 class="section-subtitle" data-key="vision.title1">
+                  Visão
+                </h3>
+                <p class="about-text mb-5" data-key="vision.text>">
+                  Posicionar Moçambique como lider regional em inovação tecnológica, transformando recursos energéticos
+                  abundantes em prosperidade nacional e desenvolvimento sustentável através de infraestrutura digital de
+                  classe mundial.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-6 col-md-12 h-30">
             <div class="mision-indicator indicator">
               <div class="number-indicator">2</div>
               <div class="indicator-line"></div>
             </div>
             <div class="section-content">
-              <h3 class="section-subtitle text-left slide-right" data-key="mission.title">
+              <h3 class="section-subtitle" data-key="mission.title">
                 Missão
               </h3>
-              <p class="about-text mb-0" data-key="mission.text">
-              <div class="quote" data-key="mission.text1">"Transformar a vantagem energética de Moçambique em valor
+              <div class="quot mb-2" data-key="mission.text1" style="font-style: italic;">"Transformar a vantagem
+                energética de Moçambique em valor
                 digital e prosperidade
                 nacional através de infraestrutura de classe mundial."</div>
-              <br>
-              Criamos soluções que conectam recursos naturais com oportunidades digitais, gerando impacto económico
-              positivo para todas as comunidades envolvidas.
+              <p class="about-text mb-0" data-key="mission.text">
+                Criamos soluções que conectam recursos naturais com oportunidades digitais, gerando impacto económico
+                positivo para todas as comunidades envolvidas.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114792.65392231884!2d32.582874407603974!3d-25.959169682531474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69723b666da55%3A0x42497f579a6bb442!2sMaputo!5e0!3m2!1sen!2smz!4v1759854540817!5m2!1sen!2smz"
+          width="1500" height="400" style="border:0; padding: 0; filter: brightness(0.5);" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- END ABOUT SECTION  -->
 
-    <!-- SERVIÇOS -->
-    <section id="servicos">
-      <div class="container">
-        <div class="row g-4 justify-content-center">
-          <h2 class="section-title text-center fade-in" data-key="services.title">Áreas de Atuação</h2>
-          <div class="col-md-4">
-            <div class="card service-card text-center p-4">
+  <!-- SERVICES SECTION -->
+  <section id="servicos">
+    <div class="container py-5 py-md-4 pb-md-1">
+      <div class="row">
+        <div class="col-12 heading">
+          <h1 data-key="about.title" class="section-title mb-1">Áreas de Atuação</h2>
+            <div class="underline mb-3"></div>
+            <p data-key="about.titletext">Conheça os nossos serviços</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid cards-container pb-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
               <span class="service-icon mt-2">
                 <i class="fa-solid fa-database"></i>
               </span>
-              <h5 class="card-title fw-bold mb-3" data-key="services.item">Data Centers de Alta Performance</h5>
-              <p data-key="services.text1" class="card-text">Desenvolvimento e operação de infraestutura de
+              <h5 class="card-title fw-bold mb-3" data-key="services.item">Data Centers de Alta Perfomance</h5>
+              <p class="card-text first" data-key="services.text1">Desenvolvimento e operação de infraestutura de
                 processamento de dados de classe
                 mundial, com foco em eficiéncia energética e desempenho computacional utilizando tecnológicas de
-                arrefecimento arrancadas e sistemas de gestão inteligente.
-              </p>
+                arrefecimento arrancadas e sistemas de gestão inteligente.</p>
             </div>
+            <!-- <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div> -->
           </div>
-          <div class="col-md-4">
-            <div class="card service-card text-center p-4">
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
               <span class="service-icon mt-2">
                 <i class="fa-solid fa-microchip"></i>
               </span>
               <h5 class="card-title fw-bold mb-3" data-key="services.item2">Computação e IA Especializada</h5>
-              <p data-key="services.text2" class="card-text">Fornecimento de serviços de processamento computacional
+              <p class="card-text" data-key="services.text2">Fornecimento de serviços de processamento computacional
                 para redes blockchain,
                 inteligência artificial e outras aplicações de alta demanda, exigindo infraestrutura robusta e
-                confiável.
-              </p>
+                confiável.</p>
             </div>
+            <!-- <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div> -->
           </div>
-          <div class="col-md-4">
-            <div class="card service-card text-center p-4">
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
               <span class="service-icon mt-2">
-                <i class="fa-solid fa-handshake"></i>
+                <i class="fa-solid fa-cubes"></i>
               </span>
-              <h5 class="card-title fw-bold mb-3" data-key="services.item3">Fomento e Desenvolvimento Tecnológico</h5>
-              <p data-key="services.text3" class="card-text mx-2">Promoção da inovação e transferência de conhecimento
+              <h5 class="card-title fw-bold mb-3 last" data-key="services.item3">Fomento e Desenvolvimento Tecnológico
+              </h5>
+              <p class="card-text" data-key="services.text3">Promoção da inovação e transferência de conhecimento
                 no setor de tecnologia,
                 fortalecendo o ecossistema digital moçambicano através de programas de capacitação e parcerias
-                estratégicas.
-              </p>
+                estratégicas.</p>
             </div>
+            <!-- <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div> -->
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OBJETIVOS -->
-    <section id="objetivos">
-      <div class="container-fluid h-100">
-        <div class="row">
-          <div class="col-12 col-md-8">
-            <div class="section-content">
-              <h2 class="section-title text-left slide-right mb-3" data-key="objetives.title">Objetivos Estratégicos
-              </h2>
-
-              <!-- Objective Item -->
-              <div class="d-flex mb-4">
-                <div class="me-3 flex-shrink-0">
-                  <div
-                    class="rounded-pill bg-light border text-primary fw-bold d-flex align-items-center justify-content-center"
-                    style="width:40px; height:115px;">
-                    1
-                  </div>
-                </div>
-                <div>
-                  <h5 class="fw-bold" data-key="objectives.subtitle">Infraestrutura Digital</h5>
-                  <p class="about-text mb-0" data-key="objectives.text">Estabelecer data centers de classe mundial em
-                    Moçambique, criando a base
-                    tecnológica
-                    necessária para impulsionar a economia digital nacional e posicionar o país como hub regional de
-                    processamento de dados.
-                  </p>
-                </div>
-              </div>
-              <!-- Objective Item -->
-              <div class="d-flex mb-4">
-                <div class="me-3 flex-shrink-0">
-                  <div
-                    class="rounded-pill bg-light border text-primary fw-bold d-flex align-items-center justify-content-center"
-                    style="width:40px; height:115px;">
-                    2
-                  </div>
-                </div>
-                <div>
-                  <h5 data-key="objectives.subtitle1" class="fw-bold">Aproveitamento Energético</h5>
-                  <p data-key="objectives.text1" class="about-text mb-0">Utilizar de forma eficiente os abundantes
-                    recursos energéticos do país,
-                    transformando
-                    energia excedente em valor económico através de operações tecnológicas sustentáveis e de
-                    alto rendimento.</p>
-                </div>
-              </div>
-
-              <!-- Objective Item -->
-              <div class="d-flex mb-4">
-                <div class="me-3 flex-shrink-0">
-                  <div
-                    class="rounded-pill bg-light border text-primary fw-bold d-flex align-items-center justify-content-center"
-                    style="width:40px; height:115px;">
-                    3
-                  </div>
-                </div>
-                <div>
-                  <h5 data-key="objectives.subtitle2" class="fw-bold">Desenvolvimento Econômico</h5>
-                  <p data-key="objectives.text2" class="about-text mb-0">Contribuir significativamente para a
-                    diversificação da economia nacional,
-                    criando
-                    novos
-                    sectores de atividade, empregos qualificados e oportunidades de investimento no setor
-                    tecnológico.</p>
-                </div>
-              </div>
-
-              <!-- Objective Item -->
-              <div class="d-flex">
-                <div class="me-3 flex-shrink-0">
-                  <div
-                    class="rounded-pill bg-light border text-primary fw-bold d-flex align-items-center justify-content-center"
-                    style="width:40px; height:115px;">
-                    4
-                  </div>
-                </div>
-                <div>
-                  <h5 data-key="objectives.subtitle3" class="fw-bold">Capacitação Tecnológica</h5>
-                  <p data-key="objectives.text3" class="about-text mb-0">Formar e desenvolver profissionais moçambicanos
-                    em tecnologias avançadas,
-                    criando
-                    competências locais e reduzindo a dependência de expertise externa no setor digital.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!-- RIGHT: Image -->
-          <div class="col-12 col-md-4 text-center">
-            <img src="Assets/images/moz-future.png" alt="Mozambique Digital Future" class="img-fluid shadow">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NECESSIDADES ENERGETICAS -->
-    <section id="necessidades">
-      <div class="container-fluid h-100">
-        <div class="row w-100">
-          <img src="Assets/images/renewable-energy.jpg" class="img-fluid" alt="Maputo">
-        </div>
-        <div class="row">
-          <h2 data-key="needs.title" class="section-title text-left slide-right">Necessidades Energéticas</h2>
-          <h3 data-key="needs.subtitle" class="section-subtitle">A NOESIS busca parcerias estratégicas com fornecedores
-            de energia para viabilizar
-            suas operações de data center, que
-            requerem condições específicas para garantir operações de classe mundial:</h3>
-          <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-            <div class="section-content">
-              <h3 data-key="needs.subtitle1" class="section-subtitle text-left slide-right">
-                Fornecimento Estavel
-              </h3>
-              <p data-key="needs.text1" class="about-text mb-5">
-                Energia contínua e de alta qualidade para operações
-                ininterruptas 24/7, com sistemas de backup e
-                redundância que garantam uptime superior a 99.99%
-                conforme padrões internacionais de data centers Tier III.
-              </p>
-            </div>
-          </div>
-          <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-            <div class="section-content">
-              <h3 data-key="needs.subtitle2" class="section-subtitle text-left slide-right">
-                Preços Competitivos
-              </h3>
-              <p data-key="needs.text2" class="about-text mb-0">
-                Tarifas que garantam viabilidade operacional e
-                vantagem competitiva no mercado regional,
-                aproveitando a abundância energética de Moçambique
-                para criar condições favoráveis de investimento.
-              </p>
-            </div>
-          </div>
-          <div class="col-4 col-md-4 col-lg-4 col-xl-4">
-            <div class="section-content">
-              <h3 data-key="needs.subtitle3" class="section-subtitle text-left slide-right">
-                Escalabilidade
-              </h3>
-              <p data-key class="about-text mb-0">
-                Possibilidade de expansão gradual conforme crescimento do projeto, com capacidade de aumentar o
-                fornecimento de forma flexível e eficiente, acompanhando nossa estratégia de crescimento faseado.
-              </p>
-            </div>
-          </div>
-          <h6 data-key="needs.quote">
-            <span>"</span> A energia é o componente fundamental para a transformação digital que propomos para
-            Moçambique<span>"</span>
-          </h6>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENEFICIOS PARA PARCEIROS -->
-    <section id="beneficios">
-      <div class="container-fluid h-100">
-        <div class="row w-100">
-          <img src="Assets/images/energy.png" class="img-fluid" alt="Maputo">
-        </div>
-        <div class="row">
-          <h2 data-key="benefits.title" class="section-title text-left slide-right">Benefícios para Parceiros</h2>
-          <h3 data-key="benefits.subtitle" class="section-subtitle">A NOESIS busca parcerias estratégicas com
-            fornecedores de energia para viabilizar
-            suas operações de data center, que
-            requerem condições específicas para garantir operações de classe mundial:</h3>
-          <div class="row g-4">
-            <!-- Cliente Estável -->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="benefit-card">
-                <h3 data-key="benefits.title1" class="benefit-title">Cliente Estável</h3>
-                <p data-key="benefits.text1">Consumo previável e contínuo de longo prazo com contratos plurianuais que
-                  garantem receitas estáveis
-                  e planejamento operacional eficiente.</p>
-              </div>
-            </div>
-
-            <!-- Projeto Inovador -->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="benefit-card">
-                <h3 data-key="benefits.title2" class="benefit-title">Projeto Inovador</h3>
-                <p data-key="benefits.text2">Participação em iniciais fixe pioneira com impacto nacional, associando sua
-                  marca a inovação e
-                  desenvolvimento tecnológico de Moçambique.</p>
-              </div>
-            </div>
-
-            <!-- Aproveitamento de Capacidade -->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="benefit-card">
-                <div class="benefit-icon">
-                  <i class="bi bi-battery-full"></i>
-                </div>
-                <h3 data-key="benefits.title3" class="benefit-title">Aproveitamento de Capacidade</h3>
-                <p data-key="benefits.text3">Utilização eficiente de energia excedente, otimizando investimentos em
-                  infraestrutura existente e
-                  maximizando o retorno sobre a fibros energéticos.</p>
-              </div>
-            </div>
-
-            <!-- Desenvolvimento Regional -->
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="benefit-card">
-                <h3 data-key="benefits.title4" class="benefit-title">Desenvolvimento Regional</h3>
-                <p data-key="benefits.text4">Contribuição direta para o crescimento económico local através da criação
-                  de emprego e transferência
-                  de tecnologia nas comunidades onde opera nota.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMPROMISSO COM A SUSTENTABILIDADE -->
-    <section id="sustenta">
-      <div class="container-fluid h-100">
-        <div class="row">
-          <div class="col-12 col-md-8">
-            <div class="section-content">
-              <h2 data-key="sustainability.title" class="section-title text-left slide-right mb-3">
-                Compromisso com a Sustentabilidade
-              </h2>
-
-              <h3 data-key="sustainability.subtitle" class="section-subtitle">A NOESIS está comprometida com practicas
-                sustentaveis em todas as suas
-                operações, integrando responsabilidade ambiental com inovação tecnológica para criar valor duradouro:
-              </h3>
-
-              <!-- Pontos Chaves -->
-              <ul class="key-points">
-                <li data-key="sustainability.text1" class="list-items">
-                  <strong>Utilização eficiente de recursos energéticos</strong>
-                  através de tecnologias avançadas de gestão de energia.
-                </li>
-                <li data-key="sustainability.text2" class="list-items">
-                  <strong>Sistemas de arrefecimentode alta eficiéncia</strong>
-                  que reduzem o consumo energético em até 40%.
-                </li>
-                <li data-key="sustainability.text3" class="list-items">
-                  <strong>Economia circular de </strong>
-                  e aproveitamneto inteligente de energia excedente para outras aplicações.
-                </li>
-                <li data-key="sustainability.text4" class="list-items">
-                  <strong>Desenvolvimento socioeconomico</strong>
-                  das comunidades locais através de programas de desenvolvimento de capacitação e emprego.
-                </li>
-              </ul>
-
-              <div class="row">
-                <div class="col-12">
-                  <p data-key="sustainability.text5" class="details">
-                    <span>"</span> Nosso compromisso é criar valor digital com responsabilidade ambiental, garantindoque
-                    o progresso tecnologico contribua para um futuro mais sustentável e inclusivo para Moçambique e suas
-                    comunidades<span>"</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- RIGHT: Image -->
-          <div class="col-12 col-md-4 text-center">
-            <img src="Assets/images/green-energy.png" alt="Mozambique Digital Future" class="img-fluid shadow">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FASES DE IMPLEMENTAÇÃO -->
-    <section id="timeline">
-      <div class="container-fluid h-100">
-
-        <!-- Image Row -->
-        <div class="row w-100 mb-4">
-          <img src="Assets/images/digital-moz.png" class="img-fluid" alt="Maputo">
-        </div>
-
-        <!-- Section Title -->
-        <div class="row mb-5">
-          <h2 data-key="timeline.title" class="section-title text-left slide-right">Fases de Implementação</h2>
-          <h3 data-key="timeline.subtitle" class="section-subtitle">
-            Abordagem faseada para garantir implementação sustentavel e crescimento orgânico,
-            minimizando riscos e maximizando oportunidades de sucesso:
-          </h3>
-        </div>
-
-
-        <div class="container text-center">
-          <h2 data-key="timeline.title1" class="section-title">Fases de Implementação</h2>
-          <p data-key="timeline.text1" class="section-subtitle mb-5">
-            Abordagem faseada para garantir implementação sustentável e crescimento orgânico.
-          </p>
-
-          <div class="timeline-horizontal position-relative d-flex justify-content-between">
-
-            <!-- Phase 1 (top) -->
-            <div class="timeline-item top text-center">
-              <h5 data-key="timeline.phase1" class="fw-bold">Fase 1</h5>
-              <p data-key="timeline.text2" class="small">Infraestrutura inicial e planeamento estratégico.</p>
-              <div class="timeline-dot"></div>
-            </div>
-
-            <!-- Phase 2 (bottom, centered) -->
-            <div class="timeline-item bottom text-center">
-              <div class="timeline-dot"></div>
-              <h5 data-key="timeline.phase2" class="fw-bold">Fase 2</h5>
-              <p data-key="timeline.text3" class="small">Implementação tecnológica e integração.</p>
-            </div>
-
-            <!-- Phase 3 (top) -->
-            <div class="timeline-item top text-center">
-              <h5 data-key="timeline.phase3" class="fw-bold">Fase 3</h5>
-              <p data-key="timeline.text4" class="small">Expansão e crescimento sustentável.</p>
-              <div class="timeline-dot"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- LIDERANÇA -->
-    <section id="lideranca">
-      <div class="container">
-        <h2 data-key="leadership.title" class="section-title text-center fade-in">Equipa de Gestão</h2>
-        <h3 data-key="leadership.subtitle" class="section-subtitle">
-          Conheça os lideres visionários que estão impulsionam a NOESIS na transformação digital em Moçambique:
-        </h3>
-        <div class="row justify-content-center g-4">
-          <div class="col-md-4">
-            <div class="profile-card fade-in">
-              <img src="Assets/images/nuno-lima-3.png" class="img-fluid" alt="Nuno Lima Foto">
-              <h5 class="fw-bold mb-1">Nuno Lima</h5>
-              <p class="text-muted mb-2">CEO</p>
-              <p data-key="leadership.bio1" class="about-text mb-0">Mais de 15 anos de experiência em gestão de empresas
-                tecnológicas.Especialista
-                em estratégia corporativa e desenvolvimento de negócios internacionais.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="profile-card fade-in">
-              <img src="Assets/images/menzi-bata.png" class="img-fluid" alt="Menzi Mbata Foto">
-              <h5 class="fw-bold mb-1">Menzi Mbata</h5>
-              <p class="text-muted mb-2">CFO</p>
-              <p data-key="leadership.bio2" class="about-text mb-0">Vasta experiência em finanças corporativas e
-                investimentos
-                estrategicos.Especialista em estrututação financeira de projetos de grande escala.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="profile-card fade-in">
-              <img src="Assets/images/anish-shivdasani.png" class="img-fluid" alt="Nuno Lima Foto">
-              <h5 class="fw-bold mb-1">Dr. Anish Shivdasani</h5>
-              <p class="text-muted mb-2">CTA</p>
-              <p data-key="leadership.bio3" class="about-text mb-0">Profundo conhecimento em iunfraestrutura de data
-                centers e tecnologias de
-                compuytação avançada. Experiência internacional em projetos tecnologicos de larga escala..</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-6 col-md-4 col-lg-5 col-xl-4 fade-in">
-            <img src="Assets/images/girl-digital.png" alt="Sobre Nós" class="img-fluid">
-          </div>
-          <div class="col-6 col-md-4 col-lg-7 col-xl-8">
-            <div class="section-content">
-              <h2 data-key="contacto.title" class="section-title text-left slide-right">Contactos</h2>
-              <h3 data-key="contacto.subtitle" class="section-subtitle text-left slide-right">
-                NOESIS - Intelligence Value, SA
-              </h3>
-              <div class="row">
-                <div class="col-12">
-                  <p class="sede">
-                    <strong data-key="contact.text1">Sede:</strong>
-                  </p>
-                  <p>Maputo, Moçambique</p>
-                  <p class="oper">
-                    <strong data-key="contact.text2">Operações:</strong>
-                  </p>
-                  <p>Tete, Moçambique</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <p class="contacto-principal">
-                    <strong data-key="contact.text3">Contacto Principal:</strong>
-                  </p>
-                  <p class="name">Nome: <span>Nuno Lima</span></p>
-                  <p class="role">Cargo: <span>CEO</span></p>
-                  <p class="email">Email: <a href="mailto:nuno.lima@noesis.co.mz">nuno.lima@noesis.co.mz</a></p>
-                  <p class="number">Number: +258 843067770</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 fade-in">
-              <form action="https://formspree.io/f/xwprqaez" method="POST">
-                <div class="mb-3">
-                  <label for="nome" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="nome" name="nome" required aria-required="true">
-                </div>
-
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required aria-required="true">
-                </div>
-
-                <div class="mb-3">
-                  <label for="mensagem" class="form-label">Mensagem</label>
-                  <textarea class="form-control" id="mensagem" name="message" rows="4" required
-                    aria-required="true"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-accent">Enviar</button>
-              </form>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="end">
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center text-md-start mb-2 mb-md-0 footer-logo">
-          <img src="Assets/images/full-logo-no-bg.png" alt="NOESIS Logo">
-        </div>
-        <div class="col-md-4 text-center mb-2 mb-md-0">
-          <a href="#" class="me-3">Política de Privacidade</a>
-          <span>&copy; 2025 NOESIS Intelligence Value</span>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
+  <!-- END SERVICES SECTION -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- STRATEGIC OBJECIVES SECTION -->
+  <section id="diferenciais">
+    <div class="container-fluid">
+      <div class="container py-5 py-md-4 pb-md-1">
+        <div class="row">
+          <div class="col-12 heading">
+            <h1 data-key="objetives.title" class="section-title mb-1">Objetivos Estratégicos</h2>
+              <div class="underline mb-3"></div>
+              <p data-key="about.titletext">Conheça os nossos objetivos estratégicos e quais são os nossos diferenciais
+                </h3>
+          </div>
+        </div>
+      </div>
+      <!-- BOOTSTRAP CAROUSEL WITH CAPTIONS -->
+      <div id="carousel-section" class="carousel-section">
+        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="carousel-bg" style="background-image: url('Assets/images/data-centers.jpg  ');">
+                <div class="carousel-overlay"></div>
+              </div>
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row align-items-center h-100">
+                    <div class="col-lg-9 col-md-8 col-sm-8">
+                      <div class="caption-content">
+                        <h2 class="caption-title" data-key="slide1.title">Infraestrutura Digital</h2>
+                        <p class="caption-text" data-key="slide1.text">Estabelecer data centers de classe mundial em
+                          Moçambique, criando a base
+                          tecnológica
+                          necessária para impulsionar a economia digital nacional e posicionar o país como hub regional
+                          de
+                          processamento de dados.</p>
+                        <div class="caption-features">
+                          <div class="feature-tag">
+                            <i class="fas fa-server me-2"></i>
+                            <span>Data Centers</span>
+                          </div>
+                          <div class="feature-tag">
+                            <i class="fas fa-globe me-2"></i>
+                            <span>Conectividade Global</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="slide-number">
+                        <span class="number" style="color: #92CA63">01</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="carousel-bg" style="background-image: url('Assets/images/renewable-energy.jpg');">
+                <div class="carousel-overlay"></div>
+              </div>
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row align-items-center h-100">
+                    <div class="col-lg-9 col-md-8 col-sm-8">
+                      <div class="caption-content">
+                        <h2 class="caption-title" data-key="slide2.title">Aproveitamento Energético</h2>
+                        <p class="caption-text" data-key="slide2.text">Utilizar de forma eficiente os abundantes
+                          recursos energéticos do país,
+                          transformando
+                          energia excedente em valor económico através de operações tecnológicas sustentáveis e de
+                          alto rendimento.</p>
+                        <div class="caption-features">
+                          <div class="feature-tag">
+                            <i class="fas fa-brain me-2"></i>
+                            <span>Tecnologias Sustentáveis</span>
+                          </div>
+                          <div class="feature-tag">
+                            <i class="fab fa-bitcoin me-2"></i>
+                            <span>Recursos Naturais</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="slide-number">
+                        <span class="number" style="color: white;">02</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="carousel-bg" style="background-image: url('Assets/images/employment.jpg');">
+                <div class="carousel-overlay"></div>
+              </div>
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row align-items-center h-100">
+                    <div class="col-lg-9 col-md-8 col-sm-8">
+                      <div class="caption-content">
+                        <h2 class="caption-title" data-key="slide3.title">Desenvolvimento Econômico</h2>
+                        <p class="caption-text" data-key="slide3.text">Contribuir significativamente para a
+                          diversificação da economia nacional,
+                          criando
+                          novos
+                          sectores de atividade, empregos qualificados e oportunidades de investimento no setor
+                          tecnológico.</p>
+                        <div class="caption-features">
+                          <div class="feature-tag">
+                            <i class="fas fa-leaf me-2"></i>
+                            <span>Crescimento Sustentável</span>
+                          </div>
+                          <div class="feature-tag">
+                            <i class="fas fa-bolt me-2"></i>
+                            <span>Transformação Económica</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="slide-number">
+                        <span class="number" style="color:#92CA63">03</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="carousel-bg" style="background-image: url('Assets/images/black-woman.jpg');">
+                <div class="carousel-overlay"></div>
+              </div>
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row align-items-center h-100">
+                    <div class="col-lg-9 col-md-8 col-sm-8">
+                      <div class="caption-content">
+                        <h2 class="caption-title" data-key="slide4.title">Capacitação Tecnológica</h2>
+                        <p class="caption-text" data-key="slide4.text">Formar e desenvolver profissionais moçambicanos
+                          em tecnologias avançadas,
+                          criando
+                          competências locais e reduzindo a dependência de expertise externa no setor digital.</p>
+                        <div class="caption-features">
+                          <div class="feature-tag">
+                            <i class="fas fa-graduation-cap me-2"></i>
+                            <span>Capacitação Tecnológica</span>
+                          </div>
+                          <div class="feature-tag">
+                            <i class="fas fa-handshake me-2"></i>
+                            <span>Inovação Tecnológica</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="slide-number">
+                        <span class="number" style="color: #F5F5F5">04</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> 
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  
+  <!-- Carousel JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize Bootstrap Carousel
+      const carousel = document.getElementById('customCarousel');
+      
+      if (carousel) {
+        // Ensure carousel is properly initialized
+        const carouselInstance = new bootstrap.Carousel(carousel, {
+          interval: 4000,
+          ride: 'carousel',
+          pause: 'hover',
+          wrap: true,
+          touch: true,
+          keyboard: true
+        });
+
+        // Add smooth transitions
+        carousel.addEventListener('slide.bs.carousel', function (e) {
+          const activeItem = carousel.querySelector('.carousel-item.active');
+          
+          if (activeItem) {
+            activeItem.style.transition = 'transform 0.6s ease-in-out';
+          }
+        });
+
+        carousel.addEventListener('slid.bs.carousel', function (e) {
+          const activeItem = carousel.querySelector('.carousel-item.active');
+          
+          if (activeItem) {
+            activeItem.style.transition = '';
+          }
+        });
+
+        // Ensure controls work properly
+        const prevButton = carousel.querySelector('.carousel-control-prev');
+        const nextButton = carousel.querySelector('.carousel-control-next');
+        const indicators = carousel.querySelectorAll('.carousel-indicators button');
+
+        if (prevButton) {
+          prevButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            carouselInstance.prev();
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            carouselInstance.next();
+          });
+        }
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener('click', function(e) {
+            e.preventDefault();
+            carouselInstance.to(index);
+          });
+        });
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- TRANSLATION SCRIPT -->
   <script>
     const translations = {
       pt: {
@@ -684,18 +656,18 @@
         "nav.team": "Team",
 
         // HERO
-        "hero.title": "NOESIS - Intelligence Value",
-        "hero.subtitle": "Acelerando a transformação digital de Moçambique",
+        "hero.title": "Transformando Energia em Valor Digital",
+        "hero.subtitle": "Acelerando a transformação digital de Moçambique entregando soluções inteligentes ee inovadoras para centros de dados e ativos digitais em Moçambique",
         "hero.cta": "Descobrir Mais",
 
 
         // SOBRE
         "about.title": "Quem Somos",
-        "about.text1":
+        "about.subtitle":
           "NOESIS - Intelligence Value é uma empresa moçambicana especializada em infraestrutura de data centers de alto desempenho.",
-        "about.text2":
+        "about.text1":
           "Focamos na criação e operação de centros de processamento de dados que aproveitam a vantagem energética de Moçambique para impulsionar a transformação digital.",
-        "about.text3":
+        "about.text2":
           "Nossa abordagem combina tecnologia de ponta com práticas sustentáveis, criando uma nova frente económica baseada em infraestrutura digital que posiciona Moçambique como um hub tecnológico regional.",
         "about.location": "Operações: Maputo, Moçambique",
 
@@ -829,11 +801,11 @@
 
         // ABOUT
         "about.title": "Who We Are",
-        "about.text1":
+        "about.subtitle":
           "NOESIS - Intelligence Value is a Mozambican company specialized in high-performance data center infrastructure.",
-        "about.text2":
+        "about.text1":
           "We focus on the creation and operation of data processing centers that leverage Mozambique’s energy advantage to drive digital transformation.",
-        "about.text3":
+        "about.text2":
           "Our approach combines cutting-edge technology with sustainable practices, creating a new economic front based on digital infrastructure that positions Mozambique as a regional technology hub.",
         "about.location": "Operations: Maputo, Mozambique",
 
@@ -984,81 +956,18 @@
     });
 
   </script>
+
+  <!-- ANIMAION ON SCROLL SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Sticky header background on scroll
-    window.addEventListener('scroll', function () {
-      const nav = document.querySelector('.navbar');
-      if (window.scrollY > 40) {
-        nav.classList.add('scrolled');
-        document.querySelectorAll('.nav-link').forEach(link => {
-          link.style.color = '#000000';
-          link.style.fontWeight = 'light';
-        });
-      } else {
-        nav.classList.remove('scrolled');
-        document.querySelectorAll('.nav-link').forEach(link => {
-          link.style.color = '#000000';
-          link.style.fontWeight = 'light';
-        });
-      }
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a.nav-link, .hero a.btn').forEach(link => {
-      link.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href && href.startsWith('#')) {
-          e.preventDefault();
-          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-
-    // // Parallax effect for hero background
-    // window.addEventListener('scroll', function() {
-    //   const hero = document.querySelector('.hero');
-    //   if(hero) {
-    //     let offset = window.scrollY * 0.4;
-    //     hero.style.backgroundPosition = `center ${offset}px`;
-    //   }
-    // });
-
-    // Fade-in animations for hero
-    window.addEventListener('DOMContentLoaded', function () {
-      setTimeout(() => {
-        document.querySelector('.hero-title').classList.add('visible');
-        setTimeout(() => {
-          document.querySelector('.hero-subtitle').classList.add('visible');
-          setTimeout(() => {
-            document.querySelector('.hero-btn').classList.add('visible');
-          }, 400);
-        }, 400);
-      }, 200);
-    });
-
-    // Scroll-triggered fade-in for sections
-    function revealOnScroll(selector, className = 'visible') {
-      const elements = document.querySelectorAll(selector);
-      function check() {
-        elements.forEach(el => {
-          const rect = el.getBoundingClientRect();
-          if (rect.top < window.innerHeight - 60) {
-            el.classList.add(className);
-          }
-        });
-      }
-      window.addEventListener('scroll', check);
-      window.addEventListener('DOMContentLoaded', check);
-      check();
-    }
-    revealOnScroll('.fade-in');
-    revealOnScroll('.service-card');
-    revealOnScroll('.timeline-step');
-    revealOnScroll('.timeline-arrow');
+    AOS.init();
   </script>
-
-
-
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="../JS/jquery-3.3.1.min.js"></script>
+  <script src="../JS/popper.min.js"></script>
+  <script src="../JS/bootstrap.min.js"></script>
+  <script src="../JS/jquery.sticky.js"></script>
+  <script src="../JS/main.js"></script>
 </body>
 
 </html>
