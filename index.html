@@ -118,11 +118,11 @@
           <div class="col-6">
             <div class="d-flex mr-auto">
               <a href="mailto:info@noesis.co.mz" class="d-flex align-items-center mr-6 pe-4">
-                <i class="fa-solid fa-envelope mr-3 pe-4 pt-2"></i>
+                <i class="fa-solid fa-envelope mr-3 pe-4 pt-0"></i>
                 <span class="d-none d-md-inline-block">nuno.lima@noesis.co.mz</span>
               </a>
               <a href="tel:+258843067770" class="d-flex align-items-center mr-auto">
-                <i class="fa-solid fa-phone mr-3 pe-4 pt-2"></i>
+                <i class="fa-solid fa-phone mr-3 pe-4 pt-0"></i>
                 <span class="d-none d-md-inline-block">+258 84 306 7770</span>
               </a>
             </div>
@@ -148,12 +148,12 @@
         <div class="d-flex align-items-center justify-content-between">
 
           <!-- Left: Logo -->
-          <h1 class="my-4 site-logo">
-            <a href="#inicio">noesis</a>
-          </h1>
+          <!-- <h1 class="my-3 site-logo"> -->
+          <a href="#inicio"><img src="Assets/images/noesis_logo_black.png" class="img-fluid brand-logo" alt="""></a>
+          <!-- </h1> -->
 
           <!-- Right: Menu & Toggler -->
-          <nav class="site-navigation text-right" role="navigation">
+          <nav class=" site-navigation text-right" role="navigation">
             <div class="container d-flex align-items-center justify-content-end">
 
               <!-- MAIN MENU (desktop) -->
@@ -165,26 +165,35 @@
                 <li><a href="#parcerias" class="nav-link" data-key="nav.partnerships">Parcerias</a></li>
                 <li><a href="#sustentabilidade" class="nav-link" data-key="nav.sustainability">Sustentabilidade</a></li>
                 <li><a href="#implementacao" class="nav-link" data-key="nav.implementation">Implementação</a></li>
-                <li><a href="#team" class="nav-link me-5" data-key="nav.team">Team</a></li>
-                <li class="lang-switch ms-3 mt-5">
+                <li><a href="#team" class="nav-link" data-key="nav.team">Team</a></li>
+                <li class="lang-switch text-center  mt-5">
                   <div class="language-switcher">
-                    <button  class="btn btn-sm px-4 language-btn" style="background-color: #fff; border: solid 3px #92CA63; color: #000000; font-weight: 700;" data-lang="pt">
-                      <i class="fas fa-language me-1"  style="color: #8ED138"></i>PT
+                    <button class="btn btn-md px-4 language-btn"
+                      style="background-color: #fff; border: solid 3px #92CA63; color: #000000; font-weight: 700;"
+                      data-lang="pt" onmouseover="this.style.backgroundColor='#70b63bb2'; this.style.color='white';"
+                      onmouseout="this.style.backgroundColor='transparent'; this.style.color='#000000';">
+                      <i class="fas fa-language me-1"></i>PT
                     </button>
-                    <button  class="btn btn-sm px-4 language-btn" style="background-color: #fff; border: solid 3px #92CA63; color: #000000; font-weight: 700; display: none;" data-lang="en"
-                      >
-                      <i class="fas fa-language me-1"  style="color: #8ED138"></i>EN
+                    <button class="btn btn-md px-4 language-btn"
+                      style="background-color: #fff; border: solid 3px #92CA63; color: #000000; font-weight: 700;  display: none;"
+                      data-lang="en" onmouseout="this.style.backgroundColor='lightgray';">
+                      <i class="fas fa-language me-1"></i>EN
                     </button>
                   </div>
                 </li>
               </ul>
 
+              <style>
+                btn.language-btn:hover {
+                  color: #70b63bb2
+                }
+              </style>
               <!-- MOBILE TOGGLER (always visible) -->
               <a href="#" class="site-menu-toggle js-menu-toggle ml-3">
                 <i class="fa-solid fa-bars fa-2x"></i>
               </a>
             </div>
-          </nav>
+            </nav>
         </div>
       </div>
     </div>
@@ -196,16 +205,17 @@
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-6 col-sm-8 col-lg-6">
-          <img src="Assets/images/moz-map.png  " class="d-block mx-lg-auto img-fluid " alt="Map Image" width="700"
+          <img src="Assets/images/moz-map.png" class="d-block mx-lg-auto img-fluid " alt="Map Image" width="700"
             height="500" loading="lazy" data-aos="fade-in" data-aos-easing="ease-in-sine" data-aos-delay="800"
             data-aos-offset="0">
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="800" data-aos-easing="ease-in" data-aos-offset="0">
-          <h1 data-key="hero.title" class="display-5 fw-bold lh-1 mb-3">Transformando Energia em Valor Digital</h1>
+          <!-- <h1 data-key="hero.title" class="display-5 fw-bold lh-1 mb-3">Transformando Energia em Valor Digital</h1> -->
+          <img src="Assets/images/noesis_logo_white.png" alt="" class="img-fluid mb-3">
           <p data-key="hero.subtitle" class="lead">Acelerando a transformação digital de Moçambique entregando soluções
             inteligentes e inovadoras para centros de dados e ativos digitais em Moçambique</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button data-key="hero.cta" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contactar</button>
+            <button data-key="hero.cta" type="button" class="btn btn-primary btn-md px-4 me-md-2">Contactar</button>
           </div>
         </div>
       </div>
@@ -225,10 +235,11 @@
         </div>
       </div>
     </div>
-    <div class="container pb-5">
+    <div class="container pb-0">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-7 pb-5">
-          <div class="about-content">
+        <!-- About text: full width; centered on md, left on lg+ -->
+        <div class="col-12 pb-0">
+          <div class="about-content text-md-center text-lg-start">
             <h5 data-key="about.subtitle" class="subtitle mb-3">NOESIS - Intelligence Value é uma empresa moçambicana
               especializada em infraestrutura de data centers de alto desempenho.</h5>
             <p data-key="about.text1" class="about-text">Focamos na criação e operação de centros de processamento de
@@ -242,12 +253,25 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-5">
-          <div class="col-6 col-md-12 h-30">
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114792.65392231884!2d32.582874407603974!3d-25.959169682531474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69723b666da55%3A0x42497f579a6bb442!2sMaputo!5e0!3m2!1sen!2smz!4v1759854540817!5m2!1sen!2smz"
+          width="1500" height="500" style="border:0; padding: 0; filter: brightness(0.5);" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Vision/Mission grid under about content -->
+      <div class="col-12">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 h-30">
             <div class="vision-content">
               <div class="vision-indicator indicator">
                 <div class="number-indicator" ">1</div>
-              <div class=" indicator-line"></div>
+                <div class=" indicator-line"></div>
               </div>
               <div class="section-content">
                 <h3 class="section-subtitle" data-key="vision.title1">
@@ -261,34 +285,28 @@
               </div>
             </div>
           </div>
-          <div class="col-6 col-md-12 h-30">
-            <div class="mision-indicator indicator">
-              <div class="number-indicator">2</div>
-              <div class="indicator-line"></div>
-            </div>
-            <div class="section-content">
-              <h3 class="section-subtitle" data-key="mission.title">
-                Missão
-              </h3>
-              <div class="quot mb-2" data-key="mission.text1" style="font-style: italic;">"Transformar a vantagem
-                energética de Moçambique em valor
-                digital e prosperidade
-                nacional através de infraestrutura de classe mundial."</div>
-              <p class="about-text mb-0" data-key="mission.text">
-                Criamos soluções que conectam recursos naturais com oportunidades digitais, gerando impacto económico
-                positivo para todas as comunidades envolvidas.
-              </p>
+          <div class="col-12 col-md-6 h-30">
+            <div class="mission-content">
+              <div class="mision-indicator indicator">
+                <div class="number-indicator">2</div>
+                <div class="indicator-line"></div>
+              </div>
+              <div class="section-content">
+                <h3 class="section-subtitle" data-key="mission.title">
+                  Missão
+                </h3>
+                <div class="quot mb-2" data-key="mission.text1" style="font-style: italic;">"Transformar a vantagem
+                  energética de Moçambique em valor
+                  digital e prosperidade
+                  nacional através de infraestrutura de classe mundial."</div>
+                <p class="about-text mb-0" data-key="mission.text">
+                  Criamos soluções que conectam recursos naturais com oportunidades digitais, gerando impacto económico
+                  positivo para todas as comunidades envolvidas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114792.65392231884!2d32.582874407603974!3d-25.959169682531474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69723b666da55%3A0x42497f579a6bb442!2sMaputo!5e0!3m2!1sen!2smz!4v1759854540817!5m2!1sen!2smz"
-          width="1500" height="400" style="border:0; padding: 0; filter: brightness(0.5);" allowfullscreen=""
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -434,7 +452,7 @@
 
             <!-- Slide 2 -->
             <div class="carousel-item">
-              <div class="carousel-bg" style="background-image: url('Assets/images/renewable-energy.jpg');">
+              <div class="carousel-bg" style="background-image: url('Assets/images/data-centers-2.jpg');">
                 <div class="carousel-overlay"></div>
               </div>
               <div class="carousel-caption">
@@ -472,7 +490,8 @@
 
             <!-- Slide 3 -->
             <div class="carousel-item">
-              <div class="carousel-bg" style="background-image: url('Assets/images/employment.jpg');">
+              <div class="carousel-bg"
+                style="background-image: url('Assets/images/moz-flag.png'); background-position: center -45rem;">
                 <div class="carousel-overlay"></div>
               </div>
               <div class="carousel-caption">
@@ -511,7 +530,7 @@
 
             <!-- Slide 4 -->
             <div class="carousel-item">
-              <div class="carousel-bg" style="background-image: url('Assets/images/black-woman.jpg');">
+              <div class="carousel-bg" style="background-image: url('Assets/images/girl-digital.png');">
                 <div class="carousel-overlay"></div>
               </div>
               <div class="carousel-caption">
@@ -555,25 +574,89 @@
           <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button> 
+          </button>
         </div>
       </div>
 
     </div>
   </section>
+  <!-- END STRATEGIC OBJECTIVES -->
+
+  <!-- WHY US SECTION -->
+  <section id="porque">
+    <div class="container">
+      <div class="container py-5 py-md-4 pb-md-1">
+        <div class="row">
+          <div class="col-12 heading">
+            <h1 data-key="about.title" class="section-title mb-0">Porque a Noesis?</h2>
+              <div class="underline mb-3"></div>
+              <p data-key="about.titletext">Veja o que nos diferencia</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container card-container">
+      <h3 class="mb-2">Nossos diferenciais como parceira estratégica para o desenvolvimento
+        tecnológico de Moçambique nos posicionam de forma única no mercado:</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="card-group row row-cols-1 row-cols-md-2 g-2">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="mb-4 mt-3 fa-solid fa-pen-fancy"></i>
+              <h5 class="card-title">Expertise Técnica</h5>
+              <p class="card-text">Equipe de especialistas com mais de 15 anos de experiência internacional em
+                infraestrutura de
+                data centers, trazendo conhecimento global adaptado às realidades locais.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="mb-4 mt-3 fa-solid fa-clock-rotate-left"></i>
+              <h5 class="card-title">Visão de Longo Prazo</h5>
+              <p class="card-text">Compromisso com o desenvolvimento sustentável e duradouro de Moçambique, investindo
+                não
+                apenas em infraestrutura, mas no desenvolvimento de competências locais.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="mb-4 mt-3 fa-solid fa-chart-line"></i>
+              <h5 class="card-title">Inovação Continua</h5>
+              <p class="card-text">Adoção das mais recentes tecnologias e práticas do setor, garantindo que Moçambique
+                se
+                mantenha na vanguarda da revolução digital global.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="mb-4 mt-3 fa-solid fa-street-view"></i>
+              <h5 class="card-title">Compromisso Local</h5>
+              <p class="card-text">Empresa 100% moçambicana focada no desenvolvimento nacional, com todos os lucros
+                reinvestidos no crescimento económico e tecnológico do país.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
 
-
-
-
-  
   <!-- Carousel JavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // Initialize Bootstrap Carousel
       const carousel = document.getElementById('customCarousel');
-      
+
       if (carousel) {
         // Ensure carousel is properly initialized
         const carouselInstance = new bootstrap.Carousel(carousel, {
@@ -588,7 +671,7 @@
         // Add smooth transitions
         carousel.addEventListener('slide.bs.carousel', function (e) {
           const activeItem = carousel.querySelector('.carousel-item.active');
-          
+
           if (activeItem) {
             activeItem.style.transition = 'transform 0.6s ease-in-out';
           }
@@ -596,7 +679,7 @@
 
         carousel.addEventListener('slid.bs.carousel', function (e) {
           const activeItem = carousel.querySelector('.carousel-item.active');
-          
+
           if (activeItem) {
             activeItem.style.transition = '';
           }
@@ -608,21 +691,21 @@
         const indicators = carousel.querySelectorAll('.carousel-indicators button');
 
         if (prevButton) {
-          prevButton.addEventListener('click', function(e) {
+          prevButton.addEventListener('click', function (e) {
             e.preventDefault();
             carouselInstance.prev();
           });
         }
 
         if (nextButton) {
-          nextButton.addEventListener('click', function(e) {
+          nextButton.addEventListener('click', function (e) {
             e.preventDefault();
             carouselInstance.next();
           });
         }
 
         indicators.forEach((indicator, index) => {
-          indicator.addEventListener('click', function(e) {
+          indicator.addEventListener('click', function (e) {
             e.preventDefault();
             carouselInstance.to(index);
           });

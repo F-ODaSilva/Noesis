@@ -1,11 +1,21 @@
 /* NAVBAR */
+.site-navbar{
+    .container{
+        a img.img-fluid.brand-logo{
+            width: 120px;
+        }
+    }
+}
 
+/* #inicio,#sobre,#servicos,#diferenciais{
+   display: none;
+} */
 
 /* HERO */
 #inicio {
     .container {
         .row {
-            margin-top: 4rem;
+            margin-top: 2rem;
 
             .col-6.col-sm-8.col-lg-6 {
                 img {
@@ -14,18 +24,23 @@
             }
 
             .col-lg-6 {
-                h1 {
+
+                /* h1 {
                     font-size: 4rem;
                     font-family: "Ubuntu", Arial, sans-serif;
                     margin-right: -3rem !important;
-                }
+                } */
+                img.img-fluid {
+                    width: 28rem;
+                    margin-bottom: 2rem;
+                }   
 
                 p {
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                     text-align: justify;
                 }
 
-                .btn.btn-primary.btn-lg.px-4 {
+                .btn.btn-primary.btn-md.px-4 {
                     font-size: 1.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
                     color: white;
@@ -34,8 +49,8 @@
                     background-color: transparent;
                 }
 
-                .btn.btn-primary.btn-lg.px-4:hover {
-                    background-color: #8ED138;
+                .btn.btn-primary.btn-md.px-4:hover {
+                    background-color: #70b63bb2;
                 }
             }
         }
@@ -47,7 +62,7 @@
 /* ABOUT SECTION */
 #sobre {
     background-color: #F5F5F5;
-    padding-top: 5rem;
+    padding-top: 3rem;
 
     .container {
         .row {
@@ -61,7 +76,7 @@
                     font-weight: 700;
                 }
 
-                /* .underline {
+                /* .underline { 
                     height: 6px;
                     width: 250px;
                     background-color: #039FAC;
@@ -98,11 +113,15 @@
                 }
             }
 
-            .col-12.col-md-6.col-lg-5 {
-                margin-top: -4rem;
+            .col-12.col-md-6.h-30 {
+                margin-top: 3rem;
+
+                .vision-indicator.indicator:nth-child(2) {
+                    width: 500px;
+                }
 
                 .indicator {
-                    width: 480px !important;
+                    width: 590px !important;
 
                     .number-indicator {
                         text-align: center;
@@ -162,6 +181,9 @@
     }
 
     .container-fluid {
+        border-top: solid 2px #8ED138;
+        border-bottom: solid 2px #8ED138;
+
         .row {
             iframe:hover {
                 filter: brightness(0.8) !important;
@@ -170,12 +192,205 @@
     }
 }
 
+
+/* --- Layout-preservation rules for updated #sobre structure --- */
+/* Base: About content now full-width; keep original typography/margins */
+#sobre .about-content h5.subtitle.mb-3 {
+    font-size: 2rem;
+    font-family: "Ubuntu", Arial, sans-serif;
+    color: #2A3B65 !important;
+    font-weight: 700;
+    text-align: justify;
+    margin-right: 45px;
+}
+
+#sobre .about-content p {
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-right: 45px;
+    color: #696969;
+    font-weight: 400;
+}
+
+/* Right-side (Vision/Mission) now in grid columns; keep previous spacing and components */
+#sobre .col-12.col-md-6.h-30 {
+    margin-top: -4rem;
+}
+
+#sobre .vision-content .indicator,
+#sobre .mission-content .indicator,
+#sobre .vision-content .mision-indicator,
+#sobre .mission-content .mision-indicator {
+    width: 480px !important;
+}
+
+#sobre .vision-content .indicator .number-indicator,
+#sobre .mission-content .indicator .number-indicator,
+#sobre .vision-content .mision-indicator .number-indicator,
+#sobre .mission-content .mision-indicator .number-indicator {
+    text-align: center;
+    width: 40px;
+    margin: 0 auto !important;
+    position: relative;
+    background-color: #039FAC;
+    top: 17px;
+    z-index: 3;
+    border-radius: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    padding: 2px;
+    padding-top: 5px;
+}
+
+#sobre .vision-content .indicator .indicator-line,
+#sobre .mission-content .indicator .indicator-line,
+#sobre .vision-content .mision-indicator .indicator-line,
+#sobre .mission-content .mision-indicator .indicator-line {
+    width: 100%;
+    background-color: #039FAC;
+    height: 5px;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+#sobre .vision-content .section-subtitle,
+#sobre .mission-content .section-subtitle {
+    font-size: 1.3rem;
+    font-family: "Ubuntu", Arial, sans-serif;
+    color: #8ED138 !important;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 45px;
+}
+
+#sobre .vision-content .about-text,
+#sobre .mission-content .about-text {
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    margin-right: 45px;
+    color: #696969 !important;
+    font-weight: 400;
+}
+
+/* Responsive: Small Laptops */
+@media (min-width: 1025px) and (max-width: 1285px) {
+    #sobre .col-12.col-md-6.h-30 {
+        margin-top: -5rem;
+        height: 495px;
+    }
+
+    #sobre .about-content h5.subtitle.mb-3 {
+        font-size: 1.2rem !important;
+        margin-right: 45px;
+    }
+
+    #sobre .about-content p {
+        font-size: 1rem !important;
+        margin-right: 45px;
+    }
+
+    #sobre .vision-content .indicator,
+    #sobre .mission-content .indicator,
+    #sobre .vision-content .mision-indicator,
+    #sobre .mission-content .mision-indicator {
+        width: 410px !important;
+    }
+}
+
+/* Responsive: Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #sobre .about-content h5.subtitle.mb-3 {
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+
+    #sobre .about-content p {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+
+    #sobre .col-12.col-md-6.h-30 {
+        margin-top: -2rem;
+    }
+
+    #sobre .vision-content .indicator,
+    #sobre .mission-content .indicator,
+    #sobre .vision-content .mision-indicator,
+    #sobre .mission-content .mision-indicator {
+        width: 400px !important;
+    }
+
+    #sobre .vision-content .section-subtitle,
+    #sobre .mission-content .section-subtitle {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    #sobre .vision-content .about-text,
+    #sobre .mission-content .about-text {
+        font-size: 0.95rem;
+        margin-right: 20px;
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 767px) {
+    #sobre {
+        padding-top: 3rem;
+    }
+
+    #sobre .about-content {
+        text-align: center;
+    }
+
+    #sobre .about-content h5.subtitle.mb-3 {
+        font-size: 1.3rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #sobre .about-content p {
+        font-size: 0.95rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #sobre .col-12.col-md-6.h-30 {
+        margin-top: 2rem;
+    }
+
+    #sobre .vision-content .indicator,
+    #sobre .mission-content .indicator,
+    #sobre .vision-content .mision-indicator,
+    #sobre .mission-content .mision-indicator {
+        width: 100% !important;
+    }
+
+    #sobre .vision-content .section-subtitle,
+    #sobre .mission-content .section-subtitle {
+        font-size: 1.1rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #sobre .vision-content .about-text,
+    #sobre .mission-content .about-text {
+        font-size: 0.9rem;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
 /* END ABOUT SECTION */
 
 /* SERVICES SECTION */
 #servicos {
     background-color: #F5F5F5;
-    padding-top: 5.4rem;
+    padding-top: 6rem;
 
     .container.py-5.py-md-4 {
         .row {
@@ -223,7 +438,7 @@
                 .card.h-100 {
                     border: solid 3px #92CA63;
                     border-radius: 0;
-                    background-color: #3c3c3cc0;
+                    background-color: #575757f6;
 
                     .card-body {
 
@@ -253,12 +468,12 @@
         }
     }
 }
-
 /* END SERVICES SECTION */
 
+/* STRATEGIC OBJECTIVES SECTION  */
 #diferenciais {
     background-color: #F5F5F5;
-    padding-top: 1rem;
+    padding-top: 4.3rem;
 
     .container.py-5.py-md-4 {
         .row {
@@ -463,7 +678,107 @@
         }
     }
 }
+/* END STRATEGIC OBJECTIVES SECTION  */
 
+/* WHY US SECTION */
+#porque{
+    padding-top: 6rem;
+    background-color: #F5F5F5;
+     .container.py-5.py-md-4 {
+
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    font-size: 3.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #92CA63 !important;
+                    font-weight: 700;
+                }
+
+                /* .underline {
+                    height: 6px;
+                    width: 430px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                } */
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+
+    .container.card-container{
+        h3.mb-2{
+            font-size: 2rem;
+            font-family: "Ubuntu", Arial, sans-serif;
+            text-align: justify;
+            color: #2A3B65;
+            font-weight: 700;
+        }
+    }
+    .container-fluid{
+        background-image: url('../Assets/images/economical.jpg');
+        background-size: cover;
+        background-position: center center;
+        padding: 0;
+        height: 60vh;
+        .card-group.row.row-cols-1.row-cols-md-2.g-2 {
+            height: 35vh;
+            margin: 0 5rem;
+            .col {
+                margin-top: 1rem;
+                text-align: center!important;
+                .card.h-100 {
+                    border: solid 1px #e9e9e9;
+                    border-radius: 8px;
+                    background-color: #2a3b65c7;
+    
+                    .card-body {
+                        h5.card-title {
+                            font-size: 1.5rem;
+                            font-family: "Ubuntu", Arial, sans-serif;
+                            color: #92CA63 !important;
+                            font-weight: 700;
+                        }   
+    
+                        i.fa-solid{
+                            color: #0de8fc;
+                            font-size: 2rem;
+                        }
+                        p.card-text{
+                            font-size: 1rem;
+                            text-align: justify;
+                            color: #FFFFFF !important;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 

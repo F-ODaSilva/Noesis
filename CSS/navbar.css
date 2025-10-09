@@ -124,7 +124,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-.site-navbar .site-navigation .site-menu a {
+.site-navbar .site-naviga   ion .site-menu a {
     text-decoration: none !important;
     display: inline-block;
     font-weight: 500;
@@ -322,18 +322,19 @@ a:hover {
 }
 
 .site-mobile-menu {
-    width: 300px;
+    width: 25%!important;
     position: fixed;
     right: 0;
     z-index: 2000;
     padding-top: 20px;
     background: #fff;
+    /* border-left: solid 2px #8ED138; */
     height: calc(100vh);
     -webkit-transform: translateX(110%);
     -ms-transform: translateX(110%);
     transform: translateX(110%);
-    -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.874);
+    box-shadow: -12px 0 20px -3px  rgba(0, 0, 0, 0.923);
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
@@ -409,10 +410,11 @@ a:hover {
 }
 
 .site-mobile-menu .site-nav-wrap a {
-    padding: 10px 20px;
+    padding: 6% 20px;
     display: block;
     position: relative;
     color: #212529;
+    text-align: center;
 }
 
 .site-mobile-menu .site-nav-wrap a.active,
