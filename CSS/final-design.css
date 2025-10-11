@@ -1,7 +1,7 @@
 /* NAVBAR */
-.site-navbar{
-    .container{
-        a img.img-fluid.brand-logo{
+.site-navbar {
+    .container {
+        a img.img-fluid.brand-logo {
             width: 120px;
         }
     }
@@ -33,7 +33,7 @@
                 img.img-fluid {
                     width: 28rem;
                     margin-bottom: 2rem;
-                }   
+                }
 
                 p {
                     font-size: 1.1rem;
@@ -72,7 +72,7 @@
                 h1 {
                     font-size: 3.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
-                    color: #92CA63 !important;
+                    color: #262626 !important;
                     font-weight: 700;
                 }
 
@@ -152,7 +152,7 @@
                 .section-subtitle {
                     font-size: 1.3rem;
                     font-family: "Ubuntu", Arial, sans-serif;
-                    color: #8ED138 !important;
+                    color: #262626 !important;
                     font-weight: 700;
                     text-align: center;
                     margin-right: 45px;
@@ -181,8 +181,8 @@
     }
 
     .container-fluid {
-        border-top: solid 2px #8ED138;
-        border-bottom: solid 2px #8ED138;
+        border-top: solid 3px #262626;
+        border-bottom: solid 3px #262626;
 
         .row {
             iframe:hover {
@@ -400,7 +400,7 @@
                 h1 {
                     font-size: 3.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
-                    color: #92CA63 !important;
+                    color: #262626 !important;
                     font-weight: 700;
                 }
 
@@ -468,6 +468,7 @@
         }
     }
 }
+
 /* END SERVICES SECTION */
 
 /* STRATEGIC OBJECTIVES SECTION  */
@@ -483,7 +484,7 @@
                 h1 {
                     font-size: 3.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
-                    color: #92CA63 !important;
+                    color: #262626 !important;
                     font-weight: 700;
                 }
 
@@ -678,13 +679,15 @@
         }
     }
 }
+
 /* END STRATEGIC OBJECTIVES SECTION  */
 
 /* WHY US SECTION */
-#porque{
+#porque {
     padding-top: 6rem;
     background-color: #F5F5F5;
-     .container.py-5.py-md-4 {
+
+    .container.py-5.py-md-4 {
 
         .row {
             .col-12.heading {
@@ -693,7 +696,7 @@
                 h1 {
                     font-size: 3.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
-                    color: #92CA63 !important;
+                    color: #262626 !important;
                     font-weight: 700;
                 }
 
@@ -715,8 +718,8 @@
     }
 
 
-    .container.card-container{
-        h3.mb-2{
+    .container.card-container {
+        h3.mb-2 {
             font-size: 2rem;
             font-family: "Ubuntu", Arial, sans-serif;
             text-align: justify;
@@ -724,36 +727,41 @@
             font-weight: 700;
         }
     }
-    .container-fluid{
-        background-image: url('../Assets/images/economical.jpg');
+
+    .container-fluid {
+        background-image: url('../Assets/images/lightbulb.png');
         background-size: cover;
         background-position: center center;
         padding: 0;
         height: 60vh;
+
         .card-group.row.row-cols-1.row-cols-md-2.g-2 {
             height: 35vh;
             margin: 0 5rem;
+
             .col {
                 margin-top: 1rem;
-                text-align: center!important;
+                text-align: center !important;
+
                 .card.h-100 {
-                    border: solid 1px #e9e9e9;
+                    /* border: solid 1px #e9e9e9; */
                     border-radius: 8px;
-                    background-color: #2a3b65c7;
-    
+                    background-color: #2a3b656b;
+
                     .card-body {
                         h5.card-title {
                             font-size: 1.5rem;
                             font-family: "Ubuntu", Arial, sans-serif;
-                            color: #92CA63 !important;
+                            color: #039FAC !important;
                             font-weight: 700;
-                        }   
-    
-                        i.fa-solid{
-                            color: #0de8fc;
+                        }
+
+                        i.fa-solid {
+                            color: #FFFFFF;
                             font-size: 2rem;
                         }
-                        p.card-text{
+
+                        p.card-text {
                             font-size: 1rem;
                             text-align: justify;
                             color: #FFFFFF !important;
@@ -762,7 +770,7 @@
                     }
                 }
             }
-        }    
+        }
     }
 
 
@@ -781,23 +789,561 @@
 }
 
 
+.mesh-gradient {
+    background: linear-gradient(28deg, rgba(55, 58, 53, 0.822) 22%, rgba(181, 185, 186, 0.807) 100%);
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+#parcerias {
+    height: 100vh;
+    padding-top: 6rem !important;
+    background-color: #F5F5F5;
+
+    .magicpattern {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: repeat;
+        position: relative;
+        top: 0rem;
+        z-index: 3;
+        background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient id=%22c%22 r=%22100%25%22 cx=%2250%25%22 cy=%2250%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23444cf7%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%232af598%22%2F%3E%3C%2FradialGradient%3E%3CclipPath id=%22b%22%3E%3Cpath fill=%22currentColor%22 d=%22M864 652q-60 152-212 245t-264-40Q276 724 149 612t-45-269q82-157 239-196t331-17q174 22 212 196t-22 326Z%22%2F%3E%3C%2FclipPath%3E%3Cfilter id=%22a%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E%3CfeFlood flood-color=%22%23fff%22 result=%22neutral-gray%22%2F%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22%2F%3E%3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22%2F%3E%3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E%3CfeFuncA type=%22table%22 tableValues=%220 0 0.35 0%22%2F%3E%3C%2FfeComponentTransfer%3E%3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg filter=%22url(%23a)%22 clip-path=%22url(%23b)%22%3E%3Cpath fill=%22url(%23c)%22 d=%22M864 652q-60 152-212 245t-264-40Q276 724 149 612t-45-269q82-157 239-196t331-17q174 22 212 196t-22 326Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    }
+
+    .container.py-5.py-md-4 {
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    font-size: 3.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #262626 !important;
+                    font-weight: 700;
+                }
+
+                /* .underline {
+                    height: 6px;
+                    width: 430px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                } */
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        background-image: url('../Assets/images/digital-moz.png');
+        background-position: center;
+        background-size: cover;
+        height: 543px;
+        align-content: end;
+
+        .row.g-4 {
+            margin-top: 4rem;
+            padding-bottom: 4rem;
+            justify-content: space-evenly;
+
+            .col-md-5 {
+                height: 250px;
+                /* background-color: #ffffff; */
+                z-index: 2;
+                padding: 0;
+                border-radius: 8px;
+
+                .card {
+                    /* border: solid 3px #92CA63!important; */
+                    border-radius: 8px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452) !important;
+                    background-color: #2a3b6596;
+
+                    .card-body {
+                        z-index: 4;
+
+                        h4.card-title {
+                            padding-top: 1rem;
+                            font-size: 1.5rem;
+                            font-family: "Ubuntu", Arial, sans-serif;
+                            color: #FFFFFF !important;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+
+                        p.card-text {
+                            font-size: 1rem;
+                            text-align: center;
+                            color: #F5F5F5 !important;
+                            font-weight: 400;
+                            margin: 1rem 3rem 1.5rem;
+                        }
+
+                        button.btn.btn-card {
+                            background-color: transparent;
+                            border-radius: 8px;
+                            color: #FFFFFF;
+                            font-weight: 500;
+                            border: solid 3px #8ED138;
+                        }
+
+                        button.btn.btn-card:hover {
+                            background-color: #78c935be;
+                            border-radius: 8px;
+                            color: #ffffff;
+                            font-weight: 700;
+                            border: solid 3px #92CA63;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-dialog {
+        border-radius: none !important;
+
+        .modal-content {
+            .modal-header {
+                .modal-title {
+                    font-size: 1.8rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #262626 !important;
+                    font-weight: 700;
+                    text-align: center
+                }
+            }
+
+            .modal-body {
+                .row.row-cols-1.row-cols-md-3.g-4 {
+                    .col-12 {
+                        .card {
+                            border-radius: 15px !important;
+                            background-color: #2a3b656b;
+                        }
+
+                        .card-body {
+                            border-radius: 15px !important;
+                            background-color: #60606020;
+
+                            h6.card-title {
+                                font-size: 1.3rem;
+                                font-family: "Ubuntu", Arial, sans-serif;
+                                color: black !important;
+                                font-weight: 700;
+                                text-align: center !important;
+                            }
+
+                            p.card-text {
+                                font-size: 1rem;
+                                text-align: center;
+                                color: #606060 !important;
+                                font-weight: 400;
+                                margin: 5px;
+                            }
+
+                            p.card-text.text-muted {
+                                margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                .row.row-cols-1.row-cols-md-2.g-4 {
+                    .col-12 {
+                        .card {
+                            border-radius: 15px !important;
+                        }
+
+                        .card-body {
+                            border-radius: 15px !important;
+                            background-color: #60606020;
+
+                            h6.card-title {
+                                font-size: 1.3rem;
+                                font-family: "Ubuntu", Arial, sans-serif;
+                                /* color: # !important; */
+                                font-weight: 700;
+                                text-align: center !important;
+                            }
+
+                            p.card-text {
+                                font-size: 1rem;
+                                text-align: center;
+                                color: #606060 !important;
+                                font-weight: 400;
+                                margin: 5px;
+                            }
+
+                            p.card-text.text-muted {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* SUSTENTABILIDADE */
+#sustentabilidade {
+    height: 80vh;
+    background-color: #F5F5F5 !important;
+    padding-top: 4rem;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+
+    .container.py-5.py-md-4 {
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    font-size: 3.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #262626 !important;
+                    font-weight: 700;
+                }
+
+                /* .underline {
+                    height: 6px;
+                    width: 430px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                } */
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        height: 100%;
+
+        .row {
+            height: 100%;
+
+            .col-12.col-md-8 {
+                padding: 0rem 0 0 5rem;
+
+                /* Section Content */
+                .section-content {
+                    padding: 0 3rem 0 0;
+                    align-content: center;
+
+                    h2.section-title.text-left {
+                        font-size: 35px;
+                        font-family: "Ubuntu", Arial, sans-serif;
+                        text-align: left;
+                        color: #000000 !important;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+
+                    h3.section-subtitle {
+                        font-size: 1.5rem;
+                        text-align: justify;
+                        color: #2A3B65;
+                        margin-bottom: 2rem;
+                        padding-right: 5rem;
+                        font-weight: 700;
+                        font-family: "Ubuntu", Arial, sans-serif;
+                    }
+
+                    ul.key-points {
+                        list-style-type: disc;
+                        padding-left: 20px;
+                        color: #000000;
+                        font-size: 16px;
+                        text-align: justify;
+                        margin-right: 6rem;
+                        margin-bottom: 3rem;
+
+                        li {
+                            margin-bottom: 0.5rem;
+                            line-height: 1.6;
+                        }
+                    }
+
+                    .row {
+                        .col-12 {
+                            border-left: solid 3px #8fd138;
+                            padding: 0 7rem 0 0;
+                            margin: 0 0 0 1rem;
+
+                            p.details {
+                                color: #1E3A8A;
+                                font-size: 15px;
+                                font-family: 'Ubuntu', Arial, sans-serif;
+                                text-align: center;
+                                font-weight: bolder;
+                                padding-left: 0 !important;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .col-12.col-md-4 {
+                padding: 0 !important;
+                height: 95%;
+
+                .img-fluid {
+                    margin-right: 10rem;
+                    width: 90%;
+                    width: 100%;
+                    height: 100% !important;
+                    object-fit: cover;
+                    object-position: center 20%;
+                    padding: 0;
+                    filter: saturate(1.3);
+                }
+            }
+
+        }
+    }
+}
 
 
 
+/* LIDERANÇA */
+#lideranca {
+    height: 100vh;
+    padding-top: 6rem !important;
+    background-color: #F5F5F5;
+
+    .container.py-5.py-md-4 {
+
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    font-size: 3.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #262626 !important;
+                    font-weight: 700;
+                }
+
+                /* .underline {
+                    height: 6px;
+                    width: 430px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                } */
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .container {
+        margin-top: 1rem;
+
+        .row-cols-1.row-cols-md-3.g-4 {
+            height: 100%;
+
+            .col {
+                .card {
+
+                    /* border: solid 1px #92CA63; */
+                    .card-img-top {
+                        width: 60% !important;
+                        height: 100%;
+                        margin: 0 auto;
+                        margin-top: 1rem;
+                        background-color: transparent;
+                    }
+
+                    .card-body {
+                        .card-title {
+                            font-size: 1.8rem;
+                            font-family: "Ubuntu", Arial, sans-serif;
+                            color: #262626 !important;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+
+                        .role.card-text {
+                            font-size: 1.5rem;
+                            text-align: center;
+                            color: #2A3B65;
+                            font-weight: 600;
+                        }
+
+                        .card-text {
+                            font-size: 15px;
+                            text-align: justify;
+                            color: #000000;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
 
 
 
+    }
+}
 
 
+/* CONTACT FORM */
+.contact-section {
+    background-color: #f5f5f5;
+    font-family: "Ubuntu", Arial, sans-serif;
+}
+
+.contact-info {
+    position: relative;
+    background: url(../Assets/images/digitalbuilding.png) center center/cover no-repeat;
+    color: #fff;
+    min-height: 600px;
+}
+
+.contact-info .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.719);
+}
+
+.contact-info .info-content h6 {
+    .fa-solid {
+        color: #8ED138 !important;
+    }
+
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contact-info .info-content p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.contact-section .form-control {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 0.75rem;
+}
+
+.contact-section .form-control:focus {
+    border: solid 3px;
+    border-color: #8ED138;
+    box-shadow: none;
+}
+
+.contact-section button.btn-success {
+    border-radius: 0;
+    background-color: #8fd13893;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.contact-section button.btn-success:hover {
+    background-color: #8fd138;
+}
 
 
+/* END HERO */
+#end {
+
+    min-height: 85vh;
+    background: url('../Assets/images/footer.png') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+    background-position: 3% center;
+    object-fit: cover;
+    /* background-position: 5% 0%; */
+    /* background-size: 105%; */
+    /* display: none; */
+}
 
 
+/* FOOTER */
+.footer {
+    background: var(--white);
+    padding: 2rem 0;
+    color: var(--secondary);
+    font-size: 0.95rem;
+    border-top: 1px solid #E5E7EB;
+}
 
+.footer-logo img {
+    height: 8rem;
+}
 
+.footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.2s;
+}
 
+.footer a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
 
+.linkedin-icon {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #F3F4F6;
+    border-radius: 50%;
+    padding: 4px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
 
+.linkedin-icon:hover {
+    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.12);
+    transform: scale(1.08);
+}
+
+/* Animations for scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s, transform 0.7s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
@@ -829,11 +1375,11 @@
     #inicio {
         .container {
             .row {
-                margin-top: 5rem;
+                margin-top: 4rem;
 
                 .col-6.col-sm-8.col-lg-6 {
                     img {
-                        width: 55%;
+                        width: 65%;
                     }
                 }
 
@@ -865,7 +1411,7 @@
 
     /* ABOUT SECTION */
     #sobre {
-        .container.pb-5 {
+        .container {
             h1 {
                 font-size: 2.5rem !important;
                 font-family: "Ubuntu", Arial, sans-serif;
@@ -881,9 +1427,9 @@
                 margin-left: 2px;
             } */
 
-            .col-12.col-md-6.col-lg-5 {
+            .col-12.col-md-6.h-30 {
                 margin-top: -5rem;
-                height: 495px;
+                height: 350px !important;
 
                 .about-content {
                     h5.subtitle.mb-3 {
@@ -906,15 +1452,15 @@
                 }
 
                 .indicator {
-                    width: 410px !important;
 
                     .number-indicator {
                         text-align: center;
                         width: 35px;
-                        margin: 0 auto !important;
+                        /* margin: 0 auto !important; */
                         position: relative;
                         background-color: #039FAC;
                         top: 17px;
+                        left: -2.5rem;
                         z-index: 3;
                         border-radius: 50%;
                         height: 35px;
@@ -925,7 +1471,7 @@
                     }
 
                     .indicator-line {
-                        width: 100%;
+                        width: 500px !important;
                         background-color: #039FAC;
                         height: 5px;
                         position: relative;
@@ -939,6 +1485,8 @@
 
     /* SERVICES SECTION */
     #servicos {
+        padding-top: 1rem;
+
         .container {
             h1 {
                 font-size: 2.5rem !important;
