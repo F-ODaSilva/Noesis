@@ -45,7 +45,7 @@
 
             .col-lg-6 {
                 position: relative;
-                left: 8rem;
+                left: 5rem;
                 top: 6rem;
                 margin-top: 0;
 
@@ -154,7 +154,7 @@
                         width: 40px;
                         margin: 0 auto !important;
                         position: relative;
-                        background-color: #039FAC;
+                        background-color: #1E3A8A;
                         top: 17px;
                         z-index: 3;
                         border-radius: 50%;
@@ -167,7 +167,7 @@
 
                     .indicator-line {
                         width: 100%;
-                        background-color: #039FAC;
+                        background-color: #1E3A8A;
                         height: 5px;
                         position: relative;
                         border-radius: 20px;
@@ -259,7 +259,7 @@
     width: 40px;
     margin: 0 auto !important;
     position: relative;
-    background-color: #039FAC;
+    background-color: #1E3A8A;
     top: 17px;
     z-index: 3;
     border-radius: 50%;
@@ -275,7 +275,7 @@
 #sobre .vision-content .mision-indicator .indicator-line,
 #sobre .mission-content .mision-indicator .indicator-line {
     width: 100%;
-    background-color: #039FAC;
+    background-color: #1E3A8A;
     height: 5px;
     position: relative;
     border-radius: 20px;
@@ -772,7 +772,7 @@
                 .card.h-100 {
                     /* border: solid 1px #e9e9e9; */
                     border-radius: 8px;
-                    background-color: #2a3b656b;
+                    background-color: #2a3b65cb;
 
                     .card-body {
                         h5.card-title {
@@ -893,7 +893,7 @@
                     /* border: solid 3px #92CA63!important; */
                     border-radius: 8px;
                     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452) !important;
-                    background-color: #2a3b6596;
+                    background-color: #2a3b65cb;
 
                     .card-body {
                         z-index: 4;
@@ -957,7 +957,7 @@
                     .col-12 {
                         .card {
                             border-radius: 15px !important;
-                            background-color: #2a3b656b !important;
+                            background-color: #2a3b65cb !important;
                         }
 
                         .card-body {
@@ -1018,7 +1018,7 @@
                                 font-size: 1rem;
                                 text-align: center;
                                 color: white !important;
-                                font-weight: 400;
+                                font-weight: lighter;
                                 margin: 5px;
                             }
 
@@ -1101,7 +1101,7 @@
     .sustainability-card {
         position: relative;
         z-index: 2;
-        background-color: rgba(255, 255, 255, 0.92);
+        background-color: rgba(240, 240, 240, 0.92);
         border-radius: 12px;
         padding: 2rem;
         color: #000;
@@ -1203,6 +1203,8 @@
         width: 100%;
         height: 560px;
         margin-top: -6.6rem;
+        /* height: 670px;
+        margin-top: -11.7rem; */
         background: rgba(1, 40, 43, 0.699);
         z-index: 0;
         padding: 0;
