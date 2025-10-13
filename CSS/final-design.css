@@ -13,6 +13,25 @@
 
 /* HERO */
 #inicio {
+    #cyber-left {
+        height: 10rem;
+        width: 30%;
+        position: absolute;
+        top: 11rem;
+        left: 0;
+        z-index: 5;
+    }
+
+    #cyber-right {
+        height: 9rem;
+        width: 19%;
+        position: absolute;
+        top: 50rem;
+        right: 0;
+        z-index: 5;
+        display: none;
+    }
+
     .container {
         .row {
             margin-top: 2rem;
@@ -24,15 +43,14 @@
             }
 
             .col-lg-6 {
+                position: relative;
+                left: 12rem;
+                top: 8rem;
+                margin-top: 0;
 
-                /* h1 {
-                    font-size: 4rem;
-                    font-family: "Ubuntu", Arial, sans-serif;
-                    margin-right: -3rem !important;
-                } */
                 img.img-fluid {
-                    width: 28rem;
-                    margin-bottom: 2rem;
+                    width: 20rem !important;
+                    /* margin-bottom: 2rem; */
                 }
 
                 p {
@@ -63,6 +81,14 @@
 #sobre {
     background-color: #F5F5F5;
     padding-top: 3rem;
+
+    #cyber-right-about {
+        position: absolute;
+        width: 25%;
+        right: 0;
+        z-index: 5;
+    }
+
 
     .container {
         .row {
@@ -931,26 +957,30 @@
                     .col-12 {
                         .card {
                             border-radius: 15px !important;
-                            background-color: #2a3b656b;
+                            background-color: #2a3b656b !important;
                         }
 
                         .card-body {
                             border-radius: 15px !important;
-                            background-color: #60606020;
+                            background-color: #2a3b65cb;
 
                             h6.card-title {
                                 font-size: 1.3rem;
                                 font-family: "Ubuntu", Arial, sans-serif;
-                                color: black !important;
+                                color: #FFFFFF !important;
                                 font-weight: 700;
                                 text-align: center !important;
+
+                                i.fa-solid {
+                                    color: #92CA63;
+                                }
                             }
 
                             p.card-text {
                                 font-size: 1rem;
                                 text-align: center;
-                                color: #606060 !important;
-                                font-weight: 400;
+                                color: #F5F5F5 !important;
+                                font-weight: light;
                                 margin: 5px;
                             }
 
@@ -965,24 +995,29 @@
                     .col-12 {
                         .card {
                             border-radius: 15px !important;
+                            background-color: #2a3b65cb !important;
                         }
 
                         .card-body {
                             border-radius: 15px !important;
-                            background-color: #60606020;
+                            background-color: #2a3b65cb !important;
 
                             h6.card-title {
                                 font-size: 1.3rem;
                                 font-family: "Ubuntu", Arial, sans-serif;
-                                /* color: # !important; */
+                                color: white !important;
                                 font-weight: 700;
                                 text-align: center !important;
+
+                                i.fa-solid {
+                                    color: #92CA63;
+                                }
                             }
 
                             p.card-text {
                                 font-size: 1rem;
                                 text-align: center;
-                                color: #606060 !important;
+                                color: white !important;
                                 font-weight: 400;
                                 margin: 5px;
                             }
@@ -997,20 +1032,140 @@
 }
 
 
-/* SUSTENTABILIDADE */
+/* SUSTAINABILITY SECTION */
+/* Sustainability background image */
 #sustentabilidade {
-    height: 80vh;
-    background-color: #F5F5F5 !important;
-    padding-top: 4rem;
-    margin-top: -1rem;
-    margin-bottom: 3rem;
-
     .container.py-5.py-md-4 {
+        padding-bottom: 0 !important;
+
         .row {
             .col-12.heading {
                 text-align: start;
 
                 h1 {
+                    padding-top: 2rem;
+                    font-size: 2.5rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: #262626 !important;
+                    font-weight: 700;
+                }
+
+                /* .underline {
+                    height: 6px;
+                    width: 430px;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                } */
+
+                p {
+                    font-size: 1.1rem;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    .container.mb-3 {
+        h3.section-subtitle {
+            font-size: 1.3rem;
+            font-family: "Ubuntu", Arial, sans-serif;
+            color: #2A3B65 !important;
+            font-weight: 700;
+            text-align: justify;
+            margin-right: 45px;
+        }
+    }
+
+    .sustainability-bg {
+        background: url("../Assets/images/sustainability-4.jpg") center center/cover no-repeat;
+        height: 55vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 4rem 0;
+    }
+
+    .sustainability-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 30, 20, 0.65);
+        z-index: 0;
+    }
+
+    /* Sustainability content card */
+    .sustainability-card {
+        position: relative;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.92);
+        border-radius: 12px;
+        padding: 2rem;
+        color: #000;
+        backdrop-filter: blur(6px);
+        height: 350px;
+    }
+
+    .sustainability-card ul li {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #111;
+    }
+
+    .sustainability-card strong {
+        color: #006B3F;
+    }
+
+    /* Sustainability Footer (quote section) */
+    .sustainability-footer {
+        background-color: #eaf4e2;
+        border-top: 4px solid #8fd138;
+    }
+
+    .sustainability-footer .details {
+        color: #1E3A8A;
+        font-size: 1.1rem;
+        font-family: "Ubuntu", Arial, sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sustainability-bg {
+        justify-content: center;
+        padding: 3rem 1rem;
+    }
+
+    .sustainability-card {
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+
+    .sustainability-footer .details {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+
+#implementacao {
+    .container.py-5.py-md-4 {
+        padding-bottom: 0 !important;
+
+        .row {
+            .col-12.heading {
+                text-align: start;
+
+                h1 {
+                    padding-top: 2rem;
                     font-size: 3.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
                     color: #262626 !important;
@@ -1028,100 +1183,107 @@
                 p {
                     font-size: 1.1rem;
                     text-align: start;
-                    margin-left: 0.5rem;
                 }
             }
         }
     }
 
     .container-fluid {
-        height: 100%;
+        background-image: url("../Assets/images/sustainability-5.jpg");
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-content: center;
+    }
 
-        .row {
-            height: 100%;
+    .container-fluid::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 560px;
+        margin-top: -6.6rem;
+        background: rgba(1, 40, 43, 0.699);
+        z-index: 0;
+        padding: 0;
+        margin-left: 0;
+        left: 0;
+        align-content: center
+    }
 
-            .col-12.col-md-8 {
-                padding: 0rem 0 0 5rem;
+    .horizontal-timeline {
+        margin-top: 5rem;
 
-                /* Section Content */
-                .section-content {
-                    padding: 0 3rem 0 0;
-                    align-content: center;
+        h5.pt-2 {
+            color: #02adbd;
+            font-weight: 800;
+            font-size: 1.5rem !important;
+            font-family: "Ubuntu", Arial, sans-serif;
+            padding-top: 0 !important;
+            margin-top: -10px !important;
+        }
 
-                    h2.section-title.text-left {
-                        font-size: 35px;
-                        font-family: "Ubuntu", Arial, sans-serif;
-                        text-align: left;
-                        color: #000000 !important;
-                        font-weight: 700;
-                        margin-bottom: 1rem;
-                    }
+        p {
+            color: white!important;
+            font-size: 1rem;
+            font-family: "Ubuntu", Arial, sans-serif;
+            font-weight: 500;
 
-                    h3.section-subtitle {
-                        font-size: 1.5rem;
-                        text-align: justify;
-                        color: #2A3B65;
-                        margin-bottom: 2rem;
-                        padding-right: 5rem;
-                        font-weight: 700;
-                        font-family: "Ubuntu", Arial, sans-serif;
-                    }
+        }
 
-                    ul.key-points {
-                        list-style-type: disc;
-                        padding-left: 20px;
-                        color: #000000;
-                        font-size: 16px;
-                        text-align: justify;
-                        margin-right: 6rem;
-                        margin-bottom: 3rem;
+        .btn.btn-primary.btn-sm {
+            font-size: 1rem;
+            font-family: "Ubuntu", Arial, sans-serif;
+            color: white;
+            font-weight: 400;
+            border: solid 3px #8ED138 !important;
+            background-color: transparent !important;
+        }
+    }
 
-                        li {
-                            margin-bottom: 0.5rem;
-                            line-height: 1.6;
-                        }
-                    }
+    .horizontal-timeline .items {
+        border-top: 3px solid #e9ecef;
+    }
 
-                    .row {
-                        .col-12 {
-                            border-left: solid 3px #8fd138;
-                            padding: 0 7rem 0 0;
-                            margin: 0 0 0 1rem;
+    .horizontal-timeline .items .items-list {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        margin-right: 0;
+    }
 
-                            p.details {
-                                color: #1E3A8A;
-                                font-size: 15px;
-                                font-family: 'Ubuntu', Arial, sans-serif;
-                                text-align: center;
-                                font-weight: bolder;
-                                padding-left: 0 !important;
-                            }
-                        }
-                    }
-                }
+    .horizontal-timeline .items .items-list:before {
+        content: "";
+        position: absolute;
+        height: 36px;
+        border-right: 2px dashed #dee2e6;
+        top: 0;
+    }
 
-            }
+    .horizontal-timeline .items .items-list .event-date {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        width: 75px;
+        margin: 0 auto;
+        font-size: 0.9rem;
+        padding-top: 8px;
+    }
 
-            .col-12.col-md-4 {
-                padding: 0 !important;
-                height: 95%;
+    @media (min-width: 1140px) {
+        .horizontal-timeline .items .items-list {
+            display: inline-block;
+            width: 33%;
+            padding-top: 45px;
+        }
 
-                .img-fluid {
-                    margin-right: 10rem;
-                    width: 90%;
-                    width: 100%;
-                    height: 100% !important;
-                    object-fit: cover;
-                    object-position: center 20%;
-                    padding: 0;
-                    filter: saturate(1.3);
-                }
-            }
-
+        .horizontal-timeline .items .items-list .event-date {
+            top: -40px;
         }
     }
 }
-
 
 
 /* LIDERANÇA */
@@ -1168,6 +1330,7 @@
 
             .col {
                 .card {
+                    border-radius: 20px;
 
                     /* border: solid 1px #92CA63; */
                     .card-img-top {
@@ -1244,7 +1407,7 @@
 
 .contact-info .info-content p {
     font-size: 0.95rem;
-    opacity: 0.9;
+    color: #FFFFFF;
 }
 
 .contact-section .form-control {
@@ -1356,29 +1519,29 @@
     /* NAVBAR SCTION */
     #sticky-wrapper {
         height: 95px !important;
-    }
 
-    .site-navbar-wrap {
-        /* top: -3rem !important; */
+        .site-navbar-wrap {
+            /* top: -3rem !important; */
 
-        .site-navbar-top {
-            .container.py-3 {
-                padding-top: 0.5rem !important;
+            .site-navbar-top {
+                .container.py-3 {
+                    padding-top: 0.5rem !important;
+                }
             }
         }
-    }
 
-    .site-navbar .site-logo a {
-        font-weight: 200;
-        color: #262626;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+        .site-navbar .site-logo a {
+            font-weight: 200;
+            color: #262626;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-    .site-navbar .site-navigation .site-menu>li>a {
-        font-size: 13px;
-        padding: 26px 7px;
+        .site-navbar .site-navigation .site-menu>li>a {
+            font-size: 13px;
+            padding: 26px 7px;
+        }
     }
 
     /* HERO SECTION */
@@ -1389,7 +1552,7 @@
             position: absolute;
             top: 11rem;
             left: 0;
-            z-index:  5 ;
+            z-index: 5;
         }
 
         #cyber-right {
@@ -1399,11 +1562,13 @@
             top: 40rem;
             right: 0;
             z-index: 5;
+            display: contents;
         }
+
         .container {
             .row {
                 margin-top: 2rem;
-    
+
                 .col-6.col-sm-8.col-lg-6 {
                     img {
                         width: 58% !important;
@@ -1412,28 +1577,28 @@
                         top: 4.5rem;
                     }
                 }
-    
+
                 .col-lg-6 {
                     position: relative;
                     left: 7rem;
                     top: 3rem;
                     margin-top: 0;
-    
-                    img.img-fluid.logo{
+
+                    img.img-fluid.logo {
                         width: 25rem !important;
-                    } 
+                    }
                 }
-    
+
                 h1 {
                     font-size: 3rem;
                 }
-    
+
                 p {
                     font-size: 1rem;
                     font-family: "Ubuntu", Arial, sans-serif;
                     font-weight: 400;
                 }
-    
+
                 .btn.btn-primary.btn-lg.px-4 {
                     font-size: 1.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
@@ -1442,7 +1607,7 @@
                     border: solid 3px #92CA63 !important;
                     background-color: transparent;
                 }
-    
+
                 .btn.btn-primary.btn-lg.px-4:hover {
                     background-color: #8ED138;
                 }
@@ -1450,18 +1615,18 @@
         }
     }
 
-    
     /* ABOUT SECTION */
     #sobre {
         padding-top: 5rem;
+
         .container {
             h1 {
-                font-size: 2.5rem !important;
+                font-size: 3rem !important;
                 font-family: "Ubuntu", Arial, sans-serif;
                 color: #92CA63 !important;
                 font-weight: 700;
             }
-    
+
             /* .underline {
                     height: 8px;
                     width: 200px !important;
@@ -1469,11 +1634,11 @@
                     border-radius: 20px;
                     margin-left: 2px;
                 } */
-    
+
             .col-12.col-md-6.h-30 {
                 margin-top: -5rem;
                 height: 350px !important;
-    
+
                 .about-content {
                     h5.subtitle.mb-3 {
                         font-size: 1.2rem !important;
@@ -1483,7 +1648,7 @@
                         text-align: justify;
                         margin-right: 45px;
                     }
-    
+
                     p {
                         font-family: "Ubuntu", Arial, sans-serif;
                         font-size: 1rem !important;
@@ -1493,15 +1658,15 @@
                         font-weight: 400;
                     }
                 }
-    
+
                 .indicator {
-    
+
                     .number-indicator {
                         text-align: center;
                         width: 35px;
                         /* margin: 0 auto !important; */
                         position: relative;
-                        background-color: #1E3A8A!important;
+                        background-color: #1E3A8A !important;
                         top: 17px;
                         left: -2.5rem;
                         z-index: 3;
@@ -1512,10 +1677,10 @@
                         padding: 2px;
                         padding-top: 5px;
                     }
-    
+
                     .indicator-line {
                         width: 500px !important;
-                        background-color: #1E3A8A!important;
+                        background-color: #1E3A8A !important;
                         height: 5px;
                         position: relative;
                         border-radius: 20px;
@@ -1525,11 +1690,11 @@
             }
         }
     }
-    
+
     /* SERVICES SECTION */
     #servicos {
         padding-top: 1rem;
-    
+
         .container {
             h1 {
                 font-size: 2.5rem !important;
@@ -1537,7 +1702,7 @@
                 color: #92CA63 !important;
                 font-weight: 700;
             }
-    
+
             /* .underline {
                     height: 8px;
                     width: 280px !important;
@@ -1546,7 +1711,7 @@
                     margin-left: 2px;
                 } */
         }
-    
+
         .container-fluid.cards-container {
             height: 70vh;
             align-content: center;
@@ -1555,41 +1720,41 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-    
+
             .row.row-cols-1.row-cols-md-3.g-4 {
                 height: 50vh;
                 margin: 0 6rem;
-    
+
                 .col {
                     .card.h-100 {
                         border: solid 3px #92CA63;
                         border-radius: 0;
                         background-color: #2a3b65b3;
-    
+
                         .card-body {
-    
+
                             span.service-icon {
                                 font-size: 1.8rem;
                                 color: #FFFFFF !important;
                             }
-    
+
                             h5.card-title {
                                 font-size: 1.4rem;
                                 font-family: "Ubuntu", Arial, sans-serif;
                                 color: #8ED138 !important;
                                 font-weight: 700;
                             }
-    
+
                             h5.card-title.last {
                                 font-size: 1.28rem;
                             }
-    
+
                             p.card-text {
                                 font-size: 15px;
                                 color: whitesmoke;
                                 text-align: justify;
                             }
-    
+
                             p.card-text.first {
                                 word-spacing: 0px;
                             }
@@ -1599,13 +1764,13 @@
             }
         }
     }
-    
+
     /* DIFERENCIAIS SECTION */
     #diferenciais {
         .carousel-section {
             height: 60vh;
             min-height: 450px;
-    
+
             .carousel {
                 .carousel-inner {
                     .carousel-item {
@@ -1615,17 +1780,17 @@
                                     .col-lg-9.col-md-8.col-sm-8 {
                                         .caption-content {
                                             padding: 25px;
-    
+
                                             .caption-title {
                                                 font-size: 1.8rem;
                                             }
-    
+
                                             .caption-text {
                                                 font-size: 1rem;
                                             }
                                         }
                                     }
-    
+
                                     .col-lg-3.col-md-4.col-sm-4 {
                                         .slide-number {
                                             .number {
@@ -1640,11 +1805,16 @@
                 }
             }
         }
-        .carousel-item:nth-child(3){
-            .carousel-bg{
+
+        .carousel-item:nth-child(3) {
+            .carousel-bg {
                 background-position: center -30rem !important;
             }
         }
+    }
+
+    #sustentabilidade {
+        .container {}
     }
 }
 

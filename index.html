@@ -201,7 +201,8 @@
   <!-- END NAVBAR -->
 
   <!-- HERO -->
-  <section id="inicio" class="hero" style="background-image: url('Assets/images/hero-image-2.png'); background-attachment: local;">
+  <section id="inicio" class="hero"
+    style="background-image: url('Assets/images/hero-image-2.png'); background-attachment: local;">
     <img src="Assets/images/tech-el-04@3x.png" alt="" class="cyber-element" id="cyber-left">
     <img src="Assets/images/tech-el-05@3x.png" alt="" class="cyber-element" id="cyber-right">
     <div class="container col-xxl-8 px-4 py-5">
@@ -217,7 +218,9 @@
           <p data-key="hero.subtitle" class="lead">Acelerando a transformação digital de Moçambique entregando soluções
             inteligentes e inovadoras para centros de dados e ativos digitais em Moçambique</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button data-key="hero.cta" type="button" class="btn btn-primary btn-md px-4 me-md-2">Contactar</button>
+            <a href="#contact">
+              <button data-key="hero.cta" type="button" class="btn btn-primary btn-md px-4 me-md-2">Contactar</button>
+            </a>
           </div>
         </div>
       </div>
@@ -228,6 +231,7 @@
 
   <!-- ABOUT SECTION -->
   <section id="sobre" class="about">
+    <img src="Assets/images/tech-el-03@3x.png" class="img-fluid cyber-element" id="cyber-right-about" alt="">
     <div class="container py-5 py-md-4">
       <div class="row">
         <div class="col-12 heading">
@@ -841,69 +845,142 @@
   <!-- END PARTNERSHIPS -->
 
   <!-- SUSTAINABILITY SECTION -->
-  <section id="sustentabilidade">
-    <div class="container py-5 py-md-4 pb-md-1">
+  <section id="sustentabilidade" class="py-5 pb-0 bg-light">
+    <!-- Heading -->
+    <div class="container py-5 py-md-4">
       <div class="row">
         <div class="col-12 heading">
-          <h1 data-key="sustainability.title" class="section-title text-left slide-right mb-3">
+          <h1 data-key="sustainability.title" class="section-title text-left fw-bold">
             Compromisso com a Sustentabilidade
           </h1>
-          <div class="underline mb-3"></div>
-          <p data-key="sustainability.titletext">Conheceça o nosso compromisso com a sustentabilidade</h3>
+          <div class="underline"></div>
+          <p data-key="sustainability.titletext" class="text-muted">
+            Conheça o nosso compromisso com a sustentabilidade.
+          </p>
         </div>
       </div>
     </div>
-    <!-- <h2 data-key="sustainability.title" class="section-title text-left slide-right mb-3">
-      Compromisso com a Sustentabilidade
-    </h2> -->
-    <div class="container-fluid h-100">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <div class="section-content">
-            <h3 data-key="sustainability.subtitle" class="section-subtitle">A NOESIS está comprometida com practicas
-              sustentaveis em todas as suas
-              operações, integrando responsabilidade ambiental com inovação tecnológica para criar valor duradouro:
-            </h3>
 
-            <!-- Pontos Chaves -->
-            <ul class="key-points">
-              <li data-key="sustainability.text1" class="list-items">
-                <strong>Utilização eficiente de recursos energéticos</strong>
-                através de tecnologias avançadas de gestão de energia.
-              </li>
-              <li data-key="sustainability.text2" class="list-items">
-                <strong>Sistemas de arrefecimentode alta eficiéncia</strong>
-                que reduzem o consumo energético em até 40%.
-              </li>
-              <li data-key="sustainability.text3" class="list-items">
-                <strong>Economia circular de </strong>
-                e aproveitamneto inteligente de energia excedente para outras aplicações.
-              </li>
-              <li data-key="sustainability.text4" class="list-items">
-                <strong>Desenvolvimento socioeconomico</strong>
-                das comunidades locais através de programas de desenvolvimento de capacitação e emprego.
-              </li>
-            </ul>
+    <!-- Subtitle outside the background -->
+    <div class="container mb-3">
+      <h3 data-key="sustainability.subtitle" class="section-subtitle text-justify fw-semibold">
+        A NOESIS está comprometida com práticas sustentáveis em todas as suas operações, integrando responsabilidade
+        ambiental com inovação tecnológica para criar valor duradouro:
+      </h3>
+    </div>
 
-            <div class="row">
-              <div class="col-12">
-                <p data-key="sustainability.text5" class="details">
-                  <span>"</span> Nosso compromisso é criar valor digital com responsabilidade ambiental, garantindo que
-                  o progresso tecnologico contribua para um futuro mais sustentável e inclusivo para Moçambique e suas
-                  comunidades<span>"</span>
-                </p>
-              </div>
+    <!-- FULL-WIDTH BACKGROUND IMAGE (content area) -->
+    <div class="container-fluid sustainability-bg d-flex align-items-center">
+      <div class="row justify-content-end w-100">
+        <div class="col-md-5 col-lg-6 me-lg-5">
+          <div class="card sustainability-card shadow-lg border-0">
+            <div class="card-body">
+              <ul class="list-unstyled key-points mb-0">
+                <li class="mb-3">
+                  <strong>Utilização eficiente de recursos energéticos:</strong>
+                  através de tecnologias avançadas de gestão de energia.
+                </li>
+                <li class="mb-3">
+                  <strong>Sistemas de arrefecimento de alta eficiência:</strong>
+                  que reduzem o consumo energético em até 40%.
+                </li>
+                <li class="mb-3">
+                  <strong>Economia circular:</strong>
+                  aproveitamento inteligente de energia excedente para outras aplicações.
+                </li>
+                <li class="mb-0">
+                  <strong>Desenvolvimento socioeconómico:</strong>
+                  programas de capacitação e emprego nas comunidades locais.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- RIGHT: Image -->
-        <div class="col-12 col-md-4 text-center">
-          <img src="Assets/images/green-energy.png" alt="Mozambique Digital Future" class="img-fluid shadow">
-        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER QUOTE -->
+    <div class="sustainability-footer py-3 text-center">
+      <div class="container">
+        <p class="details fw-bold">
+          "<em>Nosso compromisso é criar valor digital com responsabilidade ambiental, garantindo que o progresso
+            tecnológico
+            contribua para um futuro mais sustentável e inclusivo para Moçambique e suas comunidades.</em>"
+        </p>
       </div>
     </div>
   </section>
   <!-- END SUSTAINABILITY -->
+
+  <!-- TIMELINE SECTION -->
+  <section id="implementacao" class="py-5 pb-2">
+    <div class="container">
+      <div class="container py-5 py-md-4 pb-md-1">
+        <div class="row">
+          <div class="col-12 heading">
+            <h1 data-key="leadership.title" class="section-title mb-0">Implementação</h2>
+              <div class="underline mb-3"></div>
+              <p data-key="leadership.subtitle" class="text-muted">Explore as fases que dão vida aos nossos projetos
+                </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-5">
+
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="horizontal-timeline">
+
+            <ul class="list-inline items">
+              <li class="list-inline-item items-list">
+                <div class="px-4">
+                  <div class="event-date badge bg-info">1</div>
+                  <h5 class="pt-2">Fase de Preparação</h5>
+                  <p class="text-muted">Estabelecimento de parcerias estratégicas com fornecedores de energia e obtenção
+                    de todas as aprovações regulatórias necessárias. Inclui estudos de viabilidade
+                    detalhados e estruturação financeira do projeto.</p>
+                  <div>
+                    <a href="#contact" data-mdb-ripple-init class="btn btn-primary btn-sm">Saber Mais</a>
+                  </div>
+                </div>
+              </li>
+              <li class="list-inline-item items-list">
+                <div class="px-4">
+                  <div class="event-date badge bg-success">2</div>
+                  <h5 class="pt-2">Projeto Piloto</h5>
+                  <p class="text-muted">Construção do data center inicial com capacidade de 5 MW e implementação da
+                    infraestrutura base, incluindo sistemas de arrefecimento, segurança e conectividade.
+                    Fase de teste e otimização operacional.
+                  </p>
+                  <div>
+                    <a href="#" data-mdb-ripple-init class="btn btn-primary btn-sm">Saber Mais</a>
+                  </div>
+                </div>
+              </li>
+              <li class="list-inline-item items-list">
+                <div class="px-4">
+                  <div class="event-date badge bg-danger">3</div>
+                  <h5 class="pt-2">Expansão Estratégica</h5>
+                  <p class="text-muted">Ampliação da capacidade para 100 MW e diversificação dos serviços oferecidos,
+                    incluindo cloud computing, edge computing e serviços especializados para
+                    blockchain e inteligência artificial. </p>
+                  <div>
+                    <a href="#" data-mdb-ripple-init class="btn btn-primary btn-sm">Saber Mais</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END TIMELINE -->
+
 
   <!-- LEADERSHIP SECTION -->
   <section id="lideranca">
