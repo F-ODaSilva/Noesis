@@ -438,7 +438,7 @@
                 .card.h-100 {
                     border: solid 3px #92CA63;
                     border-radius: 0;
-                    background-color: #575757f6;
+                    background-color: #2a3b65b3;
 
                     .card-body {
 
@@ -1358,6 +1358,16 @@
         height: 95px !important;
     }
 
+    .site-navbar-wrap {
+        /* top: -3rem !important; */
+
+        .site-navbar-top {
+            .container.py-3 {
+                padding-top: 0.5rem !important;
+            }
+        }
+    }
+
     .site-navbar .site-logo a {
         font-weight: 200;
         color: #262626;
@@ -1373,44 +1383,77 @@
 
     /* HERO SECTION */
     #inicio {
+        #cyber-left {
+            height: 6.5rem;
+            width: 30%;
+            position: absolute;
+            top: 11rem;
+            left: 0;
+            z-index:  5 ;
+        }
+
+        #cyber-right {
+            height: 4.5rem;
+            width: 15%;
+            position: absolute;
+            top: 40rem;
+            right: 0;
+            z-index: 5;
+        }
         .container {
             .row {
-                margin-top: 4rem;
-
+                margin-top: 2rem;
+    
                 .col-6.col-sm-8.col-lg-6 {
                     img {
-                        width: 65%;
+                        width: 58% !important;
+                        position: relative;
+                        left: -4rem;
+                        top: 4.5rem;
                     }
                 }
-
+    
                 .col-lg-6 {
-                    h1 {
-                        font-size: 3rem;
-                    }
-
-                    p {
-                        font-size: 1rem;
-                    }
-
-                    .btn.btn-primary.btn-lg.px-4 {
-                        font-size: 1.2rem;
-                        font-family: "Ubuntu", Arial, sans-serif;
-                        color: white;
-                        font-weight: 400;
-                        border: solid 3px #8ED138 !important;
-                        background-color: transparent;
-                    }
-
-                    .btn.btn-primary.btn-lg.px-4:hover {
-                        background-color: #8ED138;
-                    }
+                    position: relative;
+                    left: 7rem;
+                    top: 3rem;
+                    margin-top: 0;
+    
+                    img.img-fluid.logo{
+                        width: 25rem !important;
+                    } 
+                }
+    
+                h1 {
+                    font-size: 3rem;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    font-weight: 400;
+                }
+    
+                .btn.btn-primary.btn-lg.px-4 {
+                    font-size: 1.2rem;
+                    font-family: "Ubuntu", Arial, sans-serif;
+                    color: white;
+                    font-weight: 400;
+                    border: solid 3px #92CA63 !important;
+                    background-color: transparent;
+                }
+    
+                .btn.btn-primary.btn-lg.px-4:hover {
+                    background-color: #8ED138;
                 }
             }
         }
     }
 
+    
     /* ABOUT SECTION */
     #sobre {
+        padding-top: 5rem;
         .container {
             h1 {
                 font-size: 2.5rem !important;
@@ -1418,19 +1461,19 @@
                 color: #92CA63 !important;
                 font-weight: 700;
             }
-
+    
             /* .underline {
-                height: 8px;
-                width: 200px !important;
-                background-color: #039FAC;
-                border-radius: 20px;
-                margin-left: 2px;
-            } */
-
+                    height: 8px;
+                    width: 200px !important;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                } */
+    
             .col-12.col-md-6.h-30 {
                 margin-top: -5rem;
                 height: 350px !important;
-
+    
                 .about-content {
                     h5.subtitle.mb-3 {
                         font-size: 1.2rem !important;
@@ -1440,7 +1483,7 @@
                         text-align: justify;
                         margin-right: 45px;
                     }
-
+    
                     p {
                         font-family: "Ubuntu", Arial, sans-serif;
                         font-size: 1rem !important;
@@ -1450,15 +1493,15 @@
                         font-weight: 400;
                     }
                 }
-
+    
                 .indicator {
-
+    
                     .number-indicator {
                         text-align: center;
                         width: 35px;
                         /* margin: 0 auto !important; */
                         position: relative;
-                        background-color: #039FAC;
+                        background-color: #1E3A8A!important;
                         top: 17px;
                         left: -2.5rem;
                         z-index: 3;
@@ -1469,10 +1512,10 @@
                         padding: 2px;
                         padding-top: 5px;
                     }
-
+    
                     .indicator-line {
                         width: 500px !important;
-                        background-color: #039FAC;
+                        background-color: #1E3A8A!important;
                         height: 5px;
                         position: relative;
                         border-radius: 20px;
@@ -1482,11 +1525,11 @@
             }
         }
     }
-
+    
     /* SERVICES SECTION */
     #servicos {
         padding-top: 1rem;
-
+    
         .container {
             h1 {
                 font-size: 2.5rem !important;
@@ -1494,16 +1537,16 @@
                 color: #92CA63 !important;
                 font-weight: 700;
             }
-
+    
             /* .underline {
-                height: 8px;
-                width: 280px !important;
-                background-color: #039FAC;
-                border-radius: 20px;
-                margin-left: 2px;
-            } */
+                    height: 8px;
+                    width: 280px !important;
+                    background-color: #039FAC;
+                    border-radius: 20px;
+                    margin-left: 2px;
+                } */
         }
-
+    
         .container-fluid.cards-container {
             height: 70vh;
             align-content: center;
@@ -1512,41 +1555,41 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-
+    
             .row.row-cols-1.row-cols-md-3.g-4 {
                 height: 50vh;
                 margin: 0 6rem;
-
+    
                 .col {
                     .card.h-100 {
                         border: solid 3px #92CA63;
                         border-radius: 0;
-                        background-color: #3c3c3cc0;
-
+                        background-color: #2a3b65b3;
+    
                         .card-body {
-
+    
                             span.service-icon {
                                 font-size: 1.8rem;
                                 color: #FFFFFF !important;
                             }
-
+    
                             h5.card-title {
                                 font-size: 1.4rem;
                                 font-family: "Ubuntu", Arial, sans-serif;
                                 color: #8ED138 !important;
                                 font-weight: 700;
                             }
-
+    
                             h5.card-title.last {
                                 font-size: 1.28rem;
                             }
-
+    
                             p.card-text {
                                 font-size: 15px;
                                 color: whitesmoke;
                                 text-align: justify;
                             }
-
+    
                             p.card-text.first {
                                 word-spacing: 0px;
                             }
@@ -1556,13 +1599,13 @@
             }
         }
     }
-
+    
     /* DIFERENCIAIS SECTION */
     #diferenciais {
         .carousel-section {
             height: 60vh;
             min-height: 450px;
-
+    
             .carousel {
                 .carousel-inner {
                     .carousel-item {
@@ -1572,17 +1615,17 @@
                                     .col-lg-9.col-md-8.col-sm-8 {
                                         .caption-content {
                                             padding: 25px;
-
+    
                                             .caption-title {
                                                 font-size: 1.8rem;
                                             }
-
+    
                                             .caption-text {
                                                 font-size: 1rem;
                                             }
                                         }
                                     }
-
+    
                                     .col-lg-3.col-md-4.col-sm-4 {
                                         .slide-number {
                                             .number {
@@ -1597,8 +1640,15 @@
                 }
             }
         }
+        .carousel-item:nth-child(3){
+            .carousel-bg{
+                background-position: center -30rem !important;
+            }
+        }
     }
 }
+
+
 
 /* Desktops: 1281px - 1440px */
 @media (min-width: 1285px) and (max-width: 1440px) {
