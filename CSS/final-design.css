@@ -1584,13 +1584,14 @@
                         position: relative;
                         left: -4rem;
                         top: 4.5rem;
+                        margin-top: -5rem !important;
                     }
                 }
 
                 .col-lg-6 {
                     position: relative;
                     left: 7rem;
-                    top: 3rem;
+                    top: 5rem;
                     margin-top: 0;
 
                     img.img-fluid.logo {
