@@ -29,7 +29,6 @@
         top: 50rem;
         right: 0;
         z-index: 5;
-        display: none;
     }
 
     .container {
@@ -37,20 +36,21 @@
             margin-top: 2rem;
 
             .col-6.col-sm-8.col-lg-6 {
-                img {
-                    width: 75%;
+                img.mx-lg-auto {
+                    width: 65% !important;
+                    /* top: 12rem !important; */
+                    margin-top: 6rem;
                 }
             }
 
             .col-lg-6 {
                 position: relative;
-                left: 12rem;
-                top: 8rem;
+                left: 8rem;
+                top: 6rem;
                 margin-top: 0;
 
                 img.img-fluid {
-                    width: 20rem !important;
-                    /* margin-bottom: 2rem; */
+                    width: 35rem !important;
                 }
 
                 p {
@@ -68,7 +68,7 @@
                 }
 
                 .btn.btn-primary.btn-md.px-4:hover {
-                    background-color: #70b63bb2;
+                    background-color: #8ED138;
                 }
             }
         }
@@ -1078,7 +1078,7 @@
     }
 
     .sustainability-bg {
-        background: url("../Assets/images/sustainability-4.jpg") center center/cover no-repeat;
+        background: url("../Assets/images/sustainability-4.png") center center/cover no-repeat;
         height: 55vh;
         position: relative;
         display: flex;
@@ -1215,7 +1215,7 @@
         margin-top: 5rem;
 
         h5.pt-2 {
-            color: #02adbd;
+            color: whitesmoke;
             font-weight: 800;
             font-size: 1.5rem !important;
             font-family: "Ubuntu", Arial, sans-serif;
@@ -1227,7 +1227,7 @@
             color: white!important;
             font-size: 1rem;
             font-family: "Ubuntu", Arial, sans-serif;
-            font-weight: 500;
+            font-weight: lighter;
 
         }
 
@@ -1238,6 +1238,10 @@
             font-weight: 400;
             border: solid 3px #8ED138 !important;
             background-color: transparent !important;
+        }
+
+        .btn.btn-primary.btn-sm:hover {
+            background-color: #8ED138 !important;
         }
     }
 
@@ -1270,6 +1274,11 @@
         margin: 0 auto;
         font-size: 0.9rem;
         padding-top: 8px;
+        background-color: #92ca63 !important;
+            color: black;
+            border-radius: 50%;
+            width: 7%;
+            height: 12%;
     }
 
     @media (min-width: 1140px) {
@@ -1562,7 +1571,7 @@
             top: 40rem;
             right: 0;
             z-index: 5;
-            display: contents;
+
         }
 
         .container {
