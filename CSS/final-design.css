@@ -1,3 +1,19 @@
+/* GENERAL STYLES */
+/* Cards */
+/* .card {
+  transition: all 0.3s ease;
+  transform: translateY(0) scale(1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+} */
+
+
 /* NAVBAR */
 .site-navbar {
     .container {
@@ -38,8 +54,7 @@
             .col-6.col-sm-8.col-lg-6 {
                 img.mx-lg-auto {
                     width: 65% !important;
-                    /* top: 12rem !important; */
-                    margin-top: 6rem;
+                    margin-top: 2%;
                 }
             }
 
@@ -120,12 +135,12 @@
             .col-12.col-md-6.col-lg-7 {
                 .about-content {
                     h5.subtitle.mb-3 {
-                        font-size: 2rem;
                         font-family: "Ubuntu", Arial, sans-serif;
                         color: #2A3B65 !important;
                         font-weight: 700;
                         text-align: justify;
                         margin-right: 45px;
+                        font-size: 1.3rem !important;
                     }
 
                     p {
@@ -139,7 +154,7 @@
                 }
             }
 
-            .col-12.col-md-6.h-30 {
+            .col-12.col-md-6.h-20 {
                 margin-top: 3rem;
 
                 .vision-indicator.indicator:nth-child(2) {
@@ -416,7 +431,7 @@
 /* SERVICES SECTION */
 #servicos {
     background-color: #F5F5F5;
-    padding-top: 6rem;
+    padding-top: 4rem;
 
     .container.py-5.py-md-4 {
         .row {
@@ -746,7 +761,7 @@
 
     .container.card-container {
         h3.mb-2 {
-            font-size: 2rem;
+            font-size: 1.3rem;
             font-family: "Ubuntu", Arial, sans-serif;
             text-align: justify;
             color: #2A3B65;
@@ -760,10 +775,12 @@
         background-position: center center;
         padding: 0;
         height: 60vh;
+        align-content: center;
 
         .card-group.row.row-cols-1.row-cols-md-2.g-2 {
             height: 35vh;
-            margin: 0 5rem;
+            margin: 0 15rem;
+            align-content: center;
 
             .col {
                 margin-top: 1rem;
@@ -800,17 +817,19 @@
     }
 
 
+    .card {
+        transition: all 0.3s ease;
+        transform: translateY(0) scale(1);
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-
-
-
-
-
-
-
-
-
-
+    /* Hover animation */
+    .card:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        z-index: 2;
+    }
 
 }
 
@@ -1103,14 +1122,15 @@
         z-index: 2;
         background-color: rgba(240, 240, 240, 0.92);
         border-radius: 12px;
-        padding: 2rem;
+        padding: 1rem;
         color: #000;
         backdrop-filter: blur(6px);
         height: 350px;
+        margin: 0 5rem !important;
     }
 
     .sustainability-card ul li {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.6;
         color: #111;
     }
@@ -1226,7 +1246,7 @@
         }
 
         p {
-            color: white!important;
+            color: white !important;
             font-size: 1rem;
             font-family: "Ubuntu", Arial, sans-serif;
             font-weight: lighter;
@@ -1277,10 +1297,10 @@
         font-size: 0.9rem;
         padding-top: 8px;
         background-color: #92ca63 !important;
-            color: black;
-            border-radius: 50%;
-            width: 7%;
-            height: 12%;
+        color: black;
+        border-radius: 50%;
+        width: 7%;
+        height: 12%;
     }
 
     @media (min-width: 1140px) {
@@ -1653,7 +1673,7 @@
 
                 .about-content {
                     h5.subtitle.mb-3 {
-                        font-size: 1.2rem !important;
+                        font-size: 1.3.2rem !important;
                         font-family: "Ubuntu", Arial, sans-serif;
                         color: #2A3B65 !important;
                         font-weight: 700;
@@ -1910,7 +1930,7 @@
             .col-12.col-md-6.col-lg-7 {
                 .about-content {
                     h5.subtitle.mb-3 {
-                        font-size: 1.5rem;
+                        font-size: 1.3.5rem;
                         margin-right: 20px;
                     }
 
@@ -2141,7 +2161,7 @@
                     text-align: center;
 
                     h5.subtitle.mb-3 {
-                        font-size: 1.3rem;
+                        font-size: 1.3.3rem;
                         margin-right: 0;
                         text-align: center;
                     }
