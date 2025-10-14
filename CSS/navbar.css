@@ -93,6 +93,7 @@ a:hover {
     margin-bottom: 0px;
     width: 100%;
     background-color: whitesmoke;
+    box-shadow:  0 5px 10px -3px rgb(0 0 0 / 12%);
 }
 
 #sticky-wrapper {
