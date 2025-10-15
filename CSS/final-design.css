@@ -1,7 +1,8 @@
 /* GENERAL STYLES */
-body{
+body {
     overflow-x: hidden;
 }
+
 /* NAVBAR */
 .site-navbar {
     .container {
@@ -56,7 +57,7 @@ body{
                 margin-top: 0;
 
                 img.img-fluid.logo {
-                    width: 40rem!important;
+                    width: 40rem !important;
                 }
 
                 p {
@@ -90,7 +91,7 @@ body{
     padding-top: 3rem;
     height: 92vh !important;
     align-content: center;
-    
+
     #cyber-right-about {
         position: absolute;
         width: 18%;
@@ -99,6 +100,7 @@ body{
         z-index: 5;
         /* top: 65rem; */
     }
+
     #cyber-left-about {
         position: absolute;
         width: 22%;
@@ -107,10 +109,12 @@ body{
         z-index: 5;
         top: 16%;
     }
+
     /* All paragraphs */
-    p{
+    p {
         font-size: 18px;
     }
+
     .container {
         .row {
             .col-12.heading {
@@ -122,6 +126,7 @@ body{
                     color: #262626 !important;
                     font-weight: 700;
                 }
+
                 /* .underline { 
                     height: 6px;
                     width: 250px;
@@ -259,6 +264,7 @@ body{
 #sobre .col-12.col-md-6.h-30 {
     margin-top: -4rem;
 }
+
 /* 
 #sobre .vision-content .indicator,
 #sobre .mission-content .indicator,
@@ -761,7 +767,7 @@ body{
         background-size: cover;
         background-position: center center;
         padding: 0;
-        height: 90vh;
+        height: 80vh;
         align-content: center;
 
         .card-group.row.row-cols-1.row-cols-md-2.g-2 {
@@ -820,7 +826,6 @@ body{
     }
 
 }
-
 
 .mesh-gradient {
     background: linear-gradient(28deg, rgba(55, 58, 53, 0.822) 22%, rgba(181, 185, 186, 0.807) 100%);
@@ -958,6 +963,16 @@ body{
     }
 }
 
+.modal-backdrop {
+    /* background-image: url("../Assets/images/sustainability-4.jpg") !important; */
+    background-color: #2a3b65e8;
+}
+
+.modal-backdrop.show {
+    opacity: 1 !important;
+    /* Adjust opacity as needed */
+}
+
 .modal {
     .modal-dialog {
         border-radius: none !important;
@@ -1052,11 +1067,10 @@ body{
     }
 }
 
-
 /* SUSTAINABILITY SECTION */
-/* Sustainability background image */
 #sustentabilidade {
     background-color: #F5F5F5 !important;
+
     .container.py-5.py-md-4 {
         padding-bottom: 0 !important;
 
@@ -1071,19 +1085,6 @@ body{
                     color: #262626 !important;
                     font-weight: 700;
                 }
-
-                /* .underline {
-                    height: 6px;
-                    width: 430px;
-                    background-color: #039FAC;
-                    border-radius: 20px;
-                    margin-left: 2px;
-                } */
-
-                p {
-                    font-size: 1.1rem;
-                    text-align: start;
-                }
             }
         }
     }
@@ -1093,7 +1094,7 @@ body{
             font-size: 1.3rem;
             font-family: "Ubuntu", Arial, sans-serif;
             color: #2A3B65 !important;
-            font-weight: 700;       
+            font-weight: 700;
             text-align: justify;
             margin-right: 45px;
         }
@@ -1107,7 +1108,7 @@ body{
         align-items: center;
         padding: 4rem 0;
         background-position: left center;
-        
+
     }
 
     .sustainability-bg::before {
@@ -1161,7 +1162,6 @@ body{
 
 }
 
-
 /* Responsive */
 @media (max-width: 768px) {
     .sustainability-bg {
@@ -1179,7 +1179,6 @@ body{
         padding: 0 1rem;
     }
 }
-
 
 #implementacao {
     .container.py-5.py-md-4 {
@@ -1207,7 +1206,7 @@ body{
 
     .container-fluid {
         background-image: url("../Assets/images/sustainability-5.jpg");
-        height: 70vh;
+        height: 82vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1218,15 +1217,13 @@ body{
         content: "";
         position: absolute;
         width: 100%;
-        /* height: 560px;
-        margin-top: -6.6rem; */
-        height: 670px;
-        margin-top: -11.7rem;
+        height: 100%;   
         background: rgba(1, 40, 43, 0.699);
         z-index: 0;
         padding: 0;
         margin-left: 0;
         left: 0;
+        top: 0;
         align-content: center
     }
 
@@ -1312,15 +1309,13 @@ body{
     }
 }
 
-
 /* LIDERANÇA */
 #lideranca {
-    height: 100vh;
+    height: 85vh;
     padding-top: 6rem !important;
     background-color: #F5F5F5;
 
     .container.py-5.py-md-4 {
-
         .row {
             .col-12.heading {
                 text-align: start;
@@ -1332,14 +1327,6 @@ body{
                     font-weight: 700;
                 }
 
-                /* .underline {
-                    height: 6px;
-                    width: 430px;
-                    background-color: #039FAC;
-                    border-radius: 20px;
-                    margin-left: 2px;
-                } */
-
                 p {
                     font-size: 1.1rem;
                     text-align: start;
@@ -1349,17 +1336,18 @@ body{
         }
     }
 
-    .container {
-        margin-top: 1rem;
+    .container.mb-3 {
+        margin-top: 5rem;
+        align-content: center !important;
 
         .row-cols-1.row-cols-md-3.g-4 {
             height: 100%;
 
             .col {
                 .card {
+                    background-color: transparent !important;
                     border-radius: 20px;
-
-                    /* border: solid 1px #92CA63; */
+                    border: none;  
                     .card-img-top {
                         width: 60% !important;
                         height: 100%;
@@ -1386,7 +1374,7 @@ body{
 
                         .card-text {
                             font-size: 15px;
-                            text-align: justify;
+                            text-align: center;
                             color: #000000;
                             font-weight: 400;
                         }
@@ -1399,7 +1387,7 @@ body{
 
     }
 
-    
+
     .card {
         transition: all 0.3s ease;
         transform: translateY(0) scale(1);
@@ -1415,12 +1403,26 @@ body{
     }
 }
 
-
 /* CONTACT FORM */
-#contact {
+#contacto {
     height: 100vh;
     align-content: center;
+    font-family: "Ubuntu", Arial, sans-serif;    
+
+    .container {
+       .row.g-0{
+         #contact-form{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            h3.mb-4{
+                font-weight: bolder !important;
+            }
+        }
+       }
+    }
 }
+
 .contact-section {
     background-color: #f5f5f5;
     font-family: "Ubuntu", Arial, sans-serif;
@@ -1428,24 +1430,30 @@ body{
 
 .contact-info {
     position: relative;
-    background: url(../Assets/images/digitalbuilding.png) center center/cover no-repeat;
+    background: url(../Assets/images/mozambique.jpg) center center/cover no-repeat;
     color: #fff;
     min-height: 600px;
     background-size: cover;
-    background-position: 25% center;
+    background-position: 25% top;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .contact-info .overlay {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg,
-                                rgba(26, 41, 77, 0.8) 0%,
-                                rgba(11, 114, 124, 0.6) 50%,
-                                rgba(88, 127, 57, 0.4) 100%);
+    /* background: linear-gradient(135deg,
+            rgba(26, 41, 77, 0.8) 0%,
+            rgba(11, 114, 124, 0.6) 50%,
+            rgba(88, 127, 57, 0.4) 100%); */
+    background: rgba(0, 2, 1, 0.65);
 }
+
 
 .contact-info .info-content h6 {
     .fa-solid {
@@ -1558,10 +1566,6 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
-
-
-
-
 
 
 /* Small Laptops: 1025px - 1280px */
