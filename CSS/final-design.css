@@ -1439,6 +1439,9 @@ body {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     font-family: "Ubuntu", Arial, sans-serif !important;
+    h4.text-uppercase{
+        font-family: "Ubuntu", Arial, sans-serif !important;
+    }
 }
 
 .contact-info .overlay {
