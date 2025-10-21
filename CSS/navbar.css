@@ -43,7 +43,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Ubuntu", Arial, sans-serif;
 }
 
 a {
@@ -574,3 +574,10 @@ a:hover {
 .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li.active a {
     color: #fff;
 } */
+
+.site-navbar .site-navigation .site-menu > li > a.active {
+  color: #8ED138;
+  font-weight: bold;
+  border-bottom: 3px solid #8ED138;
+  transition: all 0.3s ease;
+}
