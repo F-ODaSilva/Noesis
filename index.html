@@ -61,6 +61,7 @@
       height: 100%;
       background: linear-gradient(135deg, rgba(0, 0, 0, 0.822) 22%, rgba(41, 144, 185, 0.3) 100%);
       z-index: 1;
+      filter: grayscale(100%) !important;
     }
 
 
@@ -203,12 +204,6 @@
   <section id="inicio" class="hero"
     style="background-image: url('Assets/images/hero-image-3.png'); background-attachment: local;">
 
-    <!-- Elementos decorativos -->
-    <img src="Assets/images/tech-el-04@3x.png" alt="" class="cyber-element" id="cyber-left" data-aos="fade-right"
-      data-aos-offset="100">
-    <img src="Assets/images/tech-el-05@3x.png" alt="" class="cyber-element" id="cyber-right" data-aos="fade-left"
-      data-aos-offset="100">
-
     <div class="container px-4 py-5">
       <div class="row justify-content-start align-items-center">
         <div class="col-12 col-lg-8 text-center text-lg-start" data-aos="fade-left" data-aos-delay="800"
@@ -238,11 +233,7 @@
 
   <!-- ABOUT SECTION -->
   <section id="sobre" class="about">
-    <img src="Assets/images/tech-el-03@3x.png" class="img-fluid cyber-element" id="cyber-right-about" alt=""
-      data-aos="fade-in" data-aos-easing="linear" data-aos-delay="1000" data-aos-offset="300">
-    <img src="Assets/images/tech-el-04@3x.png" class="img-fluid cyber-element" id="cyber-left-about" alt=""
-      data-aos="fade-in" data-aos-easing="linear" data-aos-delay="1000" data-aos-offset="300">
-    <div class="container py-5 py-md-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="600"
+    <!-- <div class="container py-5 py-md-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="600"
       data-aos-offset="0">
       <div class="row">
         <div class="col-12 heading">
@@ -252,7 +243,6 @@
     </div>
     <div class="container pb-0">
       <div class="row">
-        <!-- About text: full width; centered on md, left on lg+ -->
         <div class="col-12 pb-0">
           <div class="about-content text-md-center text-lg-start">
             <h5 data-key="about.subtitle" class="subtitle mb-3" data-aos="zoom-in" data-aos-easing="ease-in-out"
@@ -273,24 +263,11 @@
         </div>
       </div>
     </div>
-    <!-- <div class="container-fluid">
-      <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114792.65392231884!2d32.582874407603974!3d-25.959169682531474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69723b666da55%3A0x42497f579a6bb442!2sMaputo!5e0!3m2!1sen!2smz!4v1759854540817!5m2!1sen!2smz"
-          width="1500" height="500" style="border:0; padding: 0; filter: brightness(0.5);" allowfullscreen=""
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div> -->
     <div class="container">
-      <!-- Vision/Mission grid under about content -->
       <div class="col-12">
         <div class="row g-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="800">
           <div class="col-12 col-md-6 h-20">
             <div class="vision-content">
-              <!-- <div class="vision-indicator indicator">
-                <div class="number-indicator" ">1</div>
-                <div class=" indicator-line"></div>
-              </div> -->
               <div class="section-content">
                 <h3 class="section-subtitle" data-key="vision.title">
                   Visão
@@ -305,10 +282,6 @@
           </div>
           <div class="col-12 col-md-6 h-20">
             <div class="mission-content">
-              <!-- <div class="mision-indicator indicator">
-                <div class="number-indicator">2</div>
-                <div class="indicator-line"></div>
-              </div> -->
               <div class="section-content">
                 <h3 class="section-subtitle" data-key="mission.title">
                   Missão
@@ -326,9 +299,65 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 heading">
+          <h1 data-key="about.title" class="section-title mb-0">Quem Somos</h1>
+          <h3 data-key="about.subtitle" class="subtitle mb-3" data-aos="zoom-in" data-aos-easing="ease-in-out"
+            data-aos-delay="700" data-aos-offset="0" style="font-size: 1.3rem;">NOESIS é uma
+            empresa moçambicana
+            especializada em infraestrutura de data centers de alto desempenho.</h3>
+          <p data-key="about.text1" class="about-text1" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-delay="1000">Focamos na criação e operação de centros de processamento de
+            dados que aproveitam a
+            vantagem energética de Moçambique para impulsionar a transformação digital.</p>
+          <p data-key="about.text2" class="about-text2" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-delay="1000">Nossa abordagem combina tecnologia de ponta com práticas
+            sustentáveis, criando uma
+            nova frente económica baseada em infraestrutura digital que posiciona Moçambique como um hub tecnológico
+            regional.
+          </p>
+        </div>
+        <div class="col-12">
+          <div class="row row-cols-1 row-cols-md-2" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="800">
+            <div class="h-20">
+            <div class="vision-content">
+              <div class="section-content">
+                <h3 class="section-subtitle" data-key="vision.title">
+                  Visão
+                </h3>
+                <p class="about-text mb-5" data-key="vision.text">
+                  Posicionar Moçambique como lider regional em inovação tecnológica, transformando recursos energéticos
+                  abundantes em prosperidade nacional e desenvolvimento sustentável através de infraestrutura digital de
+                  classe mundial.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="h-20">
+            <div class="mission-content">
+              <div class="section-content">
+                <h3 class="section-subtitle" data-key="mission.title">
+                  Missão
+                </h3>
+                <div class="quot mb-2" data-key="mission.text1" style="font-style: italic;">"Transformar a vantagem
+                  energética de Moçambique em valor
+                  digital e prosperidade
+                  nacional através de infraestrutura de classe mundial."</div>
+                <p class="about-text mb-0" data-key="mission.text">
+                  Criamos soluções que conectam recursos naturais com oportunidades digitais, gerando impacto económico
+                  positivo para todas as comunidades envolvidas.
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- END ABOUT SECTION  -->
+  <!-- END ABOUT CTION  -->
 
   <!-- SERVICES SECTION -->
   <section id="servicos">
@@ -438,7 +467,8 @@
                     <div class="col-lg-9 col-md-8 col-sm-8">
                       <div class="caption-content">
                         <h2 class="caption-title" data-key="objectives.subtitle1">Infraestrutura Digital</h2>
-                        <p class="caption-text" data-key="objectives.text1">Estabelecer data centers de classe mundial em
+                        <p class="caption-text" data-key="objectives.text1">Estabelecer data centers de classe mundial
+                          em
                           Moçambique, criando a base
                           tecnológica
                           necessária para impulsionar a economia digital nacional e posicionar o país como hub regional
@@ -555,7 +585,8 @@
                     <div class="col-lg-9 col-md-8 col-sm-8">
                       <div class="caption-content">
                         <h2 class="caption-title" data-key="objectives.subtitle4">Capacitação Tecnológica</h2>
-                        <p class="caption-text" data-key="objectives.text4">Formar e desenvolver profissionais moçambicanos
+                        <p class="caption-text" data-key="objectives.text4">Formar e desenvolver profissionais
+                          moçambicanos
                           em tecnologias avançadas,
                           criando
                           competências locais e reduzindo a dependência de expertise externa no setor digital.</p>
@@ -620,7 +651,8 @@
             <div class="card-body">
               <i class="mb-4 mt-3 fa-solid fa-pen-fancy"></i>
               <h5 class="card-title" data-key="why.item1">Expertise Técnica</h5>
-              <p class="card-text" data-key="why.text1">Equipe de especialistas com mais de 15 anos de experiência internacional em
+              <p class="card-text" data-key="why.text1">Equipe de especialistas com mais de 15 anos de experiência
+                internacional em
                 infraestrutura de
                 data centers, trazendo conhecimento global adaptado às realidades locais.</p>
             </div>
@@ -631,7 +663,8 @@
             <div class="card-body">
               <i class="mb-4 mt-3 fa-solid fa-clock-rotate-left"></i>
               <h5 class="card-title" data-key="why.item2">Visão de Longo Prazo</h5>
-              <p class="card-text" data-key="why.text2">Compromisso com o desenvolvimento sustentável e duradouro de Moçambique, investindo
+              <p class="card-text" data-key="why.text2">Compromisso com o desenvolvimento sustentável e duradouro de
+                Moçambique, investindo
                 não
                 apenas em infraestrutura, mas no desenvolvimento de competências locais.</p>
             </div>
@@ -642,7 +675,8 @@
             <div class="card-body">
               <i class="mb-4 mt-3 fa-solid fa-chart-line"></i>
               <h5 class="card-title" data-key="why.item3">Inovação Continua</h5>
-              <p class="card-text" data-key="why.text3">Adoção das mais recentes tecnologias e práticas do setor, garantindo que Moçambique
+              <p class="card-text" data-key="why.text3">Adoção das mais recentes tecnologias e práticas do setor,
+                garantindo que Moçambique
                 se
                 mantenha na vanguarda da revolução digital global.</p>
             </div>
@@ -653,7 +687,8 @@
             <div class="card-body">
               <i class="mb-4 mt-3 fa-solid fa-street-view"></i>
               <h5 class="card-title" data-key="why.item4">Compromisso Local</h5>
-              <p class="card-text" data-key="why.text4">Empresa 100% moçambicana focada no desenvolvimento nacional, com todos os lucros
+              <p class="card-text" data-key="why.text4">Empresa 100% moçambicana focada no desenvolvimento nacional, com
+                todos os lucros
                 reinvestidos no crescimento económico e tecnológico do país.</p>
             </div>
           </div>
@@ -687,7 +722,8 @@
                 suas operações de data center, que
                 requerem condições específicas para garantir operações de classe mundial
               </p>
-              <button class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalNecessidades" data-key="needs.cta">
+              <button class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalNecessidades"
+                data-key="needs.cta">
                 Saber Mais
               </button>
             </div>
@@ -706,7 +742,8 @@
                 suas operações de data center, que
                 requerem condições específicas para garantir operações de classe mundial:
               </p>
-              <button class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalBeneficios" data-key="benefits.cta">
+              <button class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalBeneficios"
+                data-key="benefits.cta">
                 Saber Mais
               </button>
             </div>
@@ -769,7 +806,8 @@
               </div>
             </div>
           </div>
-          <p class="mt-3 fst-italic text-center" data-key="needs.quote">"A energia é o componente fundamental para a transformação digital que
+          <p class="mt-3 fst-italic text-center" data-key="needs.quote">"A energia é o componente fundamental para a
+            transformação digital que
             propomos para Moçambique."</p>
         </div>
       </div>
@@ -793,7 +831,8 @@
                     <i class="fa-solid fa-bolt me-2"></i> Cliente Estável
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text1">
-                    Consumo previsível e contínuo de longo prazo com contratos plurianuais que garantem receitas estáveis e planejamento operacional eficiente.
+                    Consumo previsível e contínuo de longo prazo com contratos plurianuais que garantem receitas
+                    estáveis e planejamento operacional eficiente.
                   </p>
                 </div>
               </div>
@@ -807,7 +846,8 @@
                     <i class="fa-solid fa-scale-balanced me-2"></i>Aproveitamento de Capacidade
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text2">
-                    Utilização eficiente de eneria excedente, otimizando investimentos e infraestrutura existente e maximizando o retorno sobre ativos energéticos.
+                    Utilização eficiente de eneria excedente, otimizando investimentos e infraestrutura existente e
+                    maximizando o retorno sobre ativos energéticos.
                   </p>
                 </div>
               </div>
@@ -818,10 +858,11 @@
               <div class="card border-0 shadow-sm h-100">
                 <div class="card-body">
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="benefits.subtitle3">
-                    <i class="fa-solid fa-chart-line me-2"></i> Projeto Inovador 
+                    <i class="fa-solid fa-chart-line me-2"></i> Projeto Inovador
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text3">
-                    Participação em iniciativas pioneira com impacto nacional, associando sua marca a inovação e desenvolvimento tecnologico de Moçambique.                    
+                    Participação em iniciativas pioneira com impacto nacional, associando sua marca a inovação e
+                    desenvolvimento tecnologico de Moçambique.
                   </p>
                 </div>
               </div>
@@ -835,7 +876,7 @@
                     <i class="fa-solid fa-chart-line me-2"></i> Desenvolvimento Regional
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text4">
-                    Contribuição direta para o crescimento económico nas comunidades onde operamos. 
+                    Contribuição direta para o crescimento económico nas comunidades onde operamos.
                   </p>
                 </div>
               </div>
@@ -854,7 +895,7 @@
       data-aos-offset="0">
       <div class="row">
         <div class="col-12 heading">
-          <h1 data-keyclass="section-title text-left fw-bold" data-key="sustainability.title" >
+          <h1 data-keyclass="section-title text-left fw-bold" data-key="sustainability.title">
             Compromisso com a Sustentabilidade
           </h1>
         </div>
@@ -863,8 +904,8 @@
 
     <!-- Subtitle outside the background -->
     <div class="container mb-3">
-      <h3 class="section-subtitle text-justify fw-semibold" data-aos="fade-right"
-        data-aos-easing="ease-in-out" data-aos-delay="800" data-aos-offset="0" data-key="sustainability.subtitle">
+      <h3 class="section-subtitle text-justify fw-semibold" data-aos="fade-right" data-aos-easing="ease-in-out"
+        data-aos-delay="800" data-aos-offset="0" data-key="sustainability.subtitle">
         A NOESIS está comprometida com práticas sustentáveis em todas as suas operações, integrando responsabilidade
         ambiental com inovação tecnológica para criar valor duradouro:
       </h3>
@@ -942,11 +983,13 @@
                 <div class="px-4">
                   <div class="event-date badge bg-info">1</div>
                   <h5 class="pt-2" data-key="implementation.phase1.title">Fase de Preparação</h5>
-                  <p class="text-muted" data-key="implementation.phase1.text">Estabelecimento de parcerias estratégicas com fornecedores de energia e obtenção
+                  <p class="text-muted" data-key="implementation.phase1.text">Estabelecimento de parcerias estratégicas
+                    com fornecedores de energia e obtenção
                     de todas as aprovações regulatórias necessárias. Inclui estudos de viabilidade
                     detalhados e estruturação financeira do projeto.</p>
                   <div>
-                    <a href="#contact" data-mdb-ripple-init class="btn btn-primary btn-sm" data-key="implementation.cta">Saber Mais</a>
+                    <a href="#contact" data-mdb-ripple-init class="btn btn-primary btn-sm"
+                      data-key="implementation.cta">Saber Mais</a>
                   </div>
                 </div>
               </li>
@@ -954,12 +997,14 @@
                 <div class="px-4">
                   <div class="event-date badge bg-success">2</div>
                   <h5 class="pt-2" data-key="implementation.phase2.title">Projeto Piloto</h5>
-                  <p class="text-muted" data-key="implementation.phase2.text">Construção do data center inicial com capacidade de 5 MW e implementação da
+                  <p class="text-muted" data-key="implementation.phase2.text">Construção do data center inicial com
+                    capacidade de 5 MW e implementação da
                     infraestrutura base, incluindo sistemas de arrefecimento, segurança e conectividade.
                     Fase de teste e otimização operacional.
                   </p>
                   <div>
-                    <a href="#" data-mdb-ripple-init class="btn btn-primary btn-sm" data-key="implementation.cta">Saber Mais</a>
+                    <a href="#" data-mdb-ripple-init class="btn btn-primary btn-sm" data-key="implementation.cta">Saber
+                      Mais</a>
                   </div>
                 </div>
               </li>
@@ -967,11 +1012,13 @@
                 <div class="px-4">
                   <div class="event-date badge bg-danger">3</div>
                   <h5 class="pt-2" data-key="implementation.phase3.title">Expansão Estratégica</h5>
-                  <p class="text-muted" data-key="implementation.phase3.text">Ampliação da capacidade para 100 MW e diversificação dos serviços oferecidos,
+                  <p class="text-muted" data-key="implementation.phase3.text">Ampliação da capacidade para 100 MW e
+                    diversificação dos serviços oferecidos,
                     incluindo cloud computing, edge computing e serviços especializados para
                     blockchain e inteligência artificial. </p>
                   <div>
-                    <a href="#" data-mdb-ripple-init class="btn btn-primary btn-sm" data-key="implementation.cta">Saber Mais</a>
+                    <a href="#" data-mdb-ripple-init class="btn btn-primary btn-sm" data-key="implementation.cta">Saber
+                      Mais</a>
                   </div>
                 </div>
               </li>
@@ -1006,7 +1053,8 @@
             <div class="card-body">
               <h5 class="card-title" data-key="leadership.name1">Nuno Lima</h5>
               <p class="role card-text" data-key="leadership.role1">CEO</p>
-              <p class="card-text" data-key="leadership.bio1">Mais de 15 anos de experiência em gestão de empresas tecnológicas.Especialista em
+              <p class="card-text" data-key="leadership.bio1">Mais de 15 anos de experiência em gestão de empresas
+                tecnológicas.Especialista em
                 estratégia corporativa e desenvolvimento de negócios internacionais.</p>
             </div>
           </div>
@@ -1018,7 +1066,8 @@
             <div class="card-body">
               <h5 class="card-title" data-key="leadership.name2">Menzi Mbata</h5>
               <p class="role card-text" data-key="leadership.role2">CFO</p>
-              <p class="card-text" data-key="leadership.bio2">Vasta experiência em finanças corporativas e investimentos estrategicos.Especialista
+              <p class="card-text" data-key="leadership.bio2">Vasta experiência em finanças corporativas e investimentos
+                estrategicos.Especialista
                 em estrututação financeira de projetos de grande escala.</p>
             </div>
           </div>
@@ -1030,7 +1079,8 @@
             <div class="card-body">
               <h5 class="card-title" data-key="leadership.name3">Dr. Anish Shivdasani</h5>
               <p class="role card-text" data-key="leadership.role3">CTA</p>
-              <p class="card-text" data-key="leadership.bio3">Profundo conhecimento em infraestrutura de data centers e tecnologias de compuytação
+              <p class="card-text" data-key="leadership.bio3">Profundo conhecimento em infraestrutura de data centers e
+                tecnologias de compuytação
                 avançada.Experiência internacional em projetos tecnologicos de larga escala.</p>
             </div>
           </div>
@@ -1107,12 +1157,6 @@
     </div>
   </section>
   <!-- END CONTACT SECTION -->
-
-  <!-- END IMAGE -->
-  <section id="end" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="1200" data-aos-offset="0">
-
-  </section>
-  <!-- END  -->
 
   <!-- FOOTER -->
   <footer class="footer">
