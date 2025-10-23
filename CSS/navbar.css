@@ -100,7 +100,7 @@ a:hover {
     background-color: whitesmoke;
 
     .container{
-        height: 85px!important;
+        height: 75px!important;
         .d-flex align-items-center justify-content-end{
             height: 150px!important;
         }
