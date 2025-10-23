@@ -69,18 +69,18 @@ body {
 
 /* ABOUT SECTION */
 #sobre {
-    height: 575px;
+    height: 555px;
     font-family: "Ubuntu", Arial, sans-serif;
 
     .container {
         margin: 0 auto !important;
         background-color: #ffffff;
-        height: 685px;
-        padding: 4rem 5rem;
+        height: 705px;
+        padding: 4rem 5rem; 
         position: absolute;
         top: 46rem;
         border-radius: 35px;
-        width: 995px;
+        width: 1045px;
         justify-self: anchor-center;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
@@ -89,9 +89,9 @@ body {
                 h1.section-title {
                     font-size: 50px;
                     margin-bottom: 1.3rem !important;
-
                     color: black;
-                    font-weight: 700
+                    font-weight: 700;
+                    padding-top: 3rem;
                 }
 
                 h3.subtitle {
@@ -116,7 +116,7 @@ body {
 
             .col-12:last-child {
                 margin: auto !important;
-                height: 300px;
+                height: 255px;
                 border-top: solid 1.5px #bdbdbd;
                 border-top-style: groove;
 
@@ -1146,8 +1146,27 @@ body {
     font-family: "Ubuntu", Arial, sans-serif;
 
     .container {
+        h1.mb-4{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 600!important;
+            margin-bottom: 2rem!important;            
+        }
         .row.g-0 {
+            height: 500px!important;
+            #contact-info{
+                height: 100%;
+                .info-content {
+                    align-content: center;
+                    margin-top: 8rem !important;
+                    padding: 0 4rem !important;
+                    .mb-4{
+                        margin-bottom: 4.5rem !important;
+                    }
+                }
+            }
             #contact-form {
+                height: 100%;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
                 font-family: "Ubuntu", Arial, sans-serif !important;
@@ -1168,9 +1187,8 @@ body {
 
 .contact-info {
     position: relative;
-    background: url(../Assets/images/mozambique.jpg) center center/cover no-repeat;
+    background: url(../Assets/images/Contact.png) center center/cover no-repeat;
     color: #fff;
-    min-height: 600px;
     background-size: cover;
     background-position: 25% top;
     border-top-left-radius: 20px;
