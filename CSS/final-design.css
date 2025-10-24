@@ -39,13 +39,13 @@ body {
                 margin-top: 0;
 
                 img.img-fluid.logo {
-                    width: 40rem !important;
+                    width: 31.8rem !important;
                 }
 
                 p {
                     font-size: 1.1rem;
                     text-align: justify;
-                    margin-right: 13rem;
+                    margin-right: 21rem;
                 }
 
                 .btn.btn-primary.btn-md.px-4 {
@@ -172,77 +172,59 @@ body {
 /* SERVICES SECTION */
 #servicos {
     background-color: #F5F5F5;
-    padding-top: 6rem;
+    padding-top: 2rem;
     height: 100vh;
 
-    .container.py-5.py-md-4 {
-        .row {
-            .col-12.heading {
-                text-align: start;
-
-                h1 {
-                    font-size: 3.2rem;
-                    font-family: "Ubuntu", Arial, sans-serif;
-                    color: #262626 !important;
-                    font-weight: 700;
-                }
-
-                /* .underline {
-                    height: 6px;
-                    width: 380px;
-                    background-color: #039FAC;
-                    border-radius: 20px;
-                    margin-left: 2px;
-                } */
-
-                /* p {
-                    font-size: 1.1rem;
-                    text-align: start;
-                    margin-left: 0.5rem;
-                } */
-            }
-        }
-    }
 
     .container-fluid.cards-container {
-        height: 0;
+        height: 100%;
         align-content: center;
         padding-bottom: 4rem;
-        background-image: url(../Assets/images/data-centers-1.jpg);
+        background-image: url(/Assets/images/ServicesBackground.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 110%;
 
-        .row.row-cols-1.row-cols-md-3.g-4 {
+        
+        h1.section-title {
+            text-align: start;
+            padding-left: 8rem;
+            margin-bottom: 2rem !important;
+            font-size: 50px;
+            font-family: "Ubuntu", Arial, sans-serif;
+            color: #FFFFFF !important;
+            font-weight: 700;
+        }
+       
+
+     .row.row-cols-1.row-cols-md-3.g-4 {
             height: 40vh;
-            margin: 0 15rem;
+            margin: 0 9rem;
 
             .col {
                 .card.h-100 {
                     border: solid 3px #92CA63;
                     border-radius: 20px;
-                    background-color: #2a3b65b3;
+                    background-color: transparent !important;
 
                     .card-body {
 
                         span.service-icon {
                             font-size: 1.8rem;
                             color: #FFFFFF !important;
+                            position: relative;
+                            top: -2.5rem;
                         }
 
                         h5.card-title {
                             font-size: 1.4rem;
                             font-family: "Ubuntu", Arial, sans-serif;
-                            color: #8ED138 !important;
+                            color: #FFFFFF !important;
                             font-weight: 700;
                         }
 
-                        h5.card-title.last {
-                            font-size: 1.28rem;
-                        }
-
                         p.card-text {
-                            font-size: 18px;
+                            font-size: 16px;
                             color: whitesmoke;
                         }
                     }
@@ -251,12 +233,7 @@ body {
         }
     }
 }
-
 /* END SERVICES SECTION */
-
-
-
-
 
 /* STRATEGIC OBJECTIVES SECTION  */
 #diferenciais {
@@ -266,16 +243,17 @@ body {
     .container.py-5.py-md-4 {
         justify-items: center;
         margin-bottom: 3rem;
+
         .row {
             .col-12.heading {
-                text-align: left!important;
+                text-align: left !important;
 
                 h1 {
                     font-size: 3.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
                     color: #262626 !important;
                     font-weight: 700;
-                }   
+                }
             }
         }
     }
@@ -309,6 +287,7 @@ body {
 
             .slide-number {
                 margin-left: -4rem;
+
                 span.number {
                     color: white;
                     font-size: 25rem;
@@ -351,6 +330,7 @@ body {
 
     }
 }
+
 /* END STRATEGIC OBJECTIVES SECTION  */
 
 /* WHY US SECTION */
@@ -375,7 +355,7 @@ body {
 
     .container.card-container {
         h3.mb-2 {
-            font-size: 16px!important;
+            font-size: 16px !important;
             font-family: "Ubuntu", Arial, sans-serif;
             text-align: center;
             color: #2A3B65;
@@ -396,10 +376,10 @@ body {
             .col {
                 margin-top: 1rem;
                 text-align: center !important;
-                background-color: transparent!important;
+                background-color: transparent !important;
 
                 .card.h-100 {
-                    background-color: transparent!important;
+                    background-color: transparent !important;
                     border: none;
                     border-right: solid 2px #bdbdbd;
                     border-radius: 0;
@@ -458,140 +438,47 @@ body {
 }
 
 #parcerias {
-    height: 100vh;
+    height: 90vh;
     padding-top: 6rem !important;
     background-color: #F5F5F5;
 
-    .magicpattern {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: repeat;
-        position: relative;
-        top: 0rem;
-        z-index: 3;
-        background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CradialGradient id=%22c%22 r=%22100%25%22 cx=%2250%25%22 cy=%2250%25%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23444cf7%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%232af598%22%2F%3E%3C%2FradialGradient%3E%3CclipPath id=%22b%22%3E%3Cpath fill=%22currentColor%22 d=%22M864 652q-60 152-212 245t-264-40Q276 724 149 612t-45-269q82-157 239-196t331-17q174 22 212 196t-22 326Z%22%2F%3E%3C%2FclipPath%3E%3Cfilter id=%22a%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E%3CfeFlood flood-color=%22%23fff%22 result=%22neutral-gray%22%2F%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22%2F%3E%3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22%2F%3E%3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E%3CfeFuncA type=%22table%22 tableValues=%220 0 0.35 0%22%2F%3E%3C%2FfeComponentTransfer%3E%3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg filter=%22url(%23a)%22 clip-path=%22url(%23b)%22%3E%3Cpath fill=%22url(%23c)%22 d=%22M864 652q-60 152-212 245t-264-40Q276 724 149 612t-45-269q82-157 239-196t331-17q174 22 212 196t-22 326Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    }
-
-    .container.py-5.py-md-4 {
+    .container {
         .row {
-            .col-12.heading {
-                text-align: start;
+            .col-md-6:nth-child(1) {
+                padding-left: 6rem;
 
-                h1 {
-                    font-size: 3.2rem;
-                    font-family: "Ubuntu", Arial, sans-serif;
-                    color: #262626 !important;
-                    font-weight: 700;
+                h1.section-title {
+                    font-size: 50px;
                 }
 
-                /* .underline {
-                    height: 6px;
-                    width: 430px;
-                    background-color: #039FAC;
-                    border-radius: 20px;
-                    margin-left: 2px;
-                } */
+                .mb-4 {
+                    h5.fw-bold {
+                        font-size: 15px;
+                        color: #2A3B65 !important;
+                    }
 
-                p {
-                    font-size: 1.1rem;
-                    text-align: start;
-                    margin-left: 0.5rem;
-                }
-            }
-        }
-    }
+                    p.text-muted {
+                        color: black !important;
+                        font-weight: 400;
+                    }
 
-    .container-fluid {
-        background-image: url('../Assets/images/digital-moz.png');
-        background-position: center;
-        background-size: cover;
-        height: 95%;
-        align-content: center;
+                    button.btn.btn-sm {
+                        border-radius: 8px;
+                        background-color: transparent;
+                        border: solid 2px #8ED138;
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                        transition: 0.3s;
+                    }
 
-        .row.g-4 {
-            margin-top: 15rem;
-            padding-bottom: 4rem;
-            justify-content: space-evenly;
-
-            .col-md-5 {
-                height: 250px;
-                /* background-color: #ffffff; */
-                z-index: 2;
-                padding: 0;
-                border-radius: 8px;
-
-                .card {
-                    /* border: solid 3px #92CA63!important; */
-                    border-radius: 8px;
-                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.452) !important;
-                    background-color: #2a3b65cb;
-
-                    .card-body {
-                        z-index: 4;
-
-                        h4.card-title {
-                            padding-top: 1rem;
-                            font-size: 1.5rem;
-                            font-family: "Ubuntu", Arial, sans-serif;
-                            color: #FFFFFF !important;
-                            font-weight: 700;
-                            text-align: center;
-                        }
-
-                        p.card-text {
-                            font-size: 1rem;
-                            text-align: center;
-                            color: #F5F5F5 !important;
-                            font-weight: 400;
-                            margin: 1rem 3rem 1.5rem;
-                        }
-
-                        button.btn.btn-card {
-                            background-color: transparent;
-                            border-radius: 8px;
-                            color: #FFFFFF;
-                            font-weight: 500;
-                            border: solid 3px #8ED138;
-                        }
-
-                        button.btn.btn-card:hover {
-                            background-color: #78c935be;
-                            border-radius: 8px;
-                            color: #ffffff;
-                            font-weight: 700;
-                            border: solid 3px #92CA63;
-                        }
+                    button.btn.btn-sm:hover {
+                        background-color: #8ED138;
+                        color: white;
                     }
                 }
             }
         }
     }
-
-    .card {
-        transition: all 0.3s ease;
-        transform: translateY(0) scale(1);
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-            box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    /* Hover animation */
-    .card:hover {
-        transform: translateY(-8px) scale(1.05);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-        z-index: 2;
-    }
-}
-
-.modal-backdrop {
-    /* background-image: url("../Assets/images/sustainability-4.jpg") !important; */
-    background-color: #2a3b65e8;
-}
-
-.modal-backdrop.show {
-    opacity: 1 !important;
-    /* Adjust opacity as needed */
 }
 
 .modal {
@@ -611,38 +498,53 @@ body {
 
             .modal-body {
                 .row.row-cols-1.row-cols-md-3.g-4 {
+                    .col-12:last-child {
+                        border-right: none;
+                    }
+
                     .col-12 {
+                        border-right: #000000 1px solid;
+
                         .card {
-                            border-radius: 15px !important;
-                            background-color: #2a3b65cb !important;
+                            border: none !important;
                         }
 
                         .card-body {
-                            border-radius: 15px !important;
-                            background-color: #2a3b65cb;
+                            border: none !important;
+
+                            i.fa-solid {
+                                color: #92CA63;
+                                text-align: center !important;
+                                text-align: center !important;
+                                margin: 1rem auto !important;
+                                width: 100%;
+                                font-size: 25px;
+                            }
 
                             h6.card-title {
                                 font-size: 1.3rem;
                                 font-family: "Ubuntu", Arial, sans-serif;
-                                color: #FFFFFF !important;
+                                color: #2A3B65 !important;
                                 font-weight: 700;
                                 text-align: center !important;
-
-                                i.fa-solid {
-                                    color: #92CA63;
-                                }
                             }
 
                             p.card-text {
-                                font-size: 1rem;
+                                font-size: 14px;
                                 text-align: center;
-                                color: #F5F5F5 !important;
-                                font-weight: light;
+                                color: black !important;
+                                font-weight: 400;
                                 margin: 5px;
+                                line-height: 18px;
+                                padding: 0 15px;
                             }
 
                             p.card-text.text-muted {
                                 margin-top: 1rem;
+                            }
+
+                            p.mt-3.text-center {
+                                margin: 2rem 0px;
                             }
                         }
                     }
@@ -651,8 +553,7 @@ body {
                 .row.row-cols-1.row-cols-md-2.g-4 {
                     .col-12 {
                         .card {
-                            border-radius: 15px !important;
-                            background-color: #2a3b65cb !important;
+                            border: none !important;
                         }
 
                         .card-body {
@@ -807,13 +708,13 @@ body {
 
         .row {
             .col-12.heading {
-                text-align: start;
+                text-align: center;
 
                 h1 {
                     padding-top: 2rem;
                     font-size: 3.2rem;
                     font-family: "Ubuntu", Arial, sans-serif;
-                    color: #262626 !important;
+                    color: #FFFFFF !important;
                     font-weight: 700;
                 }
 
@@ -826,26 +727,12 @@ body {
     }
 
     .container-fluid {
-        background-image: url("../Assets/images/sustainability-5.jpg");
+        background-image: url("../Assets/images/Timeline.png");
         height: 82vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         align-content: center;
-    }
-
-    .container-fluid::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(1, 40, 43, 0.699);
-        z-index: 0;
-        padding: 0;
-        margin-left: 0;
-        left: 0;
-        top: 0;
-        align-content: center
     }
 
     .horizontal-timeline {
@@ -894,14 +781,6 @@ body {
         margin-right: 0;
     }
 
-    .horizontal-timeline .items .items-list:before {
-        content: "";
-        position: absolute;
-        height: 36px;
-        border-right: 2px dashed #dee2e6;
-        top: 0;
-    }
-
     .horizontal-timeline .items .items-list .event-date {
         position: absolute;
         top: 36px;
@@ -913,8 +792,14 @@ body {
         background-color: #92ca63 !important;
         color: black;
         border-radius: 100%;
-        width: 5%;
+        width: 8%;
         height: 14%;
+    }
+
+    
+    li.list-inline-item.item-list:nth-child(1){
+        position: relative!important;
+        top: 1.3rem!important;
     }
 
     @media (min-width: 1140px) {
@@ -927,12 +812,50 @@ body {
         .horizontal-timeline .items .items-list .event-date {
             top: -40px;
         }
+
+        .event-date.badge.bg-info{
+        height: 14%;
+        width: 8%;
+        color: white;
+        font-size: 19px;
+        padding-top: 7px;
     }
+
+
+    li.list-inline-item.item-list:nth-child(2),
+    li.list-inline-item.item-list:nth-child(3) {
+        margin-top: -2rem !important;
+        top: -1rem;
+
+        px-4{
+            .event-date.badge.bg-info{
+                height: 15%;
+                width: 8%;
+                color: #FFFFFF;
+                font-size: 18px;
+                padding-top: 6px;
+                margin-top: -9px;
+            }
+
+            h5.pt-2 {
+               position: relative;
+               top: 0.5rem;
+            }
+
+            p.text-muted{
+                position: relative;
+                top: 0.5rem;
+            }
+        }
+    }
+    }
+    
+    
 }
 
 /* LIDERANÇA */
 #lideranca {
-    height: 85vh;
+    height: 100vh;
     padding-top: 6rem !important;
     background-color: #F5F5F5;
 
@@ -1149,43 +1072,28 @@ body {
 
 /* FOOTER */
 .footer {
-    background: var(--white);
+    background: #2A3B65;
     padding: 2rem 0;
-    color: var(--secondary);
+    color: #FFFFFF;
     font-size: 0.95rem;
     border-top: 1px solid #E5E7EB;
 }
 
 .footer-logo img {
-    height: 8rem;
+    height: 3rem;
 }
 
 .footer a {
-    color: var(--secondary);
+    color: #FFFFFF;
     text-decoration: none;
     margin-right: 1rem;
     transition: color 0.2s;
+    font-weight: 400;
 }
 
 .footer a:hover {
     color: var(--primary);
     text-decoration: underline;
-}
-
-.linkedin-icon {
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    vertical-align: middle;
-    background: #F3F4F6;
-    border-radius: 50%;
-    padding: 4px;
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.linkedin-icon:hover {
-    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.12);
-    transform: scale(1.08);
 }
 
 /* Animations for scroll */

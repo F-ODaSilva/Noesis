@@ -2,12 +2,14 @@
 <html lang="pt">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- PAGE INFO -->
   <title>NOESIS Intelligence Value</title>
   <!-- FAVICONS LINK -->
-  <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/favicon_io_simple/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon_io_simple/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon_io_simple/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Assets/images/favicon_io_simple/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Assets/images/favicon_io_simple/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Assets/images/favicon_io_simple/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="description"
     content="NOESIS Intelligence Value - Soluções inteligentes para centros de dados e ativos digitais em Moçambique.">
@@ -22,15 +24,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CUSTOM CSS STYLESHEET -->
   <!-- Navbar Style -->
-  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="stylesheet" href="/CSS/navbar.css">
   <!-- CSS STYLESHEET -->
-  <link rel="stylesheet" href="CSS/final-design.css">
+  <link rel="stylesheet" href="/CSS/final-design.css">
   <!-- FONT AWESOME ICONS -->
   <script src="https://kit.fontawesome.com/3359c08231.js" crossorigin="anonymous"></script>
   <!-- AOS CDN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- FLICKITY CDN -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 
   <style>
     .hero {
@@ -168,7 +171,7 @@
                 <li><a href="#implementacao" class="nav-link" data-key="nav.implementation">Implementação</a></li>
                 <li><a href="#lideranca" class="nav-link" data-key="nav.team">Team</a></li>
                 <li><a href="#contacto" class="nav-link" data-key="nav.contact">Contacto</a></li>
-                <li class="lang-switch text-center  mt-5">
+                <li class="lang-switch text-center mt-3">
                   <div class="language-switcher">
                     <button class="btn btn-md px-4 language-btn"
                       style="background-color: #fff; border: solid 3px #92CA63; color: #000000; font-weight: 700;"
@@ -321,9 +324,7 @@
                 mundial, com foco em eficiéncia energética e desempenho computacional utilizando tecnológicas de
                 arrefecimento arrancadas e sistemas de gestão inteligente.</p>
             </div>
-            <!-- <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div> -->
+    
           </div>
         </div>
         <div class="col">
@@ -356,9 +357,6 @@
                 fortalecendo o ecossistema digital moçambicano através de programas de capacitação e parcerias
                 estratégicas.</p>
             </div>
-            <!-- <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div> -->
           </div>
         </div>
       </div>
@@ -592,59 +590,50 @@
   <!-- END WHY US SECTION -->
 
   <!-- PARTNERSHIP SECTION -->
-  <section id="parcerias" class="py-2">
-    <div class="container py-5 py-md-4 pb-md-1" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="600"
-      data-aos-offset="0">
-      <div class="row">
-        <div class="col-12 heading">
-          <h1 data-key="partners.title" class="section-title mb-0">Parcerias</h2>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="mesh-gradient"></div> -->
-    <div class="container-fluid" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="700" data-aos-offset="0">
-      <div class="row row-cols-md-2 g-4">
-        <!-- NECESSIDADES -->
-        <div class="col-md-5" data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="800">
-          <div class="card shadow-sm h-100 border-0 text-center">
-            <div class="card-body">
-              <h4 class="card-title mb-3 text-primary" data-key="needs.title">Necessidades Energéticas</h4>
-              <p class="card-text text-muted" data-key="needs.subtitle">
-                A NOESIS busca parcerias estratégicas com fornecedores
-                de energia para viabilizar
-                suas operações de data center, que
-                requerem condições específicas para garantir operações de classe mundial
-              </p>
-              <button class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalNecessidades"
-                data-key="needs.cta">
-                Saber Mais
-              </button>
-            </div>
+  <section id="parcerias" class="py-5">
+    <div class="container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="400">
+      <div class="row align-items-center">
+
+        <!-- TEXTO À ESQUERDA -->
+        <div class="col-md-6">
+          <h1 class="section-title mb-4 fw-bold" data-key="partners.title">Parcerias</h1>
+
+          <!-- NECESSIDADES -->
+          <div class="mb-4 partner-opt" data-aos="zoom-in" data-aos-delay="600">
+            <h5 class="fw-bold text-primary" data-key="needs.title">Necessidades Energéticas</h5>
+            <p class="text-muted mb-3" data-key="needs.subtitle">
+              A NOESIS busca parcerias estratégicas com fornecedores de energia para viabilizar suas operações de data
+              center, que requerem condições específicas para garantir operações de classe mundial.
+            </p>
+            <button class="btn btn-sm px-3" data-bs-toggle="modal"
+              data-bs-target="#modalNecessidades" data-key="needs.cta">
+              Saber Mais
+            </button>
+          </div>
+
+          <!-- BENEFÍCIOS -->
+          <div class="mb-4 partner-opt" data-aos="zoom-in" data-aos-delay="700">
+            <h5 class="fw-bold text-success" data-key="benefits.title">Benefícios</h5>
+            <p class="text-muted mb-3" data-key="benefits.subtitle">
+              Os fornecedores de energia que se associam à NOESIS podem obter diversos benefícios estratégicos e
+              operacionais que fortalecem suas operações e contribuem para o desenvolvimento sustentável.
+            </p>
+            <button class="btn btn-sm px-3" data-bs-toggle="modal"
+              data-bs-target="#modalBeneficios" data-key="benefits.cta">
+              Saber Mais
+            </button>
           </div>
         </div>
 
-        <!-- BENEFÍCIOS -->
-        <div class="col-md-5" data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="800">
-          <!-- <div class="magicpattern"></div> -->
-          <div class="card shadow-sm h-100 border-0 text-center">
-            <div class="card-body">
-              <h4 class="card-title mb-3 text-success" data-key="benefits.title">Benefícios para Parceiros</h4>
-              <p class="card-text text-muted" data-key="benefits.subtitle">
-                A NOESIS busca parcerias estratégicas com
-                fornecedores de energia para viabilizar
-                suas operações de data center, que
-                requerem condições específicas para garantir operações de classe mundial:
-              </p>
-              <button class="btn btn-card" data-bs-toggle="modal" data-bs-target="#modalBeneficios"
-                data-key="benefits.cta">
-                Saber Mais
-              </button>
-            </div>
-          </div>
+        <!-- IMAGEM À DIREITA -->
+        <div class="col-md-6 text-center" data-aos="fade-left" data-aos-delay="800">
+          <img src="/Assets/images/Partners.png" alt="Digital Hub Mozambique" class="img-fluid rounded-3 shadow-sm" />
         </div>
+
       </div>
     </div>
   </section>
+
 
   <!-- Modal NECESSIDADES -->
   <div class="modal fade" id="modalNecessidades" tabindex="-1" aria-labelledby="modalNecessidadesLabel"
@@ -658,10 +647,11 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Card 1 -->
             <div class="col-12">
-              <div class="card border-0 shadow-sm h-100">
+              <div class="card border-0 h-100">
                 <div class="card-body">
+                  <i class="fa-solid fa-bolt me-2"></i>
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="needs.subtitle1">
-                    <i class="fa-solid fa-bolt me-2"></i> Fornecimento Estável
+                     Fornecimento Estável
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="needs.text1">
                     Energia contínua e de alta qualidade para operações 24/7 com uptime superior a 99.99%, seguindo
@@ -673,10 +663,11 @@
 
             <!-- Card 2 -->
             <div class="col-12">
-              <div class="card border-0 shadow-sm h-100">
+              <div class="card border-0 h-100">
                 <div class="card-body">
+                  <i class="fa-solid fa-scale-balanced me-2"></i>
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="needs.subtitle2">
-                    <i class="fa-solid fa-scale-balanced me-2"></i> Preços Competitivos
+                     Preços Competitivos
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="needs.text2">
                     Tarifas que assegurem viabilidade operacional e vantagem competitiva no mercado regional.
@@ -687,10 +678,11 @@
 
             <!-- Card 3 -->
             <div class="col-12">
-              <div class="card border-0 shadow-sm h-100">
+              <div class="card border-0 h-100">
                 <div class="card-body">
+                  <i class="fa-solid fa-chart-line me-2"></i>
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="needs.subtitle3">
-                    <i class="fa-solid fa-chart-line me-2"></i> Escalabilidade
+                     Escalabilidade
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="needs.text3">
                     Capacidade de expansão gradual e flexível, acompanhando o crescimento faseado do projeto.
@@ -718,10 +710,11 @@
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <!-- Card 1 -->
             <div class="col-12">
-              <div class="card border-0 shadow-sm h-100">
+              <div class="card border-0 h-100">
                 <div class="card-body">
+                  <i class="fa-solid fa-bolt me-2"></i>
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="benefits.subtitle1">
-                    <i class="fa-solid fa-bolt me-2"></i> Cliente Estável
+                     Cliente Estável
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text1">
                     Consumo previsível e contínuo de longo prazo com contratos plurianuais que garantem receitas
@@ -733,10 +726,11 @@
 
             <!-- Card 2 -->
             <div class="col-12">
-              <div class="card border-0 shadow-sm h-100">
+              <div class="card border-0 h-100">
                 <div class="card-body">
+                  <i class="fa-solid fa-scale-balanced me-2"></i>
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="benefits.subtitle2">
-                    <i class="fa-solid fa-scale-balanced me-2"></i>Aproveitamento de Capacidade
+                    Aproveitamento de Capacidade
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text2">
                     Utilização eficiente de eneria excedente, otimizando investimentos e infraestrutura existente e
@@ -748,10 +742,11 @@
 
             <!-- Card 3 -->
             <div class="col-12">
-              <div class="card border-0 shadow-sm h-100">
+              <div class="card border-0 h-100">
                 <div class="card-body">
+                  <i class="fa-solid fa-chart-line me-2"></i> 
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="benefits.subtitle3">
-                    <i class="fa-solid fa-chart-line me-2"></i> Projeto Inovador
+                    Projeto Inovador
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text3">
                     Participação em iniciativas pioneira com impacto nacional, associando sua marca a inovação e
@@ -763,10 +758,11 @@
 
             <!-- Card 4 -->
             <div class="col-12">
-              <div class="card border-0 shadow-sm h-100">
+              <div class="card border-0 h-100">
                 <div class="card-body">
+                  <i class="fa-solid fa-chart-line me-2"></i>
                   <h6 class="card-title fw-bold text-primary mb-2" data-key="benefits.subtitle4">
-                    <i class="fa-solid fa-chart-line me-2"></i> Desenvolvimento Regional
+                     Desenvolvimento Regional
                   </h6>
                   <p class="card-text text-muted mb-0" data-key="benefits.text4">
                     Contribuição direta para o crescimento económico nas comunidades onde operamos.
@@ -782,8 +778,7 @@
   <!-- END PARTNERSHIPS -->
 
   <!-- SUSTAINABILITY SECTION -->
-  <section id="sustentabilidade" class="py-5 pb-0 bg-light">
-    <!-- Heading -->
+  <!-- <section id="sustentabilidade" class="py-5 pb-0 bg-light">
     <div class="container py-5 py-md-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="600"
       data-aos-offset="0">
       <div class="row">
@@ -795,7 +790,6 @@
       </div>
     </div>
 
-    <!-- Subtitle outside the background -->
     <div class="container mb-3">
       <h3 class="section-subtitle text-justify fw-semibold" data-aos="fade-right" data-aos-easing="ease-in-out"
         data-aos-delay="800" data-aos-offset="0" data-key="sustainability.subtitle">
@@ -804,7 +798,6 @@
       </h3>
     </div>
 
-    <!-- FULL-WIDTH BACKGROUND IMAGE (content area) -->
     <div class="container-fluid sustainability-bg d-flex align-items-center" data-aos="fade-down"
       data-aos-easing="ease-in-out" data-aos-delay="800" data-aos-offset="0">
       <div class="row justify-content-end w-100">
@@ -836,7 +829,7 @@
       </div>
     </div>
 
-    <!-- FOOTER QUOTE -->
+
     <div class="sustainability-footer py-3 text-center" data-aos="fade-right" data-aos-easing="ease-in-out"
       data-aos-delay="900" data-aos-offset="0">
       <div class="container">
@@ -847,12 +840,13 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- END SUSTAINABILITY -->
 
   <!-- TIMELINE SECTION -->
   <section id="implementacao" class="py-5 pb-2">
-    <div class="container">
+    <div class="container-fluid py-5" data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="750"
+      data-aos-offset="0">
       <div class="container py-5 py-md-4 pb-md-1" data-aos="fade-right" data-aos-easing="ease-in" data-aos-delay="600"
         data-aos-offset="0">
         <div class="row">
@@ -861,10 +855,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid py-5" data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="750"
-      data-aos-offset="0">
-
       <div class="row">
         <div class="col-lg-12">
 
@@ -872,7 +862,7 @@
             data-aos-offset="0">
 
             <ul class="list-inline items">
-              <li class="list-inline-item items-list">
+              <li class="list-inline-item items-list" style="position: relative!important; top: 1.3rem!important;">
                 <div class="px-4">
                   <div class="event-date badge bg-info">1</div>
                   <h5 class="pt-2" data-key="implementation.phase1.title">Fase de Preparação</h5>
@@ -1054,7 +1044,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4 text-center text-md-start mb-2 mb-md-0 footer-logo">
-          <img src="Assets/images/full-logo-no-bg.png" alt="NOESIS Logo">
+          <img src="Assets/images/noesis_logo_white.png" alt="NOESIS Logo">
         </div>
         <div class="col-md-4 text-center mb-2 mb-md-0">
           <a href="#" class="me-3" data-key="footer.privacy">Política de Privacidade</a>
