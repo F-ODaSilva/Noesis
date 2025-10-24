@@ -23,11 +23,14 @@
   <!-- CUSTOM CSS STYLESHEET -->
   <!-- Navbar Style -->
   <link rel="stylesheet" href="CSS/navbar.css">
+  <!-- CSS STYLESHEET -->
   <link rel="stylesheet" href="CSS/final-design.css">
   <!-- FONT AWESOME ICONS -->
   <script src="https://kit.fontawesome.com/3359c08231.js" crossorigin="anonymous"></script>
   <!-- AOS CDN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- FLICKITY CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
   <style>
     .hero {
@@ -107,7 +110,6 @@
   </div>
   <!-- END MOBILE MENU -->
 
-
   <!-- NAVBAR -->
   <div class="site-navbar-wrap">
     <!-- Top Bar -->
@@ -149,10 +151,10 @@
           <!-- Left: Logo -->
           <!-- <h1 class="my-3 site-logo"> -->
           <a href="#inicio"><img src="Assets/images/noesis_logo_black.png" class="img-fluid brand-logo" alt="""></a>
-            <!-- </h1> -->
+          <!-- </h1> -->
 
-            <!-- Right: Menu & Toggler -->
-            <nav class=" site-navigation text-right" role="navigation">
+          <!-- Right: Menu & Toggler -->
+          <nav class=" site-navigation text-right" role="navigation">
             <div class="container d-flex align-items-center justify-content-end">
 
               <!-- MAIN MENU (desktop) -->
@@ -371,176 +373,46 @@
         data-aos-delay="600" data-aos-offset="0">
         <div class="row">
           <div class="col-12 heading">
-            <h1 data-key="objetives.title" class="section-title mb-0">Objetivos Estratégicos</h2>
+            <h1 data-key="objetives.title" class="section-title mb-0">Objetivos Estratégicos</h1>
           </div>
         </div>
       </div>
-      <!-- BOOTSTRAP CAROUSEL WITH CAPTIONS -->
-      <div id="carousel-section" class="carousel-section">
-        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-          <!-- Carousel Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#customCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
 
-          <!-- Carousel Inner -->
-          <div class="carousel-inner" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="800"
-            data-aos-offset="0">
-
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="carousel-bg" style="background-image: url('Assets/images/data-centers.jpg');">
-                <div class="carousel-overlay"></div>
-              </div>
-              <div class="carousel-caption">
-                <div class="container">
-                  <div class="row align-items-center h-100">
-                    <div class="col-lg-9 col-md-8 col-sm-8">
-                      <div class="caption-content">
-                        <h2 class="caption-title" data-key="objectives.subtitle1">Infraestrutura Digital</h2>
-                        <p class="caption-text" data-key="objectives.text1">Estabelecer data centers de classe mundial
-                          em
-                          Moçambique, criando a base
-                          tecnológica
-                          necessária para impulsionar a economia digital nacional e posicionar o país como hub regional
-                          de
-                          processamento de dados.</p>
-                        <div class="caption-features">
-                          <div class="feature-tag">
-                            <i class="fas fa-server me-2"></i>
-                            <span data-key="objectives.tag1">Data Centers</span>
-                          </div>
-                          <div class="feature-tag">
-                            <i class="fas fa-globe me-2"></i>
-                            <span data-key="objectives.tag2">Conectividade Global</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="slide-number">
-                        <span class="number" style="color: white">01</span>
-                      </div>
-                    </div>
+      <!-- CAROUSEL SECTION -->
+      <div class="carousel" data-flickity='{ 
+            "autoPlay": 5000, 
+            "wrapAround": true, 
+            "pauseAutoPlayOnHover": true,
+            "prevNextButtons": true,
+            "pageDots": true}'>
+        <div class="carousel-cell" style="background-image: url('../Assets/images/Carousel1.png');">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row align-items-center h-100">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                  <div class="slide-number">
+                    <span class="number">1</span>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="carousel-bg" style="background-image: url('Assets/images/data-centers-2.jpg');">
-                <div class="carousel-overlay"></div>
-              </div>
-              <div class="carousel-caption">
-                <div class="container">
-                  <div class="row align-items-center h-100">
-                    <div class="col-lg-9 col-md-8 col-sm-8">
-                      <div class="caption-content">
-                        <h2 class="caption-title" data-key="objectives.subtitle2">Aproveitamento Energético</h2>
-                        <p class="caption-text" data-key="objectives.text2">Utilizar de forma eficiente os abundantes
-                          recursos energéticos do país,
-                          transformando
-                          energia excedente em valor económico através de operações tecnológicas sustentáveis e de
-                          alto rendimento.</p>
-                        <div class="caption-features">
-                          <div class="feature-tag">
-                            <i class="fa-solid fa-solar-panel me-2"></i>
-                            <span data-key="objectives.tag3">Tecnologias Sustentáveis</span>
-                          </div>
-                          <div class="feature-tag">
-                            <i class="fa-solid fa-seedling me-2"></i>
-                            <span data-key="objectives.tag4">Recursos Naturais</span>
-                          </div>
-                        </div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
+                  <div class="caption-content">
+                    <h2 class="caption-title" data-key="objectives.subtitle1">Infraestrutura Digital</h2>
+                    <p class="caption-text" data-key="objectives.text1">Estabelecer data centers de classe mundial
+                      em
+                      Moçambique, criando a base
+                      tecnológica
+                      necessária para impulsionar a economia digital nacional e posicionar o país como hub regional
+                      de
+                      processamento de dados.</p>
+                    <div class="caption-features">
+                      <div class="feature-tag">
+                        <i class="fas fa-server me-2"></i>
+                        <span data-key="objectives.tag1">Data Centers</span>
                       </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="slide-number">
-                        <span class="number" style="color: white;">02</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <div class="carousel-bg"
-                style="background-image: url('Assets/images/moz-flag.png'); background-position: center -45rem;">
-                <div class="carousel-overlay"></div>
-              </div>
-              <div class="carousel-caption">
-                <div class="container">
-                  <div class="row align-items-center h-100">
-                    <div class="col-lg-9 col-md-8 col-sm-8">
-                      <div class="caption-content">
-                        <h2 class="caption-title" data-key="objectives.subtitle3">Desenvolvimento Econômico</h2>
-                        <p class="caption-text" data-key="objectives.text3">Contribuir significativamente para a
-                          diversificação da economia nacional,
-                          criando
-                          novos
-                          sectores de atividade, empregos qualificados e oportunidades de investimento no setor
-                          tecnológico.</p>
-                        <div class="caption-features">
-                          <div class="feature-tag">
-                            <i class="fas fa-tree me-2"></i>
-                            <span data-key="objectives.tag5">Crescimento Sustentável</span>
-                          </div>
-                          <div class="feature-tag">
-                            <i class="fa-solid fa-arrow-up-right-dots me-2"></i>
-                            <span data-key="objectives.tag6">Transformação Económica</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="slide-number">
-                        <span class="number" style="color:white">03</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="carousel-item">
-              <div class="carousel-bg" style="background-image: url('Assets/images/girl-digital.png');">
-                <div class="carousel-overlay"></div>
-              </div>
-              <div class="carousel-caption">
-                <div class="container">
-                  <div class="row align-items-center h-100">
-                    <div class="col-lg-9 col-md-8 col-sm-8">
-                      <div class="caption-content">
-                        <h2 class="caption-title" data-key="objectives.subtitle4">Capacitação Tecnológica</h2>
-                        <p class="caption-text" data-key="objectives.text4">Formar e desenvolver profissionais
-                          moçambicanos
-                          em tecnologias avançadas,
-                          criando
-                          competências locais e reduzindo a dependência de expertise externa no setor digital.</p>
-                        <div class="caption-features">
-                          <div class="feature-tag">
-                            <i class="fas fa-graduation-cap me-2"></i>
-                            <span data-key="objectives.tag7">Capacitação Tecnológica</span>
-                          </div>
-                          <div class="feature-tag">
-                            <i class="fa-solid fa-rocket me-2"></i>
-                            <span data-key="objectives.tag8">Inovação Tecnológica</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="slide-number">
-                        <span class="number" style="color: white">04</span>
+                      <div class="feature-tag">
+                        <i class="fas fa-globe me-2"></i>
+                        <span data-key="objectives.tag2">Conectividade Global</span>
                       </div>
                     </div>
                   </div>
@@ -548,22 +420,109 @@
               </div>
             </div>
           </div>
-
-          <!-- Carousel Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </div>
+        <div class="carousel-cell" style="background-image: url('../Assets/images/Carousel2.png');">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row align-items-center h-100">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                  <div class="slide-number">
+                    <span class="number">2</span>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
+                  <div class="caption-content">
+                    <h2 class="caption-title" data-key="objectives.subtitle2">Aproveitamento Energético</h2>
+                    <p class="caption-text" data-key="objectives.text2">Utilizar de forma eficiente os abundantes
+                      recursos energéticos do país,
+                      transformando
+                      energia excedente em valor económico através de operações tecnológicas sustentáveis e de
+                      alto rendimento.</p>
+                    <div class="caption-features">
+                      <div class="feature-tag">
+                        <i class="fa-solid fa-solar-panel me-2"></i>
+                        <span data-key="objectives.tag3">Tecnologias Sustentáveis</span>
+                      </div>
+                      <div class="feature-tag">
+                        <i class="fa-solid fa-seedling me-2"></i>
+                        <span data-key="objectives.tag4">Recursos Naturais</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell" style="background-image: url('../Assets/images/Carousel3.png');">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row align-items-center h-100">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                  <div class="slide-number">
+                    <span class="number">3</span>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
+                  <div class="caption-content">
+                    <h2 class="caption-title" data-key="objectives.subtitle3">Desenvolvimento Econômico</h2>
+                    <p class="caption-text" data-key="objectives.text3">Contribuir significativamente para a
+                      diversificação da economia nacional,
+                      criando
+                      novos
+                      sectores de atividade, empregos qualificados e oportunidades de investimento no setor
+                      tecnológico.</p>
+                    <div class="caption-features">
+                      <div class="feature-tag">
+                        <i class="fas fa-tree me-2"></i>
+                        <span data-key="objectives.tag5">Crescimento Sustentável</span>
+                      </div>
+                      <div class="feature-tag">
+                        <i class="fa-solid fa-arrow-up-right-dots me-2"></i>
+                        <span data-key="objectives.tag6">Transformação Económica</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell" style="background-image: url('../Assets/images/Carousel4.png');">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row align-items-center h-100">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                  <div class="slide-number">
+                    <span class="number">4</span>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
+                  <div class="caption-content">
+                    <h2 class="caption-title" data-key="objectives.subtitle4">Capacitação Tecnológica</h2>
+                    <p class="caption-text" data-key="objectives.text4">Formar e desenvolver profissionais
+                      moçambicanos
+                      em tecnologias avançadas,
+                      criando
+                      competências locais e reduzindo a dependência de expertise externa no setor digital.</p>
+                    <div class="caption-features">
+                      <div class="feature-tag">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        <span data-key="objectives.tag7">Capacitação Tecnológica</span>
+                      </div>
+                      <div class="feature-tag">
+                        <i class="fa-solid fa-rocket me-2"></i>
+                        <span data-key="objectives.tag8">Inovação Tecnológica</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-    </div>
   </section>
-  <!-- END STRATEGIC OBJECTIVES -->
 
   <!-- WHY US SECTION -->
   <section id="porque">
@@ -1506,19 +1465,25 @@
 
   </script>
 
+  <!-- FLICKITY SCRIPT -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
   <!-- ANIMAION ON SCROLL SCRIPT -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
   <!-- BOOTSTRAP CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- BOOTSTRAP SCRIPT -->
   <script src="JS/jquery-3.3.1.min.js"></script>
   <script src="JS/popper.min.js"></script>
   <script src="JS/bootstrap.min.js"></script>
   <script src="JS/jquery.sticky.js"></script>
   <script src="JS/main.js"></script>
+
 </body>
 
 </html>

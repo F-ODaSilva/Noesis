@@ -165,7 +165,6 @@ body {
         }
     }
 }
-
 /* END ABOUT SECTION
 
 
@@ -251,8 +250,80 @@ body {
         }
     }
 }
-
 /* END SERVICES SECTION */
+
+
+/* CAROUSEL SECTION */
+.carousel {
+  background: #EEE;
+  height: 500px;
+}
+
+.carousel-cell {
+  width: 65%;
+  height: 100%!important;   
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  
+  .carousel-caption{
+    height: 100%;
+    align-content: center;
+    width: 84%; 
+    justify-content: start;
+    display: flex;
+    left: 110px;
+    bottom: 55px;
+
+    .slide-number{
+        span.number{
+            color: white;
+            font-size: 25rem;
+            -webkit-text-stroke: 8px #fff;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Ubuntu';
+        }
+    }
+
+    .caption-content{
+        .caption-title{
+           text-align: left;
+           font-size: 50px;
+           color: #8ED138;
+           margin-bottom: 1rem;
+        } 
+        .caption-text{
+            text-align: justify;
+            color: whitesmoke;
+            margin-right: 4rem;
+            margin-bottom: 2rem;
+        }
+        .caption-features{
+            text-align: left;
+            .feature-tag{
+                margin-bottom: 1rem;
+                i{
+                    color: #8ED138;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
 
 /* STRATEGIC OBJECTIVES SECTION  */
 #diferenciais {
@@ -462,7 +533,6 @@ body {
         }
     }
 }
-
 /* END STRATEGIC OBJECTIVES SECTION  */
 
 /* WHY US SECTION */
@@ -1730,7 +1800,6 @@ body {
         }
     }
 }
-
 
 
 /* Mobile: 320px - 767px */
