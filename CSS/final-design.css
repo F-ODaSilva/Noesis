@@ -180,7 +180,7 @@ body {
         height: 100%;
         align-content: center;
         padding-bottom: 4rem;
-        background-image: url(/Assets/images/ServicesBackground.png);
+        background-image: url("Assets/images/ServicesBackground.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 110%;
