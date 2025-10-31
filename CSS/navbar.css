@@ -93,19 +93,21 @@ a:hover {
     margin-bottom: 0px;
     width: 100%;
     background-color: whitesmoke;
-    box-shadow:  0 5px 10px -3px rgb(0 0 0 / 12%);
+    box-shadow: 0 5px 10px -3px rgb(0 0 0 / 12%);
 }
 
 #sticky-wrapper {
     background-color: whitesmoke;
 
-    .container{
-        height: 75px!important;
-        .d-flex align-items-center justify-content-end{
-            height: 150px!important;
+    .container {
+        height: 75px !important;
+
+        .d-flex align-items-center justify-content-end {
+            height: 150px !important;
         }
     }
 }
+
 .site-navbar .site-logo {
     font-weight: 200;
     line-height: 0;
@@ -125,7 +127,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-.site-navbar .site-naviga   ion .site-menu a {
+.site-navbar .site-naviga ion .site-menu a {
     text-decoration: none !important;
     display: inline-block;
     font-weight: 500;
@@ -137,22 +139,24 @@ a:hover {
     padding: 10px 5px;
 }
 
-.site-navbar .site-navigation .site-menu .language-switcher{
+.site-navbar .site-navigation .site-menu .language-switcher {
     margin: 1rem 0;
-    .btn.btn-sm{
+
+    .btn.btn-sm {
         color: black;
         font-weight: 400;
-        border: solid 3px #8ED138!important;
+        border: solid 3px #8ED138 !important;
         margin-top: 2rem;
     }
-    .btn.btn-sm:hover{
+
+    .btn.btn-sm:hover {
         color: #f5f5f5;
         background-color: #8ED138;
     }
 }
 
 .site-navbar .site-navigation .site-menu>li>a {
-    padding: 20px 10px;         
+    padding: 20px 10px;
     color: #5f5f5f;
     font-size: 15px;
     text-decoration: none !important;
@@ -246,14 +250,6 @@ a:hover {
     color: #343a40;
 }
 
-/* .site-navbar .site-navigation .site-menu .has-children .dropdown a.active {
-    color: #2baeb9;
-} */
-
-/* .site-navbar .site-navigation .site-menu .has-children .dropdown .active>a {
-    color: #8ED138!important;
-} */
-
 .site-navbar .site-navigation .site-menu .has-children .dropdown>li {
     list-style: none;
     padding: 0;
@@ -299,7 +295,7 @@ a:hover {
     color: #212529;
 }
 
-    /* .site-navbar .site-navigation .site-menu .has-children:hover>a,
+/* .site-navbar .site-navigation .site-menu .has-children:hover>a,
     .site-navbar .site-navigation .site-menu .has-children:focus>a,
     .site-navbar .site-navigation .site-menu .has-children:active>a {
         color: #8ED138
@@ -323,7 +319,7 @@ a:hover {
 }
 
 .site-mobile-menu {
-    width: 25%!important;
+    width: 25% !important;
     position: fixed;
     right: 0;
     z-index: 2000;
@@ -335,7 +331,7 @@ a:hover {
     -ms-transform: translateX(110%);
     transform: translateX(110%);
     -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.874);
-    box-shadow: -12px 0 20px -3px  rgba(0, 0, 0, 0.923);
+    box-shadow: -12px 0 20px -3px rgba(0, 0, 0, 0.923);
     -webkit-transition: .3s all ease-in-out;
     -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
@@ -420,10 +416,10 @@ a:hover {
 
 .site-mobile-menu .site-nav-wrap a.active,
 .site-mobile-menu .site-nav-wrap a:hover {
-    color: #8ED138 ;
+    color: #8ED138;
     font-size: 25px;
     font-weight: bold;
-    
+
 }
 
 .site-mobile-menu .site-nav-wrap li {
@@ -531,10 +527,6 @@ a:hover {
     transition: .3s all ease;
 }
 
-/* .sticky-wrapper .site-navbar ul li.active a {
-    color:  #72bd10;
-    font-weight: bold;       
-} */
 
 .sticky-wrapper.is-sticky .site-navbar {
     background-color: whitesmoke;
@@ -556,28 +548,11 @@ a:hover {
 .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li.has-children>a {
     padding-right: 20px;
 }
-/* 
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a {
-    padding: 10px 10px;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 15px;
+
+.site-navbar .site-navigation .site-menu>li>a.active {
+    color: #8ED138;
+    font-weight: bold;
+    border-bottom: 3px solid #8ED138;
+    transition: all 0.3s ease;
 }
 
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a:hover {
-    color: #fff !important;
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li>a.active {
-    color: #fff !important;
-}
-
-.sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu>li.active a {
-    color: #fff;
-} */
-
-.site-navbar .site-navigation .site-menu > li > a.active {
-  color: #8ED138;
-  font-weight: bold;
-  border-bottom: 3px solid #8ED138;
-  transition: all 0.3s ease;
-}
